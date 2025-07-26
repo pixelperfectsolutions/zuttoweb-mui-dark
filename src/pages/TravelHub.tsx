@@ -1,28 +1,55 @@
 import React from 'react';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 const TravelHub: React.FC = () => (
-  <div style={{ maxWidth: 1300, margin: '0 auto', padding: '4rem 1.5rem', background: '#ddc8aa', color: '#181511', fontFamily: 'Roboto, Arial, sans-serif' }}>
-    <section>
-      <h1 style={{ fontFamily: 'Montserrat, Roboto, Arial, sans-serif', fontWeight: 700, fontSize: '2.25rem', marginBottom: '1rem', color: 'white' }}>Travel Hub – News, Tips & Stories</h1>
-      <p style={{ fontFamily: 'Roboto, Arial, sans-serif', fontSize: '1.125rem', marginBottom: '1.5rem', color: 'white' }}>Your go-to space for updates, insider news, and travel insights.</p>
-      <div className="mb-8">
-        <h2 style={{ fontFamily: 'Montserrat, Roboto, Arial, sans-serif', fontWeight: 600, fontSize: '1.5rem', marginBottom: '0.5rem', color: 'white' }}>Travel News</h2>
-        <p style={{ fontFamily: 'Roboto, Arial, sans-serif', fontSize: '1.125rem', color: 'white' }}>Stay informed on lounge openings, travel restrictions, and aviation trends.</p>
-      </div>
-      <div className="mb-8">
-        <h2 style={{ fontFamily: 'Montserrat, Roboto, Arial, sans-serif', fontWeight: 600, fontSize: '1.5rem', marginBottom: '0.5rem', color: 'white' }}>Pro Travel Tips</h2>
-        <ul style={{ fontFamily: 'Roboto, Arial, sans-serif', fontSize: '1.125rem', marginLeft: '2rem', color: 'white' }}>
-          <li>💼 Maximize Your Lounge Visit – Enjoy all the perks, from gourmet meals to spa access.</li>
-          <li>🛃 Airport Hacks – Navigate terminals like a pro.</li>
-          <li>🌍 Top Destinations – Curated global hotspots and hidden gems.</li>
-        </ul>
-      </div>
-      <div>
-        <h2 style={{ fontFamily: 'Montserrat, Roboto, Arial, sans-serif', fontWeight: 600, fontSize: '1.5rem', marginBottom: '0.5rem', color: 'white' }}>Featured Travel Stories</h2>
-        <p style={{ fontFamily: 'Roboto, Arial, sans-serif', fontSize: '1.125rem', color: 'white' }}>Be inspired by real travelers—business flyers, adventurers, and global wanderers—sharing their luxurious and stress-free journeys with ZUTTO.</p>
-      </div>
-    </section>
-  </div>
+  <Container className="py-5">
+    <Row className="justify-content-center">
+      <Col lg={10}>
+        <Card className="shadow-lg border-0 mb-5 p-4 bg-dark text-white">
+          <Card.Body className="p-4">
+            <h1 className="display-5 fw-bold mb-3 text-center">Travel Hub – News, Tips & Stories</h1>
+            <p className="lead mb-4 text-center">
+              Your go-to space for updates, insider news, and travel insights.
+            </p>
+            <Row className="g-4">
+              <Col md={4}>
+                <Card className="h-100 bg-secondary text-white border-0">
+                  <Card.Body className="p-4">
+                    <h2 className="h5 fw-bold mb-2">Travel News</h2>
+                    <p className="mb-0">
+                      Stay informed on lounge openings, travel restrictions, and aviation trends.
+                    </p>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col md={4}>
+                <Card className="h-100 bg-secondary text-white border-0">
+                  <Card.Body className="p-4">
+                    <h2 className="h5 fw-bold mb-2">Pro Travel Tips</h2>
+                    <ul className="mb-0 ps-3">
+                      <li>💼 Maximize Your Lounge Visit – Enjoy all the perks, from gourmet meals to spa access.</li>
+                      <li>🛃 Airport Hacks – Navigate terminals like a pro.</li>
+                      <li>🌍 Top Destinations – Curated global hotspots and hidden gems.</li>
+                    </ul>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col md={4}>
+                <Card className="h-100 bg-secondary text-white border-0">
+                  <Card.Body className="p-4">
+                    <h2 className="h5 fw-bold mb-2">Featured Travel Stories</h2>
+                    <p className="mb-0">
+                      Be inspired by real travelers—business flyers, adventurers, and global wanderers—sharing their luxurious and stress-free journeys with ZUTTO.
+                    </p>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Card.Body>
+        </Card>
+      </Col>
+    </Row>
+  </Container>
 );
 
 export default TravelHub;

@@ -1,5 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Orbitron:wght@400;600;700&family=Audiowide&display=swap');
+
 html, body {
   background: #ddc8aa !important;
   color: #181511;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+/* Limit Bootstrap containers to 1300px on large screens */
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+}
+.logo {
+  font-size: 3rem;
+  font-family: 'Audiowide', cursive;
+  letter-spacing: 0.05em;
+}
+
+/* Increase vertical spacing for all sections */
+section {
+  margin-block: 6rem;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1400px;
+  }
+
+}
