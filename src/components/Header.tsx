@@ -18,7 +18,7 @@ const Header: React.FC = () => {
   const location = useLocation();
 
   return (
-    <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" fixed="top" className="shadow-sm">
+    <Navbar collapseOnSelect expand="md" bg="light" variant="light" fixed="top" className="apple-navbar">
       <Container style={{ maxWidth: '1200px' }} className="mx-auto">
         <LinkContainer to="/">
           <Navbar.Brand className="fw-bold logo">ZUTTO</Navbar.Brand>
