@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Testimonials: React.FC = () => (
-  <div style={{ maxWidth: 1300, margin: '0 auto', padding: '4rem 1.5rem', background: '#18191A', color: 'white', fontFamily: 'Roboto, Arial, sans-serif' }}>
+  <div style={{ maxWidth: 1300, margin: '0 auto', padding: '4rem 1.5rem', background: '#ddc8aa', color: '#181511', fontFamily: 'Roboto, Arial, sans-serif' }}>
     <h1 style={{ fontFamily: 'Montserrat, Roboto, Arial, sans-serif', fontWeight: 700, fontSize: '2.25rem', marginBottom: '1rem', color: 'white' }}>Testimonials</h1>
     <div className="mb-8">
       <blockquote className="border-l-4 border-blue-400 pl-4 italic text-white mb-4" style={{ fontFamily: 'Roboto, Arial, sans-serif', fontSize: '1.125rem' }}>

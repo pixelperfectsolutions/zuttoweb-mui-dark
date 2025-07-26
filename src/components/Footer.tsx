@@ -1,53 +1,30 @@
 import React from 'react';
-import Paper from '@mui/material/Paper';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Stack from '@mui/material/Stack';
-import Link from '@mui/material/Link';
-import Divider from '@mui/material/Divider';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import EmailIcon from '@mui/icons-material/Email';
 
 const Footer: React.FC = () => (
-  <Paper
-    component="footer"
-    elevation={8}
-    sx={{
-      mt: 8,
-      borderRadius: 0,
-      background: '#18191A',
-      color: 'white',
-      py: 4,
-      px: { xs: 2, sm: 6 },
-      textAlign: 'center',
-      boxShadow: 6,
-    }}
-  >
-    <Typography variant="body2" sx={{ mb: 1 }}>
+  <footer className="w-full bg-[#ddc8aa] text-[#181511] py-6 px-4 shadow-lg mt-8 text-center">
+    <p className="font-roboto text-sm mb-2">
       &copy; {new Date().getFullYear()} <b>ZUTTO</b>. All rights reserved.
-    </Typography>
-    <Stack direction="row" spacing={2} justifyContent="center" alignItems="center" sx={{ mb: 1 }}>
-      <Link href="/privacy" underline="hover" color="white" sx={{ fontWeight: 'medium', transition: 'color 0.3s', '&:hover': { color: '#ffeb3b' } }}>
+    </p>
+
+    <div className="flex items-center justify-center space-x-4 mb-2 font-roboto text-sm">
+      <a href="/privacy" className="hover:text-yellow-400 font-medium transition-colors">
         Privacy Policy
-      </Link>
-      <Divider orientation="vertical" flexItem sx={{ borderColor: 'rgba(255,255,255,0.3)' }} />
-      <Link href="/terms" underline="hover" color="white" sx={{ fontWeight: 'medium', transition: 'color 0.3s', '&:hover': { color: '#ffeb3b' } }}>
+      </a>
+      <span className="opacity-50">|</span>
+      <a href="/terms" className="hover:text-yellow-400 font-medium transition-colors">
         Terms of Service
-      </Link>
-      <Divider orientation="vertical" flexItem sx={{ borderColor: 'rgba(255,255,255,0.3)' }} />
-      <Link href="mailto:support@zutto.in" underline="hover" color="white" sx={{ fontWeight: 'medium', display: 'flex', alignItems: 'center', gap: 0.5, transition: 'color 0.3s', '&:hover': { color: '#ffeb3b' } }}>
-        <EmailIcon fontSize="small" sx={{ mb: '-2px' }} /> support@zutto.in
-      </Link>
-    </Stack>
-    <Typography variant="body2" sx={{ mt: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 0.5 }}>
-      Made with <FavoriteIcon fontSize="small" sx={{ color: 'error.light', mx: 0.5, animation: 'beat 1.2s infinite alternate' }} /> in Coimbatore, India
-    </Typography>
-    <style>{`
-      @keyframes beat {
-        to { transform: scale(1.2); }
-      }
-    `}</style>
-  </Paper>
+      </a>
+      <span className="opacity-50">|</span>
+      <a href="mailto:support@zutto.in" className="hover:text-yellow-400 font-medium transition-colors flex items-center space-x-1">
+        <span>✉️</span>
+        <span>support@zutto.in</span>
+      </a>
+    </div>
+
+    <p className="font-roboto text-sm flex items-center justify-center gap-1">
+      Made with <span className="animate-pulse text-red-500">❤</span> in Coimbatore, India
+    </p>
+  </footer>
 );
 
 export default Footer;

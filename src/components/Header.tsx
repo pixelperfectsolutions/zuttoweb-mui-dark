@@ -1,13 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
-import Slide from '@mui/material/Slide';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
 
+// Navigation items
 const navItems = [
   { name: 'Home', path: '/' },
   { name: 'About Us', path: '/about' },
@@ -19,67 +13,46 @@ const navItems = [
   { name: 'Terms', path: '/terms' },
 ];
 
-function HideOnScroll(props: { children: React.ReactElement }) {
-  const trigger = useScrollTrigger();
-  return (
-    <Slide appear={false} direction="down" in={!trigger}>
-      {props.children}
-    </Slide>
-  );
-}
-
 const Header: React.FC = () => {
   const location = useLocation();
+  const [hidden, setHidden] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(typeof window !== 'undefined' ? window.scrollY : 0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const current = window.scrollY;
+      setHidden(current > prevScrollPos && current > 100);
+      setPrevScrollPos(current);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos]);
+
   return (
-    <HideOnScroll>
-      <AppBar position="sticky" color="primary" sx={{ background: '#18191A', boxShadow: 3 }}>
-        <Toolbar>
-          <Typography
-            variant="h5"
-            component={RouterLink}
-            to="/"
-            sx={{
-              flexGrow: 1,
-              fontWeight: 'bold',
-              letterSpacing: 2,
-              color: 'white',
-              textDecoration: 'none',
-              transition: 'color 0.3s',
-              '&:hover': { color: '#ffeb3b' },
-            }}
-          >
-            ZUTTO
-          </Typography>
-          <Box sx={{ display: 'flex', gap: 1 }}>
-            {navItems.map((item, idx) => (
-              <Button
-                key={item.path}
-                component={RouterLink}
-                to={item.path}
-                color={location.pathname === item.path ? 'secondary' : 'inherit'}
-                variant={location.pathname === item.path ? 'contained' : 'text'}
-                sx={{
-                  mx: 0.5,
-                  borderRadius: 2,
-                  fontWeight: location.pathname === item.path ? 'bold' : 'normal',
-                  backgroundColor: location.pathname === item.path ? '#23272F' : 'transparent',
-                  color: location.pathname === item.path ? '#ffeb3b' : 'white',
-                  transition: 'background 0.3s, color 0.3s, transform 0.2s',
-                  '&:hover': {
-                    backgroundColor: '#23272F',
-                    color: '#ffeb3b',
-                    transform: 'scale(1.08)',
-                  },
-                  boxShadow: location.pathname === item.path ? 2 : 0,
-                }}
-              >
-                {item.name}
-              </Button>
-            ))}
-          </Box>
-        </Toolbar>
-      </AppBar>
-    </HideOnScroll>
+    <header
+      className={`w-full sticky top-0 z-50 transition-transform duration-300 ${hidden ? '-translate-y-full' : 'translate-y-0'} bg-neutral-900/60 backdrop-blur-md`}
+    >
+      <div className="max-w-[1300px] mx-auto flex items-center justify-between px-4 py-3">
+        <RouterLink to="/" className="font-montserrat font-bold text-xl tracking-wider text-white hover:text-yellow-400 transition-colors">
+          ZUTTO
+        </RouterLink>
+        <nav className="flex gap-2 md:gap-3">
+          {navItems.map((item) => (
+            <RouterLink
+              key={item.path}
+              to={item.path}
+              className={`px-3 py-1 rounded-md font-montserrat text-sm md:text-base transition-all duration-200 ${
+                location.pathname === item.path
+                  ? 'bg-neutral-800 text-yellow-400 font-semibold shadow'
+                  : 'text-white hover:bg-neutral-800 hover:text-yellow-400'
+              }`}
+            >
+              {item.name}
+            </RouterLink>
+          ))}
+        </nav>
+      </div>
+    </header>
   );
 };
 
