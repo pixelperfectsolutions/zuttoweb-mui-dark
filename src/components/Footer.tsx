@@ -3,10 +3,10 @@ import React from 'react';
 const Footer: React.FC = () => (
   <footer className="w-full bg-[#f5efe6] text-[#181511] pt-10 pb-4 px-4 border-t border-[#e5d6be] mt-8">
     <div className="w-full max-w-6xl mx-auto flex flex-col gap-6">
-      {/* Primary Row: Three Columns, always horizontal */}
-      <div className="w-full flex flex-row gap-8 pb-6 border-b border-[#e5d6be]">
+      {/* Primary Row: Four Columns, always horizontal */}
+      <div className="w-full flex flex-row gap-6 pb-6 border-b border-[#e5d6be]">
         {/* Column 1: Links */}
-        <div className="flex-1 min-w-[180px]">
+        <div className="w-1/4 min-w-[40px]">
           <h3 className="font-bold mb-3 text-lg">Links</h3>
           <ul className="space-y-2 text-sm">
             <li><a href="/" className="hover:underline">Home</a></li>
@@ -15,16 +15,22 @@ const Footer: React.FC = () => (
             <li><a href="/contact" className="hover:underline">Contact Us</a></li>
           </ul>
         </div>
-        {/* Column 2: Short Description */}
-        <div className="flex-1 flex flex-col items-center text-center justify-center min-w-[180px]">
-          <h3 className="font-bold mb-3 text-lg">About ZUTTO</h3>
-          <p className="text-sm max-w-xs">ZUTTO transforms your airport experience with clarity on lounge access, travel tips, and premium rewards. Enjoy seamless journeys across India.</p>
-        </div>
-        {/* Column 3: Location/Contact */}
-        <div className="flex-1 flex flex-col items-end text-right justify-center min-w-[180px]">
+      
+        {/* Column 3: Contact */}
+        <div className="w-1/4 flex flex-col items-end text-right justify-center min-w-[40px]">
           <h3 className="font-bold mb-3 text-lg">Contact</h3>
           <p className="text-sm flex items-center gap-1"><span role="img" aria-label="location">📍</span> Coimbatore, India</p>
           <a href="mailto:support@zutto.in" className="text-sm text-[#1a237e] hover:underline flex items-center gap-1 mt-1"><span role="img" aria-label="email">✉️</span> support@zutto.in</a>
+        </div>
+        {/* Column 4: Support/Social */}
+        <div className="w-1/4 flex flex-col items-end text-right justify-center min-w-[40px]">
+          <h3 className="font-bold mb-3 text-lg">Support</h3>
+          <a href="mailto:support@zutto.in" className="text-sm text-[#1a237e] hover:underline flex items-center gap-1 mb-2"><span role="img" aria-label="email">✉️</span> support@zutto.in</a>
+          <div className="flex gap-2 justify-end">
+            <a href="#" className="text-[#1a237e] hover:underline text-sm">Instagram</a>
+            <a href="#" className="text-[#1a237e] hover:underline text-sm">LinkedIn</a>
+            <a href="#" className="text-[#1a237e] hover:underline text-sm">Twitter</a>
+          </div>
         </div>
       </div>
       {/* Secondary Row: Three Columns, always horizontal */}

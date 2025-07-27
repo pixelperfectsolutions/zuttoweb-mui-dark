@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
 const TravelHub: React.FC = () => (
-  <Container className="pt-24" style={{ maxWidth: '1200px', paddingTop: '6rem' }}>
+  <Container className="pt-24" style={{ maxWidth: '1200px', paddingTop: '10rem' }}>
     <Row className="justify-content-center" style={{ paddingTop: '0', paddingBottom: '5rem' }}>
       <Col lg={12}>
         <Card className="shadow-lg border-0 mb-5 p-4 bg-[#ddc8aa] text-dark">

@@ -48,10 +48,24 @@ const Home: React.FC = () => {
             Your trusted companion for seamless airport lounge access across India.
           </p>
           <div className="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-3">
-          <Button href="#" variant="outline-primary" size="lg" style={{ borderColor: 'var(--apple-accent)', color: 'var(--apple-accent)' }}>
+            <Button
+              href="#"
+              size="lg"
+              style={{ backgroundColor: '#fff', color: '#181511', border: '2px solid #181511', fontWeight: 600, borderRadius: 32 }}
+              className="cta-btn-1"
+              onMouseOver={e => { e.currentTarget.style.backgroundColor = '#2563eb'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.border = '2px solid #2563eb'; }}
+              onMouseOut={e => { e.currentTarget.style.backgroundColor = '#fff'; e.currentTarget.style.color = '#181511'; e.currentTarget.style.border = '2px solid #181511'; }}
+            >
               Download on App Store
             </Button>
-            <Button href="#" variant="outline-primary" size="lg" style={{ borderColor: 'var(--apple-accent)', color: 'var(--apple-accent)' }}>
+            <Button
+              href="#"
+              size="lg"
+              style={{ backgroundColor: '#2563eb', color: '#fff', border: '2px solid #2563eb', fontWeight: 600, borderRadius: 32 }}
+              className="cta-btn-2"
+              onMouseOver={e => { e.currentTarget.style.backgroundColor = '#fff'; e.currentTarget.style.color = '#2563eb'; e.currentTarget.style.border = '2px solid #2563eb'; }}
+              onMouseOut={e => { e.currentTarget.style.backgroundColor = '#2563eb'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.border = '2px solid #2563eb'; }}
+            >
               Download on Google Play
             </Button>
           </div>

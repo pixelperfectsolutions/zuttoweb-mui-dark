@@ -36,7 +36,14 @@ const Header: React.FC = () => {
             </Nav>
             <div className="ms-auto">
               <LinkContainer to="/get-started">
-                <Button variant="success">Get Started</Button>
+                <Button 
+                  style={{ backgroundColor: '#181511', color: '#fff', border: 'none' }}
+                  className="border-0 px-4 py-2 fw-bold transition-colors"
+                  onMouseOver={e => { e.currentTarget.style.backgroundColor = '#fff'; e.currentTarget.style.color = '#181511'; }}
+                  onMouseOut={e => { e.currentTarget.style.backgroundColor = '#181511'; e.currentTarget.style.color = '#fff'; }}
+                >
+                  Get Started
+                </Button>
               </LinkContainer>
             </div>
           </div>

@@ -12,7 +12,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
  */
 const About: React.FC = () => (
   <>
-    <Container className="pt-24 pb-5 px-3" style={{ paddingTop: '6rem', paddingBottom: '5rem', maxWidth: '1200px' }}>
+    <Container className="pt-24 pb-5 px-3" style={{ paddingTop: '1rem', paddingBottom: '5rem', maxWidth: '1200px' }}>
       {/* The Story Behind ZUTTO */}
       <Card className="mb-5 p-4 shadow-lg border-0" style={{ marginTop: '10rem' }}>
         <Card.Body>
