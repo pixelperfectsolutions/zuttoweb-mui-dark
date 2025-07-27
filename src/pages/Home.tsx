@@ -6,7 +6,7 @@ const offers = [
   {
     title: 'Check Lounge Access',
     text: 'Instantly verify if your card grants lounge entry.',
-    emoji: '✅',
+    emoji: ' ✈️',
   },
   {
     title: 'Know Your Benefits',
@@ -120,16 +120,17 @@ const Home: React.FC = () => {
       </Row>
       <ScreenshotSection />
       {/* Main Content */}
-      <Container className="py-5 text-dark">
+      <Container className="py-5 text-dark" style={{marginBottom:'100px'}}>
         {/* What We Offer */}
-        <h2 className="section-heading text-center mb-5">What We Offer</h2>
+        <h2 className="section-heading text-center mb-5" >What We Offer</h2>
         <Row className="g-4 justify-content-center mb-5">
           {offers.map((o) => (
             <Col key={o.title} xs={12} md={4} className="d-flex justify-content-center">
               <div style={{ boxShadow: '0 8px 24px rgba(0,0,0,0.08)', borderRadius: 20, overflow: 'hidden', background: '#fff', padding: 40, minWidth: 0, width: '100%', maxWidth: 380 }} className="text-center">
-                <div style={{ width: 64, height: 64, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 18px auto', fontSize: 60, boxShadow: '0 2px 8px rgba(0,0,0,0.3)' }}>
-                  {o.emoji}
-                </div>
+              <div style={{ fontSize: 60, marginBottom: 18 }}>
+  {o.emoji}
+</div>
+
                 <div className="fw-bold mb-2" style={{ fontSize: 20, color: '#333' }}>{o.title}</div>
                 <div className="mb-0" style={{ color: '#666', fontSize: 16 }}>{o.text}</div>
               </div>
