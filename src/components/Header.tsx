@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import { useLocation } from 'react-router-dom';
+import '../index.css'; // Importing your custom styles
 
 const navItems = [
   { name: 'Home', path: '/' },
@@ -25,48 +26,59 @@ const Header: React.FC = () => {
       className="apple-navbar"
     >
       <Container style={{ maxWidth: '1200px' }} className="mx-auto">
+        {/* Logo */}
         <LinkContainer to="/">
           <Navbar.Brand className="fw-bold logo">ZUTTO</Navbar.Brand>
         </LinkContainer>
 
+        {/* Hamburger */}
         <Navbar.Toggle
           aria-controls="main-nav"
           onClick={() => setExpanded(!expanded)}
         />
 
+        {/* Collapsible Navigation */}
         <Navbar.Collapse id="main-nav">
-          {/* Close button for mobile menu */}
+          {/* Mobile close button */}
           <div className="d-md-none w-100 text-end mb-2">
             <Button
               variant="outline-dark"
               size="sm"
               onClick={() => setExpanded(false)}
-              style={{ border: 'none', fontSize: '1.2rem' }}
+              style={{ border: 'none', fontSize: '1.5rem', lineHeight: '1' }}
             >
               ×
             </Button>
           </div>
 
-          <div className="d-flex w-100 align-items-center">
-            <Nav className="mx-auto mx-md-0 text-start">
+          <div className="d-flex w-100 align-items-center flex-column flex-md-row">
+            {/* Nav: center on desktop, left on mobile */}
+            <Nav className="w-100 justify-content-md-center text-start text-md-center ps-3 ps-md-0">
               {navItems.map((item) => (
-                <LinkContainer key={item.path} to={item.path} onClick={() => setExpanded(false)}>
-                  <Nav.Link active={location.pathname === item.path}>
+                <LinkContainer
+                  key={item.path}
+                  to={item.path}
+                  onClick={() => setExpanded(false)}
+                >
+                  <Nav.Link
+                    active={location.pathname === item.path}
+                  >
                     {item.name}
                   </Nav.Link>
                 </LinkContainer>
               ))}
             </Nav>
 
-            <div className="ms-auto d-none d-md-block">
+            {/* Get Started button (desktop only) */}
+            <div className="ms-md-auto d-none d-md-block">
               <LinkContainer to="/contact">
                 <Button
+                  className="get-started-btn border-0 fw-bold transition-colors"
                   style={{
                     backgroundColor: '#181511',
                     color: '#fff',
                     border: 'none',
                   }}
-                  className="border-0 px-4 py-2 fw-bold transition-colors"
                   onMouseOver={(e) => {
                     e.currentTarget.style.backgroundColor = '#fff';
                     e.currentTarget.style.color = '#181511';

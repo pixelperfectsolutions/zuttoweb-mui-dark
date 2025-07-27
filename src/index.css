@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--apple-heading);
   font-weight: 600;
   letter-spacing: -0.01em;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .section-heading {
@@ -25,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .apple-navbar {
   backdrop-filter: saturate(180%) blur(20px);
-  background-color: rgba(245,245,247,0.72) !important;
+  background-color: rgba(245, 245, 247, 0.72) !important;
   transition: background-color 0.3s ease;
 }
 
@@ -35,33 +36,39 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 10px;
 }
 
+/* Increase font size in mobile menu only */
+@media (max-width: 767.98px) {
+  .apple-navbar a.nav-link {
+    font-size: 1.2rem;
+  }
+}
+
 .apple-navbar .navbar-brand {
   font-weight: 700;
   color: var(--apple-heading) !important;
 }
 
-
-
-/* Section container */
-section {
-  padding: 120px 0;
-}
-
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Orbitron', sans-serif;
-}
+/* Logo font */
 .logo {
   font-size: 3rem;
   font-family: 'Audiowide', cursive;
   letter-spacing: 0.05em;
 }
 
-/* Increase vertical spacing for all sections */
+/* Wider Get Started button for desktop */
+.get-started-btn {
+  min-width: 160px;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+/* Section container */
 section {
+  padding: 120px 0;
   margin-block: 6rem;
 }
 
+/* Optional: Larger max-width container */
 @media (min-width: 1200px) {
   .container,
   .container-lg,
@@ -71,5 +78,4 @@ section {
   .container-xxl {
     max-width: 1400px;
   }
-
 }
