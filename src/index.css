@@ -40,19 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--apple-heading) !important;
 }
 
-/* Button CTA hover states */
-.btn-primary:hover,
-.btn-primary:focus {
-  background-color: #0060d1 !important;
-  border-color: #0060d1 !important;
-}
 
-.btn-outline-primary:hover,
-.btn-outline-primary:focus {
-  background-color: var(--apple-accent) !important;
-  color: #fff !important;
-  border-color: var(--apple-accent) !important;
-}
 
 /* Section container */
 section {

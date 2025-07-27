@@ -2,10 +2,10 @@ import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
 const TravelHub: React.FC = () => (
-  <Container className="py-5">
-    <Row className="justify-content-center">
-      <Col lg={10}>
-        <Card className="shadow-lg border-0 mb-5 p-4 bg-dark text-white">
+  <Container className="py-5" style={{ maxWidth: '1200px' }}>
+    <Row className="justify-content-center" style={{ paddingTop: '9rem', paddingBottom: '5rem' }}>
+      <Col lg={12}>
+        <Card className="shadow-lg border-0 mb-5 p-4 bg-[#ddc8aa] text-dark">
           <Card.Body className="p-4">
             <h1 className="display-5 fw-bold mb-3 text-center">Travel Hub – News, Tips & Stories</h1>
             <p className="lead mb-4 text-center">
@@ -13,7 +13,7 @@ const TravelHub: React.FC = () => (
             </p>
             <Row className="g-4">
               <Col md={4}>
-                <Card className="h-100 bg-secondary text-white border-0">
+                <Card className="h-100 bg-dark text-white border-0">
                   <Card.Body className="p-4">
                     <h2 className="h5 fw-bold mb-2">Travel News</h2>
                     <p className="mb-0">
@@ -23,7 +23,7 @@ const TravelHub: React.FC = () => (
                 </Card>
               </Col>
               <Col md={4}>
-                <Card className="h-100 bg-secondary text-white border-0">
+                <Card className="h-100 bg-dark text-white border-0">
                   <Card.Body className="p-4">
                     <h2 className="h5 fw-bold mb-2">Pro Travel Tips</h2>
                     <ul className="mb-0 ps-3">
@@ -35,7 +35,7 @@ const TravelHub: React.FC = () => (
                 </Card>
               </Col>
               <Col md={4}>
-                <Card className="h-100 bg-secondary text-white border-0">
+                <Card className="h-100 bg-dark text-white border-0">
                   <Card.Body className="p-4">
                     <h2 className="h5 fw-bold mb-2">Featured Travel Stories</h2>
                     <p className="mb-0">

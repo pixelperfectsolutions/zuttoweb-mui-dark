@@ -8,10 +8,10 @@ const navItems = [
   { name: 'About Us', path: '/about' },
   { name: 'Travel Hub', path: '/travel-hub' },
   { name: 'Contact Us', path: '/contact' },
-  { name: 'FAQ', path: '/faq' },
-  { name: 'Testimonials', path: '/testimonials' },
-  { name: 'Privacy', path: '/privacy' },
-  { name: 'Terms', path: '/terms' },
+  // { name: 'FAQ', path: '/faq' },
+  // { name: 'Testimonials', path: '/testimonials' },
+  // { name: 'Privacy', path: '/privacy' },
+  // { name: 'Terms', path: '/terms' },
 ];
 
 const Header: React.FC = () => {

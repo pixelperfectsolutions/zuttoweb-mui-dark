@@ -12,11 +12,11 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
  */
 const About: React.FC = () => (
   <>
-    <Container className="py-5">
+    <Container className="pt-5 pb-5 px-3" style={{ paddingTop: '9rem', paddingBottom: '5rem', maxWidth: '1200px' }}>
       {/* The Story Behind ZUTTO */}
-      <Card className="mb-5 p-4 shadow-lg border-0">
+      <Card className="mb-5 p-4 shadow-lg border-0" style={{ marginTop: '10rem' }}>
         <Card.Body>
-          <h1 className="fw-bold display-5 mb-4 text-center">The Story Behind ZUTTO: Why ZUTTO?</h1>
+          <h1 className="fw-bold display-5 mb-4 text-center ">The Story Behind ZUTTO: Why ZUTTO?</h1>
           <p className="lead mb-0 text-center">
             The idea for ZUTTO was born from a frustrating travel experience faced by our founder’s father, who was denied lounge entry due to unclear card eligibility.<br/>
             Sharing this experience with his son, they recognized a common challenge many travelers face, and together, they created ZUTTO to solve it.<br/>
@@ -175,14 +175,13 @@ const About: React.FC = () => (
         padding: '50px 0',
         zIndex: 2,
         position: 'relative',
-        background: '#18191A',
       }}
     >
       <Container style={{ maxWidth: '1100px' }}>
         <Row className="g-4 justify-content-center">
           {[1, 2, 3].map((n) => (
             <Col key={n} md={4} className="d-flex justify-content-center">
-              <div style={{ boxShadow: '0 4px 24px rgba(0,0,0,0.5)', borderRadius: 16, overflow: 'hidden', background: '#222', padding: 16 }}>
+              <div style={{ boxShadow: '0 4px 24px rgba(0,0,0,0.5)', borderRadius: 16, overflow: 'hidden', background: '#000', padding: 16 }}>
                 <img
                   src={n === 1 ? "/login_page.png" : n === 2 ? "/my_cards.png" : "/profile.png"}
                   alt={n === 1 ? "Login Page Screenshot" : n === 2 ? "My Cards Screenshot" : "Profile Screenshot"}
