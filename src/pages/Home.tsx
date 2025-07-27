@@ -22,25 +22,25 @@ const offers = [
 
 const Home: React.FC = () => {
   const ScreenshotSection: React.FC = () => (
-    <section style={{ padding: '80px 0', background: 'var(--apple-bg)' }}>
-      <Container style={{ maxWidth: '1100px' }}>
-        <h2 className="section-heading text-center mb-5">Our App</h2>
-        <Row className="justify-content-center">
-          {[ '/login_page.png', '/my_cards.png', '/profile.png' ].map((src, index) => (
-            <Col key={index} md={4} className="d-flex justify-content-center mb-4">
-              <div style={{ boxShadow: '0 8px 24px rgba(0,0,0,0.12)', borderRadius: 20, overflow: 'hidden', background: '#fff', padding: 16 }}>
-                <img src={src} alt="App screenshot" style={{ width: '100%', height: 360, objectFit: 'cover', borderRadius: 12 }} />
-              </div>
-            </Col>
-          ))}
-        </Row>
-      </Container>
+    <section style={{ padding: '0px 0', background: 'var(--apple-bg)' }} className="pt-24">
+        {/* <Container style={{ maxWidth: '1100px' }}>
+          <h2 className="section-heading text-center mb-5">Our App</h2>
+          <Row className="justify-content-center">
+            {[ '/login_page.png', '/my_cards.png', '/profile.png' ].map((src, index) => (
+              <Col key={index} md={4} className="d-flex justify-content-center mb-4">
+                <div style={{ boxShadow: '0 8px 24px rgba(0,0,0,0.12)', borderRadius: 20, overflow: 'hidden', background: '#fff', padding: 16 }}>
+                  <img src={src} alt="App screenshot" style={{ width: '100%', height: 360, objectFit: 'cover', borderRadius: 12 }} />
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </Container> */}
     </section>
   );
   return (
     <>
       {/* Hero */}
-      <section style={{ minHeight: '700px', background: 'var(--apple-bg)' }} className="position-relative overflow-hidden d-flex align-items-center justify-content-center">
+      <section style={{ minHeight: '700px', background: 'var(--apple-bg)', paddingTop: '6rem' }} className="position-relative overflow-hidden d-flex align-items-center justify-content-center pt-24">
         <Container className="position-relative text-center">
           <h1 className="section-heading mb-2">ZUTTO</h1>
           <h2 className="h5 mb-4" style={{ color: 'var(--apple-text)', opacity: 0.8 }}>Maximize Your Lounge Access – Instantly</h2>

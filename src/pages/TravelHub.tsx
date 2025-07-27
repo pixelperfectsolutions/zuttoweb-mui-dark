@@ -2,8 +2,8 @@ import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
 const TravelHub: React.FC = () => (
-  <Container className="py-5" style={{ maxWidth: '1200px' }}>
-    <Row className="justify-content-center" style={{ paddingTop: '9rem', paddingBottom: '5rem' }}>
+  <Container className="pt-24" style={{ maxWidth: '1200px', paddingTop: '6rem' }}>
+    <Row className="justify-content-center" style={{ paddingTop: '0', paddingBottom: '5rem' }}>
       <Col lg={12}>
         <Card className="shadow-lg border-0 mb-5 p-4 bg-[#ddc8aa] text-dark">
           <Card.Body className="p-4">
@@ -12,7 +12,7 @@ const TravelHub: React.FC = () => (
               Your go-to space for updates, insider news, and travel insights.
             </p>
             <Row className="g-4">
-              <Col md={4}>
+              <Col md={4} sm={12} className="mb-4 md:mb-0">
                 <Card className="h-100 bg-dark text-white border-0">
                   <Card.Body className="p-4">
                     <h2 className="h5 fw-bold mb-2">Travel News</h2>
@@ -22,19 +22,19 @@ const TravelHub: React.FC = () => (
                   </Card.Body>
                 </Card>
               </Col>
-              <Col md={4}>
+              <Col md={4} sm={12} className="mb-4 md:mb-0">
                 <Card className="h-100 bg-dark text-white border-0">
                   <Card.Body className="p-4">
                     <h2 className="h5 fw-bold mb-2">Pro Travel Tips</h2>
                     <ul className="mb-0 ps-3">
-                      <li>💼 Maximize Your Lounge Visit – Enjoy all the perks, from gourmet meals to spa access.</li>
-                      <li>🛃 Airport Hacks – Navigate terminals like a pro.</li>
-                      <li>🌍 Top Destinations – Curated global hotspots and hidden gems.</li>
+                      <li>Maximize Your Lounge Visit – Enjoy all the perks, from gourmet meals to spa access.</li>
+                      <li>Airport Hacks – Navigate terminals like a pro.</li>
+                      <li>Top Destinations – Curated global hotspots and hidden gems.</li>
                     </ul>
                   </Card.Body>
                 </Card>
               </Col>
-              <Col md={4}>
+              <Col md={4} sm={12} className="mb-4 md:mb-0">
                 <Card className="h-100 bg-dark text-white border-0">
                   <Card.Body className="p-4">
                     <h2 className="h5 fw-bold mb-2">Featured Travel Stories</h2>

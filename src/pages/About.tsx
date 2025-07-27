@@ -12,7 +12,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
  */
 const About: React.FC = () => (
   <>
-    <Container className="pt-5 pb-5 px-3" style={{ paddingTop: '9rem', paddingBottom: '5rem', maxWidth: '1200px' }}>
+    <Container className="pt-24 pb-5 px-3" style={{ paddingTop: '6rem', paddingBottom: '5rem', maxWidth: '1200px' }}>
       {/* The Story Behind ZUTTO */}
       <Card className="mb-5 p-4 shadow-lg border-0" style={{ marginTop: '10rem' }}>
         <Card.Body>
@@ -37,6 +37,16 @@ const About: React.FC = () => (
           <div>
             Every journey tells a story—and for ZUTTO, it began with one that hit close to home...
           </div>
+        </Card.Body>
+      </Card>
+
+      {/* Carrying Forward His Legacy Section */}
+      <Card className="mb-5 p-4 shadow-lg border-0 bg-[#f5efe6] text-[#181511]">
+        <Card.Body className="flex flex-col items-center justify-center text-center">
+          <img src="/profile.png" alt="Kannan Natesan" className="mb-4 rounded-lg shadow-md" style={{ width: '220px', height: 'auto', objectFit: 'cover' }} />
+          <h2 className="fw-bold h4 mb-2">Carrying Forward His Legacy</h2>
+          <h3 className="fw-bold h5 mb-1">Kannan Natesan</h3>
+          <div className="text-lg">1973 - 2025</div>
         </Card.Body>
       </Card>
 
@@ -181,13 +191,13 @@ const About: React.FC = () => (
         <Row className="g-4 justify-content-center">
           {[1, 2, 3].map((n) => (
             <Col key={n} md={4} className="d-flex justify-content-center">
-              <div style={{ boxShadow: '0 4px 24px rgba(0,0,0,0.5)', borderRadius: 16, overflow: 'hidden', background: '#000', padding: 16 }}>
+              {/* <div style={{ boxShadow: '0 4px 24px rgba(0,0,0,0.5)', borderRadius: 16, overflow: 'hidden', background: '#000', padding: 16 }}>
                 <img
                   src={n === 1 ? "/login_page.png" : n === 2 ? "/my_cards.png" : "/profile.png"}
                   alt={n === 1 ? "Login Page Screenshot" : n === 2 ? "My Cards Screenshot" : "Profile Screenshot"}
                   style={{ width: '100%', height: 360, objectFit: 'cover', borderRadius: 12 }}
                 />
-              </div>
+              </div> */}
             </Col>
           ))}
         </Row>
