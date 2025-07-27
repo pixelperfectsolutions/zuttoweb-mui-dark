@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Footer from './components/Footer';
+import { CustomFooter } from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import TravelHub from './pages/TravelHub';
@@ -27,7 +27,7 @@ function App() {
           {/* <Route path="/terms" element={<Terms />} /> */}
         </Routes>
       </main>
-      <Footer />
+      <CustomFooter />
     </div>
   );
 }

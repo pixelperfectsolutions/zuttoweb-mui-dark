@@ -79,10 +79,10 @@ const About: React.FC = () => (
         <Card.Body>
           <h2 className="fw-bold h4 mb-4 text-warning">Our Journey</h2>
           <ul className="mb-0 ps-4">
-            <li className="mb-1">🔍 <b>2023-24</b> – Identified the problem, mapped the travel pain points.</li>
-            <li className="mb-1">💡 <b>Late 2024</b> – Conceptualized ZUTTO, built the founding team.</li>
-            <li className="mb-1">🔧 <b>Jan – July 2025</b> – Research, testing & refinement.</li>
-            <li>🚀 <b>Aug / September 2025</b> – Official launch, transforming lounge access in India.</li>
+            <li className="mb-1"> <b>2023-24</b> – Identified the problem, mapped the travel pain points.</li>
+            <li className="mb-1"><b>Late 2024</b> – Conceptualized ZUTTO, built the founding team.</li>
+            <li className="mb-1"> <b>Jan – July 2025</b> – Research, testing & refinement.</li>
+            <li><b>Aug / September 2025</b> – Official launch, transforming lounge access in India.</li>
           </ul>
         </Card.Body>
       </Card>
