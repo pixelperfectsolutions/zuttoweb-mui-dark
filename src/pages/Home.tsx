@@ -69,7 +69,7 @@ const Home: React.FC = () => {
               Download on Google Play
             </Button>
           </div>
-          <img src="/splash.png" alt="App screens t" style={{ width: '100%', maxWidth: 380, margin: '40px auto 0', borderRadius: 20, boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }} />
+          <img src="/splash.png" alt="App screens t" style={{ height: '300px', width: '100%', maxWidth: 280, margin: '40px auto 0', borderRadius: 20, boxShadow: '0 8px 24px rgba(0,0,0,0.12)', height: 'auto' }} />
         </Container>
       </section>
 
