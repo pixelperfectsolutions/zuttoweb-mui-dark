@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
-import { Navbar, Nav, Container, Button } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
-import { useLocation } from 'react-router-dom';
-import '../index.css'; // Importing your custom styles
+import React, { useState } from "react";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
+import { useLocation } from "react-router-dom";
+import "../index.css";
 
 const navItems = [
-  { name: 'Home', path: '/' },
-  { name: 'About Us', path: '/about' },
-  { name: 'Travel Hub', path: '/travel-hub' },
-  { name: 'Contact Us', path: '/contact' },
+  { name: "Home", path: "/" },
+  { name: "About Us", path: "/about" },
+  { name: "Services", path: "/services" },
+  { name: "Travel Hub", path: "/travel-hub" },
+  { name: "Contact Us", path: "/contact" },
 ];
 
 const Header: React.FC = () => {
@@ -23,37 +24,56 @@ const Header: React.FC = () => {
       variant="light"
       fixed="top"
       expanded={expanded}
-      className="apple-navbar"
+      className="apple-navbar py-3 shadow-sm"
     >
-      <Container style={{ maxWidth: '1200px' }} className="mx-auto">
-        {/* Logo */}
+      <Container
+        style={{ maxWidth: "1200px" }}
+        className="mx-auto d-flex justify-content-between align-items-center px-4"
+      >
+        {/* Logo Left */}
         <LinkContainer to="/">
-          <Navbar.Brand className="fw-bold logo">ZUTTO</Navbar.Brand>
+          <Navbar.Brand
+            className="fw-bold logo"
+            style={{
+              fontSize: "3.2rem !important",
+              letterSpacing: "0.5px",
+              fontFamily: "Tesla, var(--primary-font)",
+              fontWeight: "800 !important",
+            }}
+          >
+            ZUTTO
+          </Navbar.Brand>
         </LinkContainer>
 
-        {/* Hamburger */}
+        {/* Hamburger Menu */}
         <Navbar.Toggle
           aria-controls="main-nav"
           onClick={() => setExpanded(!expanded)}
         />
 
-        {/* Collapsible Navigation */}
+        {/* Nav Content */}
         <Navbar.Collapse id="main-nav">
-          {/* Mobile close button */}
-          <div className="d-md-none w-100 text-end mb-2">
+          {/* Close button (mobile only) */}
+          <div className="d-md-none w-100 text-end mb-3">
             <Button
               variant="outline-dark"
               size="sm"
               onClick={() => setExpanded(false)}
-              style={{ border: 'none', fontSize: '1.5rem', lineHeight: '1' }}
+              style={{
+                border: "none",
+                fontSize: "1.5rem",
+                lineHeight: "0.75",
+                fontFamily: "var(--primary-font)",
+                padding: "0.5rem",
+              }}
             >
               ×
             </Button>
           </div>
 
-          <div className="d-flex w-100 align-items-center flex-column flex-md-row">
-            {/* Nav: center on desktop, left on mobile */}
-            <Nav className="w-100 justify-content-md-center text-start text-md-center ps-3 ps-md-0">
+          <div className="d-flex flex-column flex-md-row justify-content-between align-items-center w-100">
+            {/* Navigation Items */}
+            <Nav className="text-start text-md-center flex-grow-1 justify-content-center py-2 py-md-0">
               {navItems.map((item) => (
                 <LinkContainer
                   key={item.path}
@@ -62,6 +82,14 @@ const Header: React.FC = () => {
                 >
                   <Nav.Link
                     active={location.pathname === item.path}
+                    style={{
+                      fontFamily: "var(--primary-font)",
+                      fontWeight: "500",
+                      padding: "0.75rem 1rem",
+                      margin: "0 0.25rem",
+                      borderRadius: "0.5rem",
+                      transition: "all 0.3s ease",
+                    }}
                   >
                     {item.name}
                   </Nav.Link>
@@ -69,23 +97,30 @@ const Header: React.FC = () => {
               ))}
             </Nav>
 
-            {/* Get Started button (desktop only) */}
-            <div className="ms-md-auto d-none d-md-block">
+            {/* Get Started Button */}
+            <div className="d-none d-md-block mt-2 mt-md-0">
               <LinkContainer to="/contact">
                 <Button
-                  className="get-started-btn border-0 fw-bold transition-colors"
+                  className="get-started-btn fw-bold"
                   style={{
-                    backgroundColor: '#181511',
-                    color: '#fff',
-                    border: 'none',
+                    backgroundColor: "#181511",
+                    color: "#fff",
+                    border: "none",
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    padding: "0.75rem 1.5rem",
+                    borderRadius: "0.5rem",
+                    transition: "all 0.3s ease",
                   }}
                   onMouseOver={(e) => {
-                    e.currentTarget.style.backgroundColor = '#fff';
-                    e.currentTarget.style.color = '#181511';
+                    e.currentTarget.style.backgroundColor = "#fff";
+                    e.currentTarget.style.color = "#181511";
+                    e.currentTarget.style.border = "2px solid #181511";
                   }}
                   onMouseOut={(e) => {
-                    e.currentTarget.style.backgroundColor = '#181511';
-                    e.currentTarget.style.color = '#fff';
+                    e.currentTarget.style.backgroundColor = "#181511";
+                    e.currentTarget.style.color = "#fff";
+                    e.currentTarget.style.border = "none";
                   }}
                 >
                   Get Started

@@ -1,146 +1,1233 @@
-import React from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import React from "react";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import {
+  FaBullseye,
+  FaEye,
+  FaCalendarAlt,
+  FaInfoCircle,
+  FaCreditCard,
+  FaSearch,
+  FaLightbulb,
+  FaCrown,
+  FaPlus,
+  FaBriefcase,
+  FaUser,
+  FaGlobe,
+  FaQuestionCircle,
+  FaUsers,
+} from "react-icons/fa";
+import "../index.css";
 
 // Data for offer cards
 const offers = [
   {
-    title: 'Check Lounge Access',
-    text: 'Instantly verify if your card grants lounge entry.',
-    emoji: ' ✈️',
+    title: "Check Lounge Access",
+    text: "Instantly verify if your card grants lounge entry.",
+    emoji: " ✈️",
   },
   {
-    title: 'Know Your Benefits',
-    text: 'Unlock your card’s full travel perks.',
-    emoji: '🎁',
+    title: "Know Your Benefits",
+    text: "Unlock your card’s full travel perks.",
+    emoji: "🎁",
   },
   {
-    title: 'Hassle-Free Experience',
-    text: 'Travel with clarity, convenience, and confidence.',
-    emoji: '✨',
+    title: "Hassle-Free Experience",
+    text: "Travel with clarity, convenience, and confidence.",
+    emoji: "✨",
   },
 ];
 
 const Home: React.FC = () => {
   const ScreenshotSection: React.FC = () => (
-    <section style={{ padding: '0px 0', background: 'var(--apple-bg)' }} className="pt-24">
-        {/* <Container style={{ maxWidth: '1100px' }}>
-          <h2 className="section-heading text-center mb-5">Our App</h2>
-          <Row className="justify-content-center">
-            {[ '/login_page.png', '/my_cards.png', '/profile.png' ].map((src, index) => (
-              <Col key={index} md={4} className="d-flex justify-content-center mb-4">
-                <div style={{ boxShadow: '0 8px 24px rgba(0,0,0,0.12)', borderRadius: 20, overflow: 'hidden', background: '#fff', padding: 16 }}>
-                  <img src={src} alt="App screenshot" style={{ width: '100%', height: 360, objectFit: 'cover', borderRadius: 12 }} />
-                </div>
-              </Col>
-            ))}
-          </Row>
-        </Container> */}
+    <section
+      style={{ padding: "0px 0", background: "var(--apple-bg)" }}
+      className="pt-24"
+    >
+      {/* Screenshot section is hidden for now */}
     </section>
   );
+
   return (
     <>
-      {/* Hero */}
-      <section style={{ minHeight: '700px', background: 'var(--apple-bg)', paddingTop: '6rem' }} className="position-relative overflow-hidden d-flex align-items-center justify-content-center pt-24">
-        <Container className="position-relative text-center">
-          <h1 className="section-heading mb-2">ZUTTO</h1>
-          <h2 className="h5 mb-4" style={{ color: 'var(--apple-text)', opacity: 0.8 }}>Maximize Your Lounge Access – Instantly</h2>
-          <p className="lead mx-auto" style={{ maxWidth: 700 }}>
-            Your trusted companion for seamless airport lounge access across India.
-          </p>
-          <div className="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-3">
-            <Button
-              href="#"
-              size="lg"
-              style={{ backgroundColor: '#fff', color: '#181511', border: '2px solid #181511', fontWeight: 600, borderRadius: 32 }}
-              className="cta-btn-1"
-              onMouseOver={e => { e.currentTarget.style.backgroundColor = '#2563eb'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.border = '2px solid #2563eb'; }}
-              onMouseOut={e => { e.currentTarget.style.backgroundColor = '#fff'; e.currentTarget.style.color = '#181511'; e.currentTarget.style.border = '2px solid #181511'; }}
-            >
-              Download on App Store
-            </Button>
-            <Button
-              href="#"
-              size="lg"
-              style={{ backgroundColor: '#2563eb', color: '#fff', border: '2px solid #2563eb', fontWeight: 600, borderRadius: 32 }}
-              className="cta-btn-2"
-              onMouseOver={e => { e.currentTarget.style.backgroundColor = '#fff'; e.currentTarget.style.color = '#2563eb'; e.currentTarget.style.border = '2px solid #2563eb'; }}
-              onMouseOut={e => { e.currentTarget.style.backgroundColor = '#2563eb'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.border = '2px solid #2563eb'; }}
-            >
-              Download on Google Play
-            </Button>
-          </div>
-          <img src="/splash.png" alt="App screens t" style={{  width: '100%', maxWidth: 280, margin: '40px auto 0', borderRadius: 20, boxShadow: '0 8px 24px rgba(0,0,0,0.12)', height: 'auto' }} />
-        </Container>
-      </section>
-
-      {/* App Screenshots Section - overlays hero by 50px */}
+      {/* Updated Hero Section */}
       <section
         style={{
-          marginTop: '-50px',
-          padding: '80px 0',
-          zIndex: 2,
-          position: 'relative',
-          background: 'var(--apple-bg)',
-          display: 'none',
+          minHeight: "700px",
+          background: "var(--apple-bg)",
+          paddingTop: "6rem",
         }}
+        className="position-relative overflow-hidden d-flex align-items-center justify-content-center pt-24"
       >
-        <Container style={{ maxWidth: '1100px' }}>
-          <Row className="g-4 justify-content-center">
-            {[1, 2, 3].map((n) => (
-              <Col key={n} md={4} className="d-flex justify-content-center">
-                <div style={{ boxShadow: '0 8px 24px rgba(0,0,0,0.12)', borderRadius: 20, overflow: 'hidden', background: '#fff', padding: 16 }}>
+        <Container style={{ maxWidth: "1200px" }} className="px-4">
+          <Row className="align-items-center">
+            {/* Left Content */}
+            <Col md={6} className="text-left">
+              <h1
+                className="fw-bold mb-4"
+                style={{
+                  fontSize: "3.5rem",
+                  fontFamily: "var(--primary-font)",
+                  fontWeight: "700",
+                  lineHeight: "1.2",
+                  letterSpacing: "-0.02em",
+                }}
+              >
+                YOUR GATEWAY TO{" "}
+                <span style={{ color: "#dbc8ad" }}>PREMIUM</span> AIRPORT
+                EXPERIENCES
+              </h1>
+              <p
+                className="lead mb-4"
+                style={{
+                  maxWidth: 500,
+                  fontFamily: "var(--primary-font)",
+                  fontWeight: "400",
+                  fontSize: "1.125rem",
+                  lineHeight: "1.6",
+                }}
+              >
+                ZUTTO is a comprehensive solution for accessing lounge
+                eligibility at domestic and international airports in India,
+                eliminating confusion.
+              </p>
+
+              {/* Store Buttons */}
+              <div className="d-flex flex-column flex-sm-row gap-3 mt-4">
+                <a href="#" target="_blank" rel="noopener noreferrer">
                   <img
-                    src={n === 1 ? "/login_page.png" : n === 2 ? "/my_cards.png" : "/profile.png"}
-                    alt={n === 1 ? "Login Page Screenshot" : n === 2 ? "My Cards Screenshot" : "Profile Screenshot"}
-                    style={{ width: '100%', height: 360, objectFit: 'cover', borderRadius: 12 }}
+                    src="/appstore.png"
+                    alt="Download on the App Store"
+                    style={{ height: 50, width: "auto" }}
                   />
-                </div>
-              </Col>
-            ))}
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="/playstore.png"
+                    alt="Download on Google Play"
+                    style={{ height: 50, width: "auto" }}
+                  />
+                </a>
+              </div>
+            </Col>
+
+            {/* Right Image */}
+            <Col
+              md={6}
+              className="d-flex justify-content-end align-items-center mt-5 mt-md-0"
+            >
+              <img
+                src="/heroimage.png"
+                alt="ZUTTO App Mockup"
+                style={{
+                  width: "100%",
+                  maxWidth: 320,
+                  borderRadius: 24,
+                  boxShadow: "0 8px 24px rgba(0,0,0,0.15)",
+                }}
+              />
+            </Col>
           </Row>
         </Container>
       </section>
 
-      <Row className="justify-content-center my-5">
-        <Col lg={11}>
-          <Card className="shadow-lg border-0 bg-white text-dark text-center" style={{ borderRadius: 16, marginBottom: '8.5rem', marginTop: '8.5rem', padding: '5.5rem 1.5rem', backgroundColor: '#f7f7f7' }}>
-            <Card.Body>
-              <h1 className="fw-bold mb-4">About ZUTTO</h1>
-              <h2 className="mb-3 text-dark" style={{ fontSize: 20, color: '#333' }}>
-                In today’s fast-paced world of air travel, every moment counts. <strong>At ZUTTO</strong>, we believe your
-                journey should begin with comfort, convenience, and premium experiences.
-              </h2>
-              <p className="mb-0 text-dark" style={{ color: '#666' }}>
-                ZUTTO eliminates confusion by letting you instantly check lounge eligibility across domestic and
-                international airports in India. It’s more than an app—it’s your gateway to stress-free travel.
-              </p>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-      <ScreenshotSection />
-      {/* Main Content */}
-      <Container className="py-5 text-dark" style={{marginBottom:'100px'}}>
-        {/* What We Offer */}
-        <h2 className="section-heading text-center mb-5" >What We Offer</h2>
-        <Row className="g-4 justify-content-center mb-5">
-          {offers.map((o) => (
-            <Col key={o.title} xs={12} md={4} className="d-flex justify-content-center">
-              <div style={{ boxShadow: '0 8px 24px rgba(0,0,0,0.08)', borderRadius: 20, overflow: 'hidden', background: '#fff', padding: 40, minWidth: 0, width: '100%', maxWidth: 380 }} className="text-center">
-              <div style={{ fontSize: 60, marginBottom: 18 }}>
-  {o.emoji}
-</div>
-
-                <div className="fw-bold mb-2" style={{ fontSize: 20, color: '#333' }}>{o.title}</div>
-                <div className="mb-0" style={{ color: '#666', fontSize: 16 }}>{o.text}</div>
+      {/* Mission, Vision, Established Section */}
+      <section
+        style={{
+          padding: "5rem 0",
+          background: "var(--apple-bg)",
+        }}
+      >
+        <Container style={{ maxWidth: "1200px" }} className="px-4">
+          <Row className="g-4 justify-content-center">
+            {/* Our Mission */}
+            <Col md={4} className="d-flex justify-content-center">
+              <div
+                style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  padding: "2.5rem 2rem",
+                  textAlign: "left",
+                  height: "100%",
+                  minHeight: "280px",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = "translateY(-5px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 30px rgba(0,0,0,0.15)";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 20px rgba(0,0,0,0.08)";
+                }}
+              >
+                <FaBullseye
+                  style={{
+                    fontSize: "3rem",
+                    color: "#333",
+                    marginBottom: "1.5rem",
+                  }}
+                />
+                <h3
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    fontSize: "1.5rem",
+                    color: "#333",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  Our Mission
+                </h3>
+                <p
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "400",
+                    fontSize: "1rem",
+                    lineHeight: "1.6",
+                    color: "#666",
+                    margin: "0",
+                  }}
+                >
+                  ZUTTO aims to simplify lounge access for travelers, offering
+                  clarity and convenience for a premium experience during their
+                  journeys.
+                </p>
               </div>
             </Col>
-          ))}
-        </Row>
 
-        {/* About */}
-       
-      </Container>
+            {/* Our Vision */}
+            <Col md={4} className="d-flex justify-content-center">
+              <div
+                style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  padding: "2.5rem 2rem",
+                  textAlign: "left",
+                  height: "100%",
+                  minHeight: "280px",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = "translateY(-5px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 30px rgba(0,0,0,0.15)";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 20px rgba(0,0,0,0.08)";
+                }}
+              >
+                <FaEye
+                  style={{
+                    fontSize: "3rem",
+                    color: "#333",
+                    marginBottom: "1.5rem",
+                  }}
+                />
+                <h3
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    fontSize: "1.5rem",
+                    color: "#333",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  Our Vision
+                </h3>
+                <p
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "400",
+                    fontSize: "1rem",
+                    lineHeight: "1.6",
+                    color: "#666",
+                    margin: "0",
+                  }}
+                >
+                  ZUTTO aims to transform air travel by providing accessible,
+                  comfortable, and clear airport lounges, ensuring every journey
+                  starts with peace of mind and every traveler enjoys deserved
+                  luxury.
+                </p>
+              </div>
+            </Col>
+
+            {/* Established */}
+            <Col md={4} className="d-flex justify-content-center">
+              <div
+                style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  padding: "2.5rem 2rem",
+                  textAlign: "left",
+                  height: "100%",
+                  minHeight: "280px",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = "translateY(-5px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 30px rgba(0,0,0,0.15)";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 20px rgba(0,0,0,0.08)";
+                }}
+              >
+                <FaCalendarAlt
+                  style={{
+                    fontSize: "3rem",
+                    color: "#333",
+                    marginBottom: "1.5rem",
+                  }}
+                />
+                <h3
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    fontSize: "1.5rem",
+                    color: "#333",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  Established
+                </h3>
+                <p
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "400",
+                    fontSize: "1rem",
+                    lineHeight: "1.6",
+                    color: "#666",
+                    margin: "0",
+                  }}
+                >
+                  Founded in 2025, ZUTTO is set to become the premium travel app
+                  across India soon.
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/* Our Services Section */}
+      <section
+        style={{
+          padding: "5rem 0",
+          background: "#f8f9fa",
+        }}
+      >
+        <Container style={{ maxWidth: "1200px" }} className="px-4">
+          {/* Section Header */}
+          <div className="text-center mb-5">
+            <h2
+              className="section-heading"
+              style={{
+                fontFamily: "var(--primary-font)",
+                fontWeight: "700",
+                fontSize: "2.5rem",
+                color: "#333",
+                marginBottom: "1rem",
+                position: "relative",
+                display: "inline-block",
+              }}
+            >
+              Our Services
+            </h2>
+            <p
+              style={{
+                fontFamily: "var(--primary-font)",
+                fontWeight: "400",
+                fontSize: "1.125rem",
+                lineHeight: "1.6",
+                color: "#666",
+                maxWidth: "600px",
+                margin: "0 auto",
+              }}
+            >
+              ZUTTO provides comprehensive solutions to enhance your airport
+              experience with premium lounge access.
+            </p>
+          </div>
+
+          {/* Services Grid */}
+          <Row className="g-4 justify-content-center">
+            {/* Lounge Access Information */}
+            <Col lg={4} md={6} className="d-flex justify-content-center">
+              <div
+                style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  padding: "2.5rem 2rem",
+                  textAlign: "left",
+                  height: "100%",
+                  minHeight: "300px",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  maxWidth: "350px",
+                  width: "100%",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = "translateY(-5px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 30px rgba(0,0,0,0.15)";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 20px rgba(0,0,0,0.08)";
+                }}
+              >
+                <div
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    backgroundColor: "#333",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "1.5rem",
+                  }}
+                >
+                  <FaInfoCircle style={{ fontSize: "1.5rem", color: "#fff" }} />
+                </div>
+                <h3
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    fontSize: "1.25rem",
+                    color: "#333",
+                    marginBottom: "1rem",
+                    lineHeight: "1.3",
+                  }}
+                >
+                  Lounge Access Information
+                </h3>
+                <p
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "400",
+                    fontSize: "0.95rem",
+                    lineHeight: "1.6",
+                    color: "#666",
+                    margin: "0",
+                  }}
+                >
+                  Get instant, accurate information about lounge access
+                  eligibility based on your travel details and payment cards.
+                </p>
+              </div>
+            </Col>
+
+            {/* Bank Card & Access Integration */}
+            <Col lg={4} md={6} className="d-flex justify-content-center">
+              <div
+                style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  padding: "2.5rem 2rem",
+                  textAlign: "left",
+                  height: "100%",
+                  minHeight: "300px",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  maxWidth: "350px",
+                  width: "100%",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = "translateY(-5px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 30px rgba(0,0,0,0.15)";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 20px rgba(0,0,0,0.08)";
+                }}
+              >
+                <div
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    backgroundColor: "#333",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "1.5rem",
+                  }}
+                >
+                  <FaCreditCard style={{ fontSize: "1.5rem", color: "#fff" }} />
+                </div>
+                <h3
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    fontSize: "1.25rem",
+                    color: "#333",
+                    marginBottom: "1rem",
+                    lineHeight: "1.3",
+                  }}
+                >
+                  Bank Card & Access Integration
+                </h3>
+                <p
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "400",
+                    fontSize: "0.95rem",
+                    lineHeight: "1.6",
+                    color: "#666",
+                    margin: "0",
+                  }}
+                >
+                  Seamlessly integrate your bank cards to verify and access
+                  lounge benefits you're already entitled to.
+                </p>
+              </div>
+            </Col>
+
+            {/* Airport Lounge Search & Compatibility */}
+            <Col lg={4} md={6} className="d-flex justify-content-center">
+              <div
+                style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  padding: "2.5rem 2rem",
+                  textAlign: "left",
+                  height: "100%",
+                  minHeight: "300px",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  maxWidth: "350px",
+                  width: "100%",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = "translateY(-5px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 30px rgba(0,0,0,0.15)";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 20px rgba(0,0,0,0.08)";
+                }}
+              >
+                <div
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    backgroundColor: "#333",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "1.5rem",
+                  }}
+                >
+                  <FaSearch style={{ fontSize: "1.5rem", color: "#fff" }} />
+                </div>
+                <h3
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    fontSize: "1.25rem",
+                    color: "#333",
+                    marginBottom: "1rem",
+                    lineHeight: "1.3",
+                  }}
+                >
+                  Airport Lounge Search & Compatibility
+                </h3>
+                <p
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "400",
+                    fontSize: "0.95rem",
+                    lineHeight: "1.6",
+                    color: "#666",
+                    margin: "0",
+                  }}
+                >
+                  Find lounges at any airport in India and check your
+                  eligibility with our comprehensive database.
+                </p>
+              </div>
+            </Col>
+
+            {/* Travel Tips & Updates */}
+            <Col lg={4} md={6} className="d-flex justify-content-center">
+              <div
+                style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  padding: "2.5rem 2rem",
+                  textAlign: "left",
+                  height: "100%",
+                  minHeight: "300px",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  maxWidth: "350px",
+                  width: "100%",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = "translateY(-5px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 30px rgba(0,0,0,0.15)";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 20px rgba(0,0,0,0.08)";
+                }}
+              >
+                <div
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    backgroundColor: "#333",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "1.5rem",
+                  }}
+                >
+                  <FaLightbulb style={{ fontSize: "1.5rem", color: "#fff" }} />
+                </div>
+                <h3
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    fontSize: "1.25rem",
+                    color: "#333",
+                    marginBottom: "1rem",
+                    lineHeight: "1.3",
+                  }}
+                >
+                  Travel Tips & Updates
+                </h3>
+                <p
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "400",
+                    fontSize: "0.95rem",
+                    lineHeight: "1.6",
+                    color: "#666",
+                    margin: "0",
+                  }}
+                >
+                  Stay informed with the latest travel tips, airport updates,
+                  and lounge information for a smoother journey.
+                </p>
+              </div>
+            </Col>
+
+            {/* Premium Travel Offers */}
+            <Col lg={4} md={6} className="d-flex justify-content-center">
+              <div
+                style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  padding: "2.5rem 2rem",
+                  textAlign: "left",
+                  height: "100%",
+                  minHeight: "300px",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  maxWidth: "350px",
+                  width: "100%",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = "translateY(-5px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 30px rgba(0,0,0,0.15)";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 20px rgba(0,0,0,0.08)";
+                }}
+              >
+                <div
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    backgroundColor: "#333",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "1.5rem",
+                  }}
+                >
+                  <FaCrown style={{ fontSize: "1.5rem", color: "#fff" }} />
+                </div>
+                <h3
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    fontSize: "1.25rem",
+                    color: "#333",
+                    marginBottom: "1rem",
+                    lineHeight: "1.3",
+                  }}
+                >
+                  Premium Travel Offers
+                </h3>
+                <p
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "400",
+                    fontSize: "0.95rem",
+                    lineHeight: "1.6",
+                    color: "#666",
+                    margin: "0",
+                  }}
+                >
+                  Coming Soon: Exclusive deals and offers for premium travel
+                  experiences beyond the lounge.
+                </p>
+              </div>
+            </Col>
+
+            {/* Other Features Coming Soon */}
+            <Col lg={4} md={6} className="d-flex justify-content-center">
+              <div
+                style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  padding: "2.5rem 2rem",
+                  textAlign: "center",
+                  height: "100%",
+                  minHeight: "300px",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  maxWidth: "350px",
+                  width: "100%",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = "translateY(-5px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 30px rgba(0,0,0,0.15)";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 20px rgba(0,0,0,0.08)";
+                }}
+              >
+                <div
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    backgroundColor: "#333",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "1.5rem",
+                    margin: "0 auto 1.5rem auto",
+                  }}
+                >
+                  <FaPlus style={{ fontSize: "1.5rem", color: "#fff" }} />
+                </div>
+                <h3
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    fontSize: "1.25rem",
+                    color: "#333",
+                    marginBottom: "1rem",
+                    lineHeight: "1.3",
+                  }}
+                >
+                  Other Features Coming Soon
+                </h3>
+                <p
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "400",
+                    fontSize: "0.95rem",
+                    lineHeight: "1.6",
+                    color: "#666",
+                    margin: "0",
+                  }}
+                >
+                  We're constantly developing new features to enhance your
+                  travel experience. Stay tuned!
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/* Who We Serve Section */}
+      <section
+        style={{
+          padding: "5rem 0",
+          background: "var(--apple-bg)",
+        }}
+      >
+        <Container style={{ maxWidth: "1200px" }} className="px-4">
+          {/* Section Header */}
+          <div className="text-center mb-5">
+            <h2
+              className="section-heading"
+              style={{
+                fontFamily: "var(--primary-font)",
+                fontWeight: "700",
+                fontSize: "2.5rem",
+                color: "#333",
+                marginBottom: "1rem",
+                position: "relative",
+                display: "inline-block",
+              }}
+            >
+              Who We Serve
+            </h2>
+            <p
+              style={{
+                fontFamily: "var(--primary-font)",
+                fontWeight: "400",
+                fontSize: "1.125rem",
+                lineHeight: "1.6",
+                color: "#666",
+                maxWidth: "600px",
+                margin: "0 auto",
+              }}
+            >
+              ZUTTO is designed for all types of travelers seeking clarity and
+              convenience in their airport experience.
+            </p>
+          </div>
+
+          {/* Who We Serve Grid */}
+          <Row className="g-4 justify-content-center">
+            {/* Frequent Flyers */}
+            <Col lg={4} md={6} className="d-flex justify-content-center">
+              <div
+                style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  padding: "2.5rem 2rem",
+                  textAlign: "left",
+                  height: "100%",
+                  minHeight: "280px",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  maxWidth: "350px",
+                  width: "100%",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = "translateY(-5px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 30px rgba(0,0,0,0.15)";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 20px rgba(0,0,0,0.08)";
+                }}
+              >
+                <div
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    backgroundColor: "#333",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "1.5rem",
+                  }}
+                >
+                  <FaBriefcase style={{ fontSize: "1.5rem", color: "#fff" }} />
+                </div>
+                <h3
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    fontSize: "1.25rem",
+                    color: "#333",
+                    marginBottom: "1rem",
+                    lineHeight: "1.3",
+                  }}
+                >
+                  Frequent Flyers
+                </h3>
+                <p
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "400",
+                    fontSize: "0.95rem",
+                    lineHeight: "1.6",
+                    color: "#666",
+                    margin: "0",
+                  }}
+                >
+                  Business travelers, professionals, and consultants who are
+                  always on the move and need reliable lounge access
+                  information.
+                </p>
+              </div>
+            </Col>
+
+            {/* Young Travellers */}
+            <Col lg={4} md={6} className="d-flex justify-content-center">
+              <div
+                style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  padding: "2.5rem 2rem",
+                  textAlign: "left",
+                  height: "100%",
+                  minHeight: "280px",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  maxWidth: "350px",
+                  width: "100%",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = "translateY(-5px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 30px rgba(0,0,0,0.15)";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 20px rgba(0,0,0,0.08)";
+                }}
+              >
+                <div
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    backgroundColor: "#333",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "1.5rem",
+                  }}
+                >
+                  <FaUser style={{ fontSize: "1.5rem", color: "#fff" }} />
+                </div>
+                <h3
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    fontSize: "1.25rem",
+                    color: "#333",
+                    marginBottom: "1rem",
+                    lineHeight: "1.3",
+                  }}
+                >
+                  Young Travellers
+                </h3>
+                <p
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "400",
+                    fontSize: "0.95rem",
+                    lineHeight: "1.6",
+                    color: "#666",
+                    margin: "0",
+                  }}
+                >
+                  Students, solo travelers, and young professionals looking to
+                  maximize their travel experience with premium amenities.
+                </p>
+              </div>
+            </Col>
+
+            {/* Premium Cardholders */}
+            <Col lg={4} md={6} className="d-flex justify-content-center">
+              <div
+                style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  padding: "2.5rem 2rem",
+                  textAlign: "left",
+                  height: "100%",
+                  minHeight: "280px",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  maxWidth: "350px",
+                  width: "100%",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = "translateY(-5px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 30px rgba(0,0,0,0.15)";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 20px rgba(0,0,0,0.08)";
+                }}
+              >
+                <div
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    backgroundColor: "#333",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "1.5rem",
+                  }}
+                >
+                  <FaCreditCard style={{ fontSize: "1.5rem", color: "#fff" }} />
+                </div>
+                <h3
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    fontSize: "1.25rem",
+                    color: "#333",
+                    marginBottom: "1rem",
+                    lineHeight: "1.3",
+                  }}
+                >
+                  Premium Cardholders
+                </h3>
+                <p
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "400",
+                    fontSize: "0.95rem",
+                    lineHeight: "1.6",
+                    color: "#666",
+                    margin: "0",
+                  }}
+                >
+                  Travelers with lounge-access credit/debit cards who want to
+                  understand and utilize their benefits fully.
+                </p>
+              </div>
+            </Col>
+
+            {/* Travel Enthusiasts */}
+            <Col lg={4} md={6} className="d-flex justify-content-center">
+              <div
+                style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  padding: "2.5rem 2rem",
+                  textAlign: "left",
+                  height: "100%",
+                  minHeight: "280px",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  maxWidth: "350px",
+                  width: "100%",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = "translateY(-5px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 30px rgba(0,0,0,0.15)";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 20px rgba(0,0,0,0.08)";
+                }}
+              >
+                <div
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    backgroundColor: "#333",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "1.5rem",
+                  }}
+                >
+                  <FaGlobe style={{ fontSize: "1.5rem", color: "#fff" }} />
+                </div>
+                <h3
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    fontSize: "1.25rem",
+                    color: "#333",
+                    marginBottom: "1rem",
+                    lineHeight: "1.3",
+                  }}
+                >
+                  Travel Enthusiasts
+                </h3>
+                <p
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "400",
+                    fontSize: "0.95rem",
+                    lineHeight: "1.6",
+                    color: "#666",
+                    margin: "0",
+                  }}
+                >
+                  Digital nomads and travel lovers who prioritize comfort and
+                  convenience during their journeys.
+                </p>
+              </div>
+            </Col>
+
+            {/* First-time Flyers */}
+            <Col lg={4} md={6} className="d-flex justify-content-center">
+              <div
+                style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  padding: "2.5rem 2rem",
+                  textAlign: "left",
+                  height: "100%",
+                  minHeight: "280px",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  maxWidth: "350px",
+                  width: "100%",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = "translateY(-5px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 30px rgba(0,0,0,0.15)";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 20px rgba(0,0,0,0.08)";
+                }}
+              >
+                <div
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    backgroundColor: "#333",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "1.5rem",
+                  }}
+                >
+                  <FaQuestionCircle
+                    style={{ fontSize: "1.5rem", color: "#fff" }}
+                  />
+                </div>
+                <h3
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    fontSize: "1.25rem",
+                    color: "#333",
+                    marginBottom: "1rem",
+                    lineHeight: "1.3",
+                  }}
+                >
+                  First-time Flyers
+                </h3>
+                <p
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "400",
+                    fontSize: "0.95rem",
+                    lineHeight: "1.6",
+                    color: "#666",
+                    margin: "0",
+                  }}
+                >
+                  Digital nomads and travel lovers who prioritize comfort and
+                  convenience during their journeys.
+                </p>
+              </div>
+            </Col>
+
+            {/* Families */}
+            <Col lg={4} md={6} className="d-flex justify-content-center">
+              <div
+                style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  padding: "2.5rem 2rem",
+                  textAlign: "left",
+                  height: "100%",
+                  minHeight: "280px",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  maxWidth: "350px",
+                  width: "100%",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = "translateY(-5px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 30px rgba(0,0,0,0.15)";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 20px rgba(0,0,0,0.08)";
+                }}
+              >
+                <div
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    backgroundColor: "#333",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "1.5rem",
+                  }}
+                >
+                  <FaUsers style={{ fontSize: "1.5rem", color: "#fff" }} />
+                </div>
+                <h3
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    fontSize: "1.25rem",
+                    color: "#333",
+                    marginBottom: "1rem",
+                    lineHeight: "1.3",
+                  }}
+                >
+                  Families
+                </h3>
+                <p
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "400",
+                    fontSize: "0.95rem",
+                    lineHeight: "1.6",
+                    color: "#666",
+                    margin: "0",
+                  }}
+                >
+                  Families traveling together who want to ensure a comfortable
+                  and relaxing airport experience for everyone.
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     </>
   );
 };

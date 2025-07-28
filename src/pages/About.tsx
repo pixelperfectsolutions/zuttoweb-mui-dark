@@ -1,208 +1,550 @@
-import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import "../index.css";
 
-/**
- * About page component.
- *
- * This component renders the about page.
- * It explains the story behind ZUTTO, the vision and mission, and the products and services offered.
- * It also provides a section for the app screenshots.
- *
- * @return {ReactElement} The about page component.
- */
 const About: React.FC = () => (
   <>
-    <Container className="pt-24 pb-5 px-3" style={{ paddingTop: '1rem', paddingBottom: '5rem', maxWidth: '1200px' }}>
-      {/* The Story Behind ZUTTO */}
-      <Card className="mb-5 p-4 shadow-lg border-0" style={{ marginTop: '10rem' }}>
-        <Card.Body>
-          <h1 className="fw-bold display-5 mb-4 text-center ">The Story Behind ZUTTO: Why ZUTTO?</h1>
-          <p className="lead mb-0 text-center">
-            The idea for ZUTTO was born from a frustrating travel experience faced by our founder’s father, who was denied lounge entry due to unclear card eligibility.<br/>
-            Sharing this experience with his son, they recognized a common challenge many travelers face, and together, they created ZUTTO to solve it.<br/>
-            With a vision to simplify lounge access and offer clarity, ZUTTO was built to transform airport experiences across India.
-          </p>
-        </Card.Body>
-      </Card>
-
-      {/* Founder's Message */}
-      <Card className="mb-5 p-4 shadow-lg border-0 bg-dark text-white">
-        <Card.Body>
-          <h2 className="fw-bold h4 mb-3 text-warning">Founder’s Message</h2>
-          <blockquote className="fst-italic mb-4 border-start border-4 border-warning ps-4">
-            “ZUTTO was born from a moment of frustration, when my father was denied lounge access due to unclear card eligibility. What seemed like a minor inconvenience revealed a major gap in the travel experience. That moment sparked a vision to build something meaningful.<br/><br/>
-            Together, we created ZUTTO—a platform built on the pillars of clarity, convenience, and premium travel. This is just the beginning of a smarter way to travel.”
-          </blockquote>
-          <div className="fw-bold text-warning mb-2">— Varshan Kannan, Founder & CEO</div>
-          <div>
-            Every journey tells a story—and for ZUTTO, it began with one that hit close to home...
-          </div>
-        </Card.Body>
-      </Card>
-
-      {/* Carrying Forward His Legacy Section */}
-      <Card className="mb-5 p-4 shadow-lg border-0 bg-[#f5efe6] text-[#181511]">
-        <Card.Body className="flex flex-col items-center justify-center text-center">
-          <img src="/profile.png" alt="Kannan Natesan" className="mb-4 rounded-lg shadow-md" style={{ width: '220px', height: 'auto', objectFit: 'cover' }} />
-          <h2 className="fw-bold h4 mb-2">Carrying Forward His Legacy</h2>
-          <h3 className="fw-bold h5 mb-1">Kannan Natesan</h3>
-          <div className="text-lg">1973 - 2025</div>
-        </Card.Body>
-      </Card>
-
-      {/* Vision & Mission Cards */}
-      <Row className="mb-5 g-4">
-        <Col md={6}>
-          <Card className="h-100 p-4 shadow-lg border-0">
-            <Card.Body>
-              <h2 className="fw-bold h5 mb-2 text-warning">Vision</h2>
-              <p className="mb-0">
-                To transform air travel by making airport lounges accessible, comfortable, and clear for every traveler. At ZUTTO, we aim to ensure every journey begins with peace of mind and every traveler enjoys the luxury they deserve.
-              </p>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={6}>
-          <Card className="h-100 p-4 shadow-lg border-0">
-            <Card.Body>
-              <h2 className="fw-bold h5 mb-2 text-warning">Mission</h2>
-              <p className="mb-0">
-                Our mission is to remove confusion around lounge access, offering a seamless and stress-free experience. ZUTTO empowers travelers with clarity and convenience, ensuring they can confidently enjoy their journey with premium access.
-              </p>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-
-      {/* Our Journey Section */}
-      <Card className="mb-5 p-4 shadow-lg border-0">
-        <Card.Body>
-          <h2 className="fw-bold h4 mb-4 text-warning">Our Journey</h2>
-          <ul className="mb-0 ps-4">
-            <li className="mb-1"> <b>2023-24</b> – Identified the problem, mapped the travel pain points.</li>
-            <li className="mb-1"><b>Late 2024</b> – Conceptualized ZUTTO, built the founding team.</li>
-            <li className="mb-1"> <b>Jan – July 2025</b> – Research, testing & refinement.</li>
-            <li><b>Aug / September 2025</b> – Official launch, transforming lounge access in India.</li>
-          </ul>
-        </Card.Body>
-      </Card>
-
-      {/* Products & Services 4-card layout */}
-      <h2 className="fw-bold h4 mb-4 text-warning text-center">Products & Services</h2>
-      <Row className="mb-5 g-4">
-        <Col md={3}>
-          <Card className="h-100 p-4 shadow-lg border-0">
-            <Card.Body>
-              <h3 className="fw-bold h6 mb-2 text-warning">Lounge Eligibility Checker</h3>
-              <p className="mb-0">
-                Instantly check if your card is eligible for airport lounge access.
-              </p>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={3}>
-          <Card className="h-100 p-4 shadow-lg border-0">
-            <Card.Body>
-              <h3 className="fw-bold h6 mb-2 text-warning">Lounge Finder</h3>
-              <p className="mb-0">
-                Find lounges at airports across India with details and access info.
-              </p>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={3}>
-          <Card className="h-100 p-4 shadow-lg border-0">
-            <Card.Body>
-              <h3 className="fw-bold h6 mb-2 text-warning">Travel Insights</h3>
-              <p className="mb-0">
-                Get travel tips, news, and updates for a seamless journey.
-              </p>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={3}>
-          <Card className="h-100 p-4 shadow-lg border-0">
-            <Card.Body>
-              <h3 className="fw-bold h6 mb-2 text-warning">Rewards & Offers</h3>
-              <p className="mb-0">
-                Discover exclusive rewards and offers for ZUTTO users.
-              </p>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-
-      {/* More Products & Services */}
-      <h2 className="fw-bold h4 mb-4 text-warning text-center">More Products & Services</h2>
-      <Row className="mb-5 g-4">
-        <Col md={3}>
-          <Card className="h-100 p-4 shadow-lg border-0">
-            <Card.Body>
-              <h3 className="fw-bold h6 mb-2 text-warning">Lounge Access Checker</h3>
-              <p className="mb-0">
-                Instantly find eligible lounges.
-              </p>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={3}>
-          <Card className="h-100 p-4 shadow-lg border-0">
-            <Card.Body>
-              <h3 className="fw-bold h6 mb-2 text-warning">Card Benefits & Eligibility</h3>
-              <p className="mb-0">
-                Understand terms, limits, and offers.
-              </p>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={3}>
-          <Card className="h-100 p-4 shadow-lg border-0">
-            <Card.Body>
-              <h3 className="fw-bold h6 mb-2 text-warning">Seamless Travel Experience</h3>
-              <p className="mb-0">
-                Plan ahead and avoid surprises.
-              </p>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={3}>
-          <Card className="h-100 p-4 shadow-lg border-0">
-            <Card.Body>
-              <h3 className="fw-bold h6 mb-2 text-warning">Coming Soon</h3>
-              <p className="mb-0">
-                More features, wider coverage & brand partnerships.
-              </p>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
-
-    {/* App Screenshots Section - overlays hero by 50px */}
-    <section
-      style={{
-        marginTop: '-50px',
-        padding: '50px 0',
-        zIndex: 2,
-        position: 'relative',
-      }}
+    <Container
+      className="pt-24 pb-5 px-4"
+      style={{ paddingTop: "10rem", paddingBottom: "5rem", maxWidth: "1200px" }}
     >
-      <Container style={{ maxWidth: '1100px' }}>
-        <Row className="g-4 justify-content-center">
-          {[1, 2, 3].map((n) => (
-            <Col key={n} md={4} className="d-flex justify-content-center">
-              {/* <div style={{ boxShadow: '0 4px 24px rgba(0,0,0,0.5)', borderRadius: 16, overflow: 'hidden', background: '#000', padding: 16 }}>
-                <img
-                  src={n === 1 ? "/login_page.png" : n === 2 ? "/my_cards.png" : "/profile.png"}
-                  alt={n === 1 ? "Login Page Screenshot" : n === 2 ? "My Cards Screenshot" : "Profile Screenshot"}
-                  style={{ width: '100%', height: 360, objectFit: 'cover', borderRadius: 12 }}
-                />
-              </div> */}
-            </Col>
-          ))}
+      {/* The Story Behind ZUTTO */}
+      <div className="text-center mb-5">
+        <h1
+          className="section-heading"
+          style={{
+            fontFamily: "var(--primary-font)",
+            fontWeight: "700",
+            fontSize: "2.5rem",
+            lineHeight: "1.2",
+            marginBottom: "2rem",
+            position: "relative",
+            display: "inline-block",
+          }}
+        >
+          The Story Behind ZUTTO: Why ZUTTO?
+        </h1>
+      </div>
+
+      {/* Main Content Section */}
+      <Row className="align-items-center">
+        {/* Left Image */}
+        <Col md={5} className="mb-4 mb-md-0">
+          <div className="text-center">
+            <img
+              src="/founder-image.png"
+              alt="Varshan Kannan - Founder & CEO"
+              style={{
+                width: "100%",
+                maxWidth: "350px",
+                height: "auto",
+                borderRadius: "1rem",
+                boxShadow: "0 8px 30px rgba(0,0,0,0.15)",
+              }}
+            />
+          </div>
+        </Col>
+
+        {/* Right Content */}
+        <Col md={7}>
+          <div
+            style={{
+              borderLeft: "4px solid #dbc8ad",
+              paddingLeft: "2rem",
+            }}
+          >
+            <p
+              style={{
+                fontFamily: "var(--primary-font)",
+                fontWeight: "400",
+                fontSize: "1.125rem",
+                lineHeight: "1.8",
+                color: "#333",
+                marginBottom: "1.5rem",
+              }}
+            >
+              ZUTTO was inspired by a moment my father experienced at the
+              airport that exposed how people are facing unclear details
+              regarding lounge access systems really are.
+            </p>
+
+            <p
+              style={{
+                fontFamily: "var(--primary-font)",
+                fontWeight: "400",
+                fontSize: "1.125rem",
+                lineHeight: "1.8",
+                color: "#333",
+                marginBottom: "1.5rem",
+              }}
+            >
+              That moment sparked a conversation that became the foundation of
+              this platform. His experience gave rise to our mission, to bring
+              clarity and comfort to every traveler.
+            </p>
+
+            <p
+              style={{
+                fontFamily: "var(--primary-font)",
+                fontWeight: "400",
+                fontSize: "1.125rem",
+                lineHeight: "1.8",
+                color: "#333",
+                marginBottom: "2rem",
+              }}
+            >
+              Though he's no longer with us, his story lives in ZUTTO. Every
+              feature we build carries forward his vision and this company
+              stands as a tribute to the journey he began.
+            </p>
+
+            <div
+              style={{
+                marginBottom: "1.5rem",
+              }}
+            >
+              <p
+                style={{
+                  fontFamily: "var(--primary-font)",
+                  fontWeight: "600",
+                  fontSize: "1.125rem",
+                  lineHeight: "1.6",
+                  color: "#333",
+                  marginBottom: "0.5rem",
+                }}
+              >
+                <strong>It's more than a business...</strong>
+              </p>
+              <p
+                style={{
+                  fontFamily: "var(--primary-font)",
+                  fontWeight: "600",
+                  fontSize: "1.125rem",
+                  lineHeight: "1.6",
+                  color: "#333",
+                  marginBottom: "1.5rem",
+                }}
+              >
+                <strong>It's a continuation of his story...</strong>
+              </p>
+            </div>
+
+            <div>
+              <h3
+                style={{
+                  fontFamily: "var(--primary-font)",
+                  fontWeight: "700",
+                  fontSize: "1.25rem",
+                  color: "#333",
+                  marginBottom: "0.25rem",
+                }}
+              >
+                Varshan Kannan
+              </h3>
+              <p
+                style={{
+                  fontFamily: "var(--primary-font)",
+                  fontWeight: "500",
+                  fontSize: "1rem",
+                  color: "#666",
+                  marginBottom: "1rem",
+                }}
+              >
+                Founder & CEO
+              </p>
+
+              {/* Social Icons Placeholder */}
+              <div className="d-flex gap-3">
+                <div
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    backgroundColor: "#333",
+                    borderRadius: "8px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    cursor: "pointer",
+                    transition: "background-color 0.3s ease",
+                  }}
+                  onMouseOver={(e) => {
+                    e.currentTarget.style.backgroundColor = "#dbc8ad";
+                  }}
+                  onMouseOut={(e) => {
+                    e.currentTarget.style.backgroundColor = "#333";
+                  }}
+                >
+                  {/* LinkedIn Icon Placeholder */}
+                  <div
+                    style={{
+                      width: "20px",
+                      height: "20px",
+                      backgroundColor: "#fff",
+                      borderRadius: "2px",
+                    }}
+                  ></div>
+                </div>
+                <div
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    backgroundColor: "#333",
+                    borderRadius: "8px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    cursor: "pointer",
+                    transition: "background-color 0.3s ease",
+                  }}
+                  onMouseOver={(e) => {
+                    e.currentTarget.style.backgroundColor = "#dbc8ad";
+                  }}
+                  onMouseOut={(e) => {
+                    e.currentTarget.style.backgroundColor = "#333";
+                  }}
+                >
+                  {/* Instagram Icon Placeholder */}
+                  <div
+                    style={{
+                      width: "20px",
+                      height: "20px",
+                      backgroundColor: "#fff",
+                      borderRadius: "50%",
+                    }}
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Col>
+      </Row>
+
+      {/* The Inspiration Behind ZUTTO */}
+      <div
+        className="text-center mt-5 pt-5"
+        style={{ maxWidth: "1400px", margin: "0 auto" }}
+      >
+        <h1
+          className="section-heading"
+          style={{
+            fontFamily: "var(--primary-font)",
+            fontWeight: "700",
+            fontSize: "2.5rem",
+            lineHeight: "1.2",
+            marginBottom: "2rem",
+            position: "relative",
+            display: "inline-block",
+          }}
+        >
+          The Inspiration Behind ZUTTO
+        </h1>
+        <h2
+          style={{
+            fontFamily: "var(--primary-font)",
+            fontWeight: "600",
+            fontSize: "1.75rem",
+            marginBottom: "2rem",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "0.5rem",
+          }}
+        >
+          <span role="img" aria-label="dove">
+            🕊
+          </span>{" "}
+          CARRYING FORWARD HIS LEGACY
+        </h2>
+      </div>
+
+      <Row className="justify-content-center mt-4">
+        <Col md={6} className="text-center">
+          <img
+            src="/profile.png"
+            alt="Kannan Natesan"
+            style={{
+              width: "100%",
+              maxWidth: "400px",
+              height: "auto",
+              borderRadius: "8px",
+              boxShadow: "0 8px 30px rgba(0,0,0,0.15)",
+              marginBottom: "2rem",
+            }}
+          />
+          <h3
+            style={{
+              fontFamily: "var(--primary-font)",
+              fontWeight: "700",
+              fontSize: "1.75rem",
+              marginBottom: "0.5rem",
+            }}
+          >
+            Kannan Natesan
+          </h3>
+          <p
+            style={{
+              fontFamily: "var(--primary-font)",
+              fontSize: "1.25rem",
+              color: "#666",
+              marginBottom: "3rem",
+            }}
+          >
+            1973 - 2025
+          </p>
+        </Col>
+      </Row>
+
+      {/* Core Values Section */}
+      <div className="text-center mb-5">
+        <h1
+          className="section-heading"
+          style={{
+            fontFamily: "var(--primary-font)",
+            fontWeight: "800",
+            fontSize: "3rem",
+            lineHeight: "1.2",
+            marginBottom: "4rem",
+            position: "relative",
+            display: "inline-block",
+            paddingBottom: "0.5rem",
+          }}
+        >
+          Our Core Values
+        </h1>
+
+        <Row
+          className="g-4 justify-content-between"
+          style={{ maxWidth: "1400px", margin: "0 auto" }}
+        >
+          {/* Clarity Card */}
+          <Col lg={2} md={4} style={{ minWidth: "240px", flex: "1" }}>
+            <div
+              style={{
+                background: "#ffffff",
+                borderRadius: "20px",
+                padding: "2rem 1.5rem",
+                height: "100%",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                transition: "transform 0.3s ease",
+                cursor: "pointer",
+                borderTop: "3px solid #dbc8ad",
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.transform = "translateY(-5px)";
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.transform = "translateY(0)";
+              }}
+            >
+              <h3
+                style={{
+                  fontFamily: "var(--primary-font)",
+                  fontWeight: "700",
+                  fontSize: "1.35rem",
+                  marginBottom: "1.25rem",
+                  color: "#333",
+                }}
+              >
+                Clarity
+              </h3>
+              <p
+                style={{
+                  fontFamily: "var(--primary-font)",
+                  fontSize: "1.1rem",
+                  lineHeight: "1.6",
+                  color: "#666",
+                  fontWeight: "400",
+                }}
+              >
+                We simplify complex information, giving travellers clear,
+                instant insights they can trust.
+              </p>
+            </div>
+          </Col>
+
+          {/* Convenience Card */}
+          <Col lg={2} md={4} style={{ minWidth: "240px", flex: "1" }}>
+            <div
+              style={{
+                background: "#ffffff",
+                borderRadius: "20px",
+                padding: "2rem 1.5rem",
+                height: "100%",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                transition: "transform 0.3s ease",
+                cursor: "pointer",
+                borderTop: "3px solid #dbc8ad",
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.transform = "translateY(-5px)";
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.transform = "translateY(0)";
+              }}
+            >
+              <h3
+                style={{
+                  fontFamily: "var(--primary-font)",
+                  fontWeight: "700",
+                  fontSize: "1.35rem",
+                  marginBottom: "1.25rem",
+                  color: "#333",
+                }}
+              >
+                Convenience
+              </h3>
+              <p
+                style={{
+                  fontFamily: "var(--primary-font)",
+                  fontSize: "1.1rem",
+                  lineHeight: "1.6",
+                  color: "#666",
+                  fontWeight: "400",
+                }}
+              >
+                From app to airport, everything we build is designed to make the
+                travel experience smoother and stress-free.
+              </p>
+            </div>
+          </Col>
+
+          {/* Trust Card */}
+          <Col lg={2} md={4} style={{ minWidth: "240px", flex: "1" }}>
+            <div
+              style={{
+                background: "#ffffff",
+                borderRadius: "20px",
+                padding: "2rem 1.5rem",
+                height: "100%",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                transition: "transform 0.3s ease",
+                cursor: "pointer",
+                borderTop: "3px solid #dbc8ad",
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.transform = "translateY(-5px)";
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.transform = "translateY(0)";
+              }}
+            >
+              <h3
+                style={{
+                  fontFamily: "var(--primary-font)",
+                  fontWeight: "700",
+                  fontSize: "1.35rem",
+                  marginBottom: "1.25rem",
+                  color: "#333",
+                }}
+              >
+                Trust
+              </h3>
+              <p
+                style={{
+                  fontFamily: "var(--primary-font)",
+                  fontSize: "1rem",
+                  lineHeight: "1.6",
+                  color: "#666",
+                }}
+              >
+                We value transparency and accuracy, ensuring our users always
+                receive reliable, up to date information.
+              </p>
+            </div>
+          </Col>
+
+          {/* Empowerment Card */}
+          <Col lg={2} md={4} style={{ minWidth: "240px", flex: "1" }}>
+            <div
+              style={{
+                background: "#ffffff",
+                borderRadius: "20px",
+                padding: "2rem 1.5rem",
+                height: "100%",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                transition: "transform 0.3s ease",
+                cursor: "pointer",
+                borderTop: "3px solid #dbc8ad",
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.transform = "translateY(-5px)";
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.transform = "translateY(0)";
+              }}
+            >
+              <h3
+                style={{
+                  fontFamily: "var(--primary-font)",
+                  fontWeight: "700",
+                  fontSize: "1.35rem",
+                  marginBottom: "1.25rem",
+                  color: "#333",
+                }}
+              >
+                Empowerment
+              </h3>
+              <p
+                style={{
+                  fontFamily: "var(--primary-font)",
+                  fontSize: "1rem",
+                  lineHeight: "1.6",
+                  color: "#666",
+                }}
+              >
+                We equip travellers with the tools they need to make informed
+                decisions and enjoy premium benefits with confidence.
+              </p>
+            </div>
+          </Col>
+
+          {/* Innovation Card */}
+          <Col lg={2} md={4} style={{ minWidth: "240px", flex: "1" }}>
+            <div
+              style={{
+                background: "#ffffff",
+                borderRadius: "20px",
+                padding: "2rem 1.5rem",
+                height: "100%",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                transition: "transform 0.3s ease",
+                cursor: "pointer",
+                borderTop: "3px solid #dbc8ad",
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.transform = "translateY(-5px)";
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.transform = "translateY(0)";
+              }}
+            >
+              <h3
+                style={{
+                  fontFamily: "var(--primary-font)",
+                  fontWeight: "700",
+                  fontSize: "1.35rem",
+                  marginBottom: "1.25rem",
+                  color: "#333",
+                }}
+              >
+                Innovation
+              </h3>
+              <p
+                style={{
+                  fontFamily: "var(--primary-font)",
+                  fontSize: "1rem",
+                  lineHeight: "1.6",
+                  color: "#666",
+                }}
+              >
+                We're constantly evolving, bringing smarter features, wider
+                integrations, and a better way to travel.
+              </p>
+            </div>
+          </Col>
         </Row>
-      </Container>
-    </section>
+      </div>
+    </Container>
   </>
 );
 

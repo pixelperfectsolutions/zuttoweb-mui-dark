@@ -1,137 +1,412 @@
-/* Existing styles kept unchanged */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Orbitron:wght@400;600;700&family=Audiowide&display=swap');
+/* Import Open Sans font family with proper weights */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
-html, body {
-  background: var(--apple-bg);
+/* Import Tesla font family from local file */
+@font-face {
+    font-family: "Tesla";
+    font-size: 32 0px;
+    src: url("/TESLA.ttf") format("truetype");
+    font-weight: light;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* CSS Variables for consistent theming */
+:root {
+    --apple-bg: #fafafa;
+    --apple-text: #1d1d1f;
+    --apple-heading: #1d1d1f;
+    --apple-accent: #007aff;
+    --primary-font:
+        "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Base styles */
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    background: var(--apple-bg);
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  background: var(--apple-bg);
-  color: var(--apple-text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  line-height: 1.5;
+    background: var(--apple-bg);
+    color: var(--apple-text);
+    font-family: var(--primary-font);
+    font-weight: 400;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--apple-heading);
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  font-family: 'Orbitron', sans-serif;
+/* Typography hierarchy */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--apple-heading);
+    font-family: var(--primary-font);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    margin-top: 0;
 }
 
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Text elements */
+p {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Section heading standardization */
 .section-heading {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+    position: relative;
+    display: inline-block;
 }
 
-/* NAVBAR STYLES OMITTED FOR BREVITY */
-
-/* Footer Wrapper */
-.footer-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2.5rem 1rem;
+.section-heading::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #dbc8ad;
+    border-radius: 2px;
 }
 
-/* Main Container Styling */
+/* Logo styling */
+.logo,
+.navbar-brand.logo,
+.fw-bold.logo {
+    font-family: "Tesla", var(--primary-font) !important;
+    font-size: 2.2rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* Button styling */
+.get-started-btn {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+/* Navbar styles */
+.apple-navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+.apple-navbar .navbar-brand {
+    font-family: var(--primary-font);
+    font-weight: 800;
+    color: #1d1d1f;
+}
+
+.apple-navbar .nav-link {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    color: #1d1d1f;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.apple-navbar .nav-link:hover,
+.apple-navbar .nav-link.active {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #1d1d1f;
+}
+
+/* Footer styles */
 .custom-footer {
-  background-color: #f5efe6;
-  color: #181511;
-  border-top: 1px solid #e5d6be;
+    background-color: #f5efe6;
+    color: #181511;
+    border-top: 1px solid #e5d6be;
+    font-family: var(--primary-font);
 }
 
-/* Columns */
+.footer-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
 .footer-columns {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  padding-bottom: 2rem;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    padding-bottom: 2.5rem;
+    flex-wrap: wrap;
 }
 
-/* Column Styling */
 .footer-column {
-  flex: 1;
-  min-width: 200px;
-  text-align: left;
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
 }
 
 .footer-column ul {
-  list-style: none;
-  padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 .footer-column a {
-  text-decoration: none;
-  color: inherit;
+    font-family: var(--primary-font);
+    text-decoration: none;
+    color: inherit;
+    font-weight: 400;
+    transition: color 0.3s ease;
 }
 
 .footer-column a:hover {
-  color: #1a237e;
+    color: #1a237e;
 }
 
-/* Headings */
 .footer-heading {
-  font-size: 1.125rem;
-  font-weight: 400;
-  margin-bottom: 0 rem;
+    font-family: var(--primary-font);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #181511;
 }
 
-/* Email */
 .footer-email {
-  color: #1a237e;
-  font-size: 0.875rem;
+    color: #1a237e;
+    font-size: 0.875rem;
+    font-weight: 500;
 }
 
 .footer-email:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-/* Text */
 .footer-text {
-  font-size: 0.875rem;
-  margin-bottom: 0.5rem;
+    font-family: var(--primary-font);
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
 }
 
-/* Social Links */
 .footer-socials {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  font-size: 0.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    font-size: 0.875rem;
 }
 
 .footer-socials a {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  color: #1a237e;
-  text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #1a237e;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .footer-socials a:hover {
-  color: #0d47a1;
+    color: #0d47a1;
 }
 
-/* Divider */
 .footer-divider {
-  border-color: #e5d6be;
-  margin: 1rem 0;
+    border-color: #e5d6be;
+    margin: 1.5rem 0;
 }
 
-/* Bottom Section */
 .footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.75rem;
-  color: #6b6b6b;
-  flex-wrap: wrap;
-  gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    color: #6b6b6b;
+    font-weight: 400;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1rem;
 }
 
-/* Remove underline from Flowbite FooterLink globally */
-a[href^="/"], a[href^="mailto:"], a[href^="http"] {
-  text-decoration: none !important;
+/* Card styling improvements */
+.card {
+    font-family: var(--primary-font);
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Utility classes for consistent spacing */
+.pt-24 {
+    padding-top: 6rem;
+}
+
+.pb-24 {
+    padding-bottom: 6rem;
+}
+
+.section-padding {
+    padding: 4rem 0;
+}
+
+.container-padding {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+    .section-heading {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .logo,
+    .navbar-brand.logo,
+    .fw-bold.logo {
+        font-size: 2.5rem !important;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-wrapper {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-heading {
+        font-size: 1.75rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .logo,
+    .navbar-brand.logo,
+    .fw-bold.logo {
+        font-size: 2.2rem !important;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+}
+
+/* Remove underline from all links globally */
+a[href^="/"],
+a[href^="mailto:"],
+a[href^="http"],
+a[href^="https://"]
+{
+    text-decoration: none !important;
+    font-family: var(--primary-font);
+}
+
+/* Focus states for accessibility */
+a:focus,
+button:focus,
+.btn:focus {
+    outline: 2px solid var(--apple-accent);
+    outline-offset: 2px;
+}
+
+/* Smooth transitions for interactive elements */
+a,
+button,
+.btn {
+    transition: all 0.3s ease;
 }

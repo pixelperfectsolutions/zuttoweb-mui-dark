@@ -1,52 +1,181 @@
-import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import "../index.css";
 
 const TravelHub: React.FC = () => (
-  <Container className="pt-24" style={{ maxWidth: '1200px', paddingTop: '10rem' }}>
-    <Row className="justify-content-center" style={{ paddingTop: '0', paddingBottom: '5rem' }}>
+  <Container
+    className="pt-24 px-4"
+    style={{ maxWidth: "1200px", paddingTop: "10rem" }}
+  >
+    <Row
+      className="justify-content-center"
+      style={{ paddingTop: "0", paddingBottom: "5rem" }}
+    >
       <Col lg={12}>
-        <Card className="shadow-lg border-0 mb-5 p-4 bg-[#ddc8aa] text-dark">
-          <Card.Body className="p-4">
-            <h1 className="display-5 fw-bold mb-3 text-center">Travel Hub – News, Tips & Stories</h1>
-            <p className="lead mb-4 text-center">
+        <div
+          className="shadow-lg border-0 mb-5 p-4"
+          style={{ background: "#ffffff" }}
+        >
+          <div style={{ padding: "3rem 2rem", textAlign: "center" }}>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <h1
+                className="display-5 fw-bold mb-4 text-center"
+                style={{
+                  fontFamily: "var(--primary-font)",
+                  fontWeight: "800",
+                  fontSize: "3rem",
+                  lineHeight: "1.2",
+                  position: "relative",
+                  display: "inline-block",
+                  borderBottom: "4px solid #dbc8ad",
+                  paddingBottom: "0.5rem",
+                  marginBottom: "2rem",
+                }}
+              >
+                Travel Hub – News, Tips & Stories
+              </h1>
+            </div>
+            <p
+              className="lead mb-5"
+              style={{
+                fontFamily: "var(--primary-font)",
+                fontWeight: "400",
+                fontSize: "1.125rem",
+                lineHeight: "1.6",
+              }}
+            >
               Your go-to space for updates, insider news, and travel insights.
             </p>
-            <Row className="g-4">
-              <Col md={4} sm={12} className="mb-4 md:mb-0">
-                <Card className="h-100 bg-dark text-white border-0">
-                  <Card.Body className="p-4">
-                    <h2 className="h5 fw-bold mb-2">Travel News</h2>
-                    <p className="mb-0">
-                      Stay informed on lounge openings, travel restrictions, and aviation trends.
-                    </p>
-                  </Card.Body>
-                </Card>
+
+            {/* First Row - Two Cards */}
+            <Row className="justify-content-center mb-4">
+              <Col md={6}>
+                <div
+                  style={{
+                    background: "#ffffff",
+                    borderRadius: "20px",
+                    padding: "2rem 1.5rem",
+                    height: "100%",
+                    boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                    borderTop: "3px solid #dbc8ad",
+                  }}
+                >
+                  <h2
+                    style={{
+                      fontFamily: "var(--primary-font)",
+                      fontWeight: "700",
+                      fontSize: "1.35rem",
+                      marginBottom: "1.25rem",
+                      color: "#333",
+                    }}
+                  >
+                    Travel News
+                  </h2>
+                  <p
+                    style={{
+                      fontFamily: "var(--primary-font)",
+                      fontSize: "1.1rem",
+                      lineHeight: "1.6",
+                      color: "#666",
+                      fontWeight: "400",
+                    }}
+                  >
+                    Stay informed on lounge openings, travel restrictions, and
+                    aviation trends.
+                  </p>
+                </div>
               </Col>
-              <Col md={4} sm={12} className="mb-4 md:mb-0">
-                <Card className="h-100 bg-dark text-white border-0">
-                  <Card.Body className="p-4">
-                    <h2 className="h5 fw-bold mb-2">Pro Travel Tips</h2>
-                    <ul className="mb-0 ps-3">
-                      <li>Maximize Your Lounge Visit – Enjoy all the perks, from gourmet meals to spa access.</li>
-                      <li>Airport Hacks – Navigate terminals like a pro.</li>
-                      <li>Top Destinations – Curated global hotspots and hidden gems.</li>
-                    </ul>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col md={4} sm={12} className="mb-4 md:mb-0">
-                <Card className="h-100 bg-dark text-white border-0">
-                  <Card.Body className="p-4">
-                    <h2 className="h5 fw-bold mb-2">Featured Travel Stories</h2>
-                    <p className="mb-0">
-                      Be inspired by real travelers—business flyers, adventurers, and global wanderers—sharing their luxurious and stress-free journeys with ZUTTO.
-                    </p>
-                  </Card.Body>
-                </Card>
+              <Col md={6}>
+                <div
+                  style={{
+                    background: "#ffffff",
+                    borderRadius: "20px",
+                    padding: "2rem 1.5rem",
+                    height: "100%",
+                    boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                    borderTop: "3px solid #dbc8ad",
+                  }}
+                >
+                  <h2
+                    style={{
+                      fontFamily: "var(--primary-font)",
+                      fontWeight: "700",
+                      fontSize: "1.35rem",
+                      marginBottom: "1.25rem",
+                      color: "#333",
+                    }}
+                  >
+                    Pro Travel Tips
+                  </h2>
+                  <ul
+                    style={{
+                      fontFamily: "var(--primary-font)",
+                      fontSize: "1.1rem",
+                      lineHeight: "1.6",
+                      color: "#666",
+                      fontWeight: "400",
+                      paddingLeft: "1.2rem",
+                      marginBottom: 0,
+                    }}
+                  >
+                    <li className="mb-2">
+                      Maximize Your Lounge Visit – Enjoy all the perks, from
+                      gourmet meals to spa access.
+                    </li>
+                    <li className="mb-2">
+                      Airport Hacks – Navigate terminals like a pro.
+                    </li>
+                    <li>
+                      Top Destinations – Curated global hotspots and hidden
+                      gems.
+                    </li>
+                  </ul>
+                </div>
               </Col>
             </Row>
-          </Card.Body>
-        </Card>
+
+            {/* Second Row - One Card */}
+            <Row className="justify-content-center">
+              <Col md={8}>
+                <div
+                  style={{
+                    background: "#ffffff",
+                    borderRadius: "20px",
+                    padding: "2rem 1.5rem",
+                    height: "100%",
+                    boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                    borderTop: "3px solid #dbc8ad",
+                  }}
+                >
+                  <h2
+                    style={{
+                      fontFamily: "var(--primary-font)",
+                      fontWeight: "700",
+                      fontSize: "1.35rem",
+                      marginBottom: "1.25rem",
+                      color: "#333",
+                    }}
+                  >
+                    Featured Travel Stories
+                  </h2>
+                  <p
+                    style={{
+                      fontFamily: "var(--primary-font)",
+                      fontSize: "1.1rem",
+                      lineHeight: "1.6",
+                      color: "#666",
+                      fontWeight: "400",
+                    }}
+                  >
+                    Be inspired by real travelers—business flyers, adventurers,
+                    and global wanderers—sharing their luxurious and stress-free
+                    journeys with ZUTTO.
+                  </p>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </div>
       </Col>
     </Row>
   </Container>
