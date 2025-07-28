@@ -1,9 +1,17 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import "../index.css";
 
 export function CustomFooter() {
+  const navigate = useNavigate();
+
+  const handleNavClick = (path: string) => {
+    navigate(path);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer
       style={{
@@ -18,12 +26,31 @@ export function CustomFooter() {
       <Container style={{ maxWidth: "1200px", padding: "0 24px" }}>
         {/* Main Footer Content */}
         <Row className="py-5">
+          {/* About Zutto Column */}
+          <Col lg={3} md={6} sm={6} className="mb-4 mb-lg-0">
+            <h3
+              style={{
+                fontSize: "14px",
+                fontWeight: "700",
+                marginBottom: "1.2em",
+                letterSpacing: "0.5px",
+              }}
+            >
+              About ZUTTO
+            </h3>
+            <p style={{ fontSize: "12px", lineHeight: "1.4" }}>
+              Access airport lounge eligibility across India—domestic and
+              international—with zero confusion. Travel smart, skip the
+              guesswork, and elevate your journey with ZUTTO.
+            </p>
+          </Col>
+
           {/* Links Column */}
           <Col lg={3} md={6} sm={6} className="mb-4 mb-lg-0">
             <h3
               style={{
-                fontSize: "12px",
-                fontWeight: "600",
+                fontSize: "14px",
+                fontWeight: "700",
                 marginBottom: "1.2em",
                 letterSpacing: "0.5px",
               }}
@@ -34,7 +61,12 @@ export function CustomFooter() {
               {["Home", "About Us", "Travel Hub", "Contact Us"].map((item) => (
                 <li key={item} style={{ marginBottom: "0.8em" }}>
                   <a
-                    href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
+                    href="#"
+                    onClick={() =>
+                      handleNavClick(
+                        `/${item.toLowerCase().replace(/\s+/g, "-")}`,
+                      )
+                    }
                     style={{
                       color: "#424245",
                       textDecoration: "none",
@@ -54,30 +86,12 @@ export function CustomFooter() {
             </ul>
           </Col>
 
-          {/* About Zutto Column */}
-          <Col lg={3} md={6} sm={6} className="mb-4 mb-lg-0">
-            <h3
-              style={{
-                fontSize: "12px",
-                fontWeight: "600",
-                marginBottom: "1.2em",
-                letterSpacing: "0.5px",
-              }}
-            >
-              About ZUTTO
-            </h3>
-            <p style={{ fontSize: "12px", lineHeight: "1.4" }}>
-              Zutto is your personalized travel companion, offering curated
-              experiences and hassle-free bookings to make every trip memorable.
-            </p>
-          </Col>
-
           {/* Contact Column */}
           <Col lg={3} md={6} sm={6} className="mb-4 mb-lg-0">
             <h3
               style={{
-                fontSize: "12px",
-                fontWeight: "600",
+                fontSize: "14px",
+                fontWeight: "700",
                 marginBottom: "1.2em",
                 letterSpacing: "0.5px",
               }}
@@ -109,8 +123,8 @@ export function CustomFooter() {
           <Col lg={3} md={6} sm={6} className="mb-4 mb-lg-0">
             <h3
               style={{
-                fontSize: "12px",
-                fontWeight: "600",
+                fontSize: "14px",
+                fontWeight: "700",
                 marginBottom: "1.2em",
                 letterSpacing: "0.5px",
               }}
@@ -178,7 +192,8 @@ export function CustomFooter() {
                 ].map((link) => (
                   <a
                     key={link.name}
-                    href={link.path}
+                    href="#"
+                    onClick={() => handleNavClick(link.path)}
                     style={{
                       color: "#424245",
                       textDecoration: "none",

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "../index.css";
 
 const navItems = [
@@ -14,7 +14,14 @@ const navItems = [
 
 const Header: React.FC = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [expanded, setExpanded] = useState(false);
+
+  const handleNavClick = (path: string) => {
+    setExpanded(false);
+    navigate(path);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <Navbar
@@ -78,7 +85,7 @@ const Header: React.FC = () => {
                 <LinkContainer
                   key={item.path}
                   to={item.path}
-                  onClick={() => setExpanded(false)}
+                  onClick={() => handleNavClick(item.path)}
                 >
                   <Nav.Link
                     active={location.pathname === item.path}
@@ -99,7 +106,10 @@ const Header: React.FC = () => {
 
             {/* Get Started Button */}
             <div className="d-none d-md-block mt-2 mt-md-0">
-              <LinkContainer to="/contact">
+              <LinkContainer
+                to="/contact"
+                onClick={() => handleNavClick("/contact")}
+              >
                 <Button
                   className="get-started-btn fw-bold"
                   style={{
