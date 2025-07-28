@@ -62,7 +62,7 @@ const Header: React.FC = () => {
               style={{
                 border: "none",
                 fontSize: "1.5rem",
-                lineHeight: "0.75",
+                lineHeight: "0.55",
                 fontFamily: "var(--primary-font)",
                 padding: "0.5rem",
               }}

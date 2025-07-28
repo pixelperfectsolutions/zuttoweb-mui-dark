@@ -8,17 +8,18 @@ export function CustomFooter() {
     <footer
       style={{
         backgroundColor: "#f5f5f7",
-        padding: "0 0 30px 0",
+        padding: "40px 0",
         color: "#6e6e73",
         fontSize: "12px",
         marginTop: "50px",
+        width: "100%",
       }}
     >
-      <Container style={{ maxWidth: "980px" }}>
+      <Container style={{ maxWidth: "1200px", padding: "0 24px" }}>
         {/* Main Footer Content */}
         <Row className="py-5">
           {/* Links Column */}
-          <Col md={3}>
+          <Col lg={3} md={6} sm={6} className="mb-4 mb-lg-0">
             <h3
               style={{
                 fontSize: "12px",
@@ -54,7 +55,7 @@ export function CustomFooter() {
           </Col>
 
           {/* About Zutto Column */}
-          <Col md={3}>
+          <Col lg={3} md={6} sm={6} className="mb-4 mb-lg-0">
             <h3
               style={{
                 fontSize: "12px",
@@ -72,7 +73,7 @@ export function CustomFooter() {
           </Col>
 
           {/* Contact Column */}
-          <Col md={3}>
+          <Col lg={3} md={6} sm={6} className="mb-4 mb-lg-0">
             <h3
               style={{
                 fontSize: "12px",
@@ -105,7 +106,7 @@ export function CustomFooter() {
           </Col>
 
           {/* Social Media Column */}
-          <Col md={3}>
+          <Col lg={3} md={6} sm={6} className="mb-4 mb-lg-0">
             <h3
               style={{
                 fontSize: "12px",
@@ -157,13 +158,13 @@ export function CustomFooter() {
           }}
         >
           <Row className="align-items-center">
-            <Col md={6}>
+            <Col lg={6} md={12}>
               <p style={{ margin: 0 }}>
                 Copyright © {new Date().getFullYear()} ZUTTO. All rights
                 reserved.
               </p>
             </Col>
-            <Col md={6}>
+            <Col lg={6} md={12} className="mb-3 mb-lg-0">
               <div
                 style={{
                   display: "flex",
