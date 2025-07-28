@@ -1,182 +1,221 @@
 import React from "react";
-import {
-  Footer,
-  FooterCopyright,
-  FooterDivider,
-  FooterLink,
-  FooterLinkGroup,
-} from "flowbite-react";
+import { Container, Row, Col } from "react-bootstrap";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import "../index.css";
 
 export function CustomFooter() {
   return (
-    <Footer container className="custom-footer">
-      <div className="footer-wrapper" style={{ marginTop: "50px" }}>
-        {/* Top: Four Columns */}
-        <div className="footer-columns">
-          {/* Column 1: Links */}
-          <div className="footer-column">
-            <p className="footer-heading">Links</p>
-            <FooterLinkGroup col className="no-bullets">
-              <FooterLink
-                href="/"
-                className="no-underline"
-                style={{ fontFamily: "var(--primary-font)", fontWeight: "400" }}
-              >
-                Home
-              </FooterLink>
-              <FooterLink
-                href="/about"
-                className="no-underline"
-                style={{ fontFamily: "var(--primary-font)", fontWeight: "400" }}
-              >
-                About Us
-              </FooterLink>
-              <FooterLink
-                href="/travel-hub"
-                className="no-underline"
-                style={{ fontFamily: "var(--primary-font)", fontWeight: "400" }}
-              >
-                Travel Hub
-              </FooterLink>
-              <FooterLink
-                href="/contact"
-                className="no-underline"
-                style={{ fontFamily: "var(--primary-font)", fontWeight: "400" }}
-              >
-                Contact Us
-              </FooterLink>
-            </FooterLinkGroup>
-          </div>
-
-          {/* Column 2: About Zutto */}
-          <div className="footer-column">
-            <p className="footer-heading">Zutto</p>
-            <p
-              className="footer-text"
+    <footer
+      style={{
+        backgroundColor: "#f5f5f7",
+        padding: "0 0 30px 0",
+        color: "#6e6e73",
+        fontSize: "12px",
+        marginTop: "50px",
+      }}
+    >
+      <Container style={{ maxWidth: "980px" }}>
+        {/* Main Footer Content */}
+        <Row className="py-5">
+          {/* Links Column */}
+          <Col md={3}>
+            <h3
               style={{
-                fontFamily: "var(--primary-font)",
-                fontWeight: "400",
-                lineHeight: "1.6",
+                fontSize: "12px",
+                fontWeight: "600",
+                marginBottom: "1.2em",
+                letterSpacing: "0.5px",
               }}
             >
+              Links
+            </h3>
+            <ul style={{ listStyle: "none", padding: 0 }}>
+              {["Home", "About Us", "Travel Hub", "Contact Us"].map((item) => (
+                <li key={item} style={{ marginBottom: "0.8em" }}>
+                  <a
+                    href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
+                    style={{
+                      color: "#424245",
+                      textDecoration: "none",
+                      fontSize: "12px",
+                    }}
+                    onMouseOver={(e) =>
+                      (e.currentTarget.style.textDecoration = "underline")
+                    }
+                    onMouseOut={(e) =>
+                      (e.currentTarget.style.textDecoration = "none")
+                    }
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </Col>
+
+          {/* About Zutto Column */}
+          <Col md={3}>
+            <h3
+              style={{
+                fontSize: "12px",
+                fontWeight: "600",
+                marginBottom: "1.2em",
+                letterSpacing: "0.5px",
+              }}
+            >
+              About ZUTTO
+            </h3>
+            <p style={{ fontSize: "12px", lineHeight: "1.4" }}>
               Zutto is your personalized travel companion, offering curated
               experiences and hassle-free bookings to make every trip memorable.
             </p>
-          </div>
+          </Col>
 
-          {/* Column 3: Contact */}
-          <div className="footer-column">
-            <p className="footer-heading">Contact</p>
-            <p
-              className="footer-text"
+          {/* Contact Column */}
+          <Col md={3}>
+            <h3
               style={{
-                fontFamily: "var(--primary-font)",
-                fontWeight: "400",
+                fontSize: "12px",
+                fontWeight: "600",
+                marginBottom: "1.2em",
+                letterSpacing: "0.5px",
               }}
             >
+              Contact
+            </h3>
+            <p style={{ fontSize: "12px", marginBottom: "0.8em" }}>
               Coimbatore, India
             </p>
-            <FooterLink
+            <a
               href="mailto:support@zutto.in"
-              className="footer-email no-underline"
               style={{
-                fontFamily: "var(--primary-font)",
-                fontWeight: "500",
+                color: "#424245",
+                textDecoration: "none",
+                fontSize: "12px",
               }}
+              onMouseOver={(e) =>
+                (e.currentTarget.style.textDecoration = "underline")
+              }
+              onMouseOut={(e) =>
+                (e.currentTarget.style.textDecoration = "none")
+              }
             >
               support@zutto.in
-            </FooterLink>
-          </div>
+            </a>
+          </Col>
 
-          {/* Column 4: Social Media */}
-          <div className="footer-column">
-            <p className="footer-heading">Follow Us</p>
-            <div className="footer-socials">
-              <a
-                href="#"
-                className="social-link"
+          {/* Social Media Column */}
+          <Col md={3}>
+            <h3
+              style={{
+                fontSize: "12px",
+                fontWeight: "600",
+                marginBottom: "1.2em",
+                letterSpacing: "0.5px",
+              }}
+            >
+              Follow Us
+            </h3>
+            <ul style={{ listStyle: "none", padding: 0 }}>
+              {[
+                { icon: <FaInstagram />, name: "Instagram" },
+                { icon: <FaLinkedin />, name: "LinkedIn" },
+                { icon: <FaTwitter />, name: "Twitter" },
+              ].map((social) => (
+                <li key={social.name} style={{ marginBottom: "0.8em" }}>
+                  <a
+                    href="#"
+                    style={{
+                      color: "#424245",
+                      textDecoration: "none",
+                      fontSize: "12px",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                    onMouseOver={(e) =>
+                      (e.currentTarget.style.textDecoration = "underline")
+                    }
+                    onMouseOut={(e) =>
+                      (e.currentTarget.style.textDecoration = "none")
+                    }
+                  >
+                    {social.icon} {social.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </Col>
+        </Row>
+
+        {/* Footer Bottom */}
+        <div
+          style={{
+            borderTop: "1px solid #d2d2d7",
+            paddingTop: "20px",
+            fontSize: "12px",
+          }}
+        >
+          <Row className="align-items-center">
+            <Col md={6}>
+              <p style={{ margin: 0 }}>
+                Copyright © {new Date().getFullYear()} ZUTTO. All rights
+                reserved.
+              </p>
+            </Col>
+            <Col md={6}>
+              <div
                 style={{
-                  fontFamily: "var(--primary-font)",
-                  fontWeight: "500",
+                  display: "flex",
+                  gap: "20px",
+                  justifyContent: "flex-end",
                 }}
               >
-                <FaInstagram /> Instagram
-              </a>
-              <a
-                href="#"
-                className="social-link"
-                style={{
-                  fontFamily: "var(--primary-font)",
-                  fontWeight: "500",
-                }}
-              >
-                <FaLinkedin /> LinkedIn
-              </a>
-              <a
-                href="#"
-                className="social-link"
-                style={{
-                  fontFamily: "var(--primary-font)",
-                  fontWeight: "500",
-                }}
-              >
-                <FaTwitter /> Twitter
-              </a>
-            </div>
-          </div>
+                {[
+                  { name: "Privacy Policy", path: "/privacy" },
+                  { name: "Terms of Service", path: "/terms" },
+                ].map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.path}
+                    style={{
+                      color: "#424245",
+                      textDecoration: "none",
+                      fontSize: "12px",
+                    }}
+                    onMouseOver={(e) =>
+                      (e.currentTarget.style.textDecoration = "underline")
+                    }
+                    onMouseOut={(e) =>
+                      (e.currentTarget.style.textDecoration = "none")
+                    }
+                  >
+                    {link.name}
+                  </a>
+                ))}
+                <a
+                  href="https://pixelperfect.co.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: "#424245",
+                    textDecoration: "none",
+                    fontSize: "12px",
+                  }}
+                  onMouseOver={(e) =>
+                    (e.currentTarget.style.textDecoration = "underline")
+                  }
+                  onMouseOut={(e) =>
+                    (e.currentTarget.style.textDecoration = "none")
+                  }
+                >
+                  Designed By Pixel Perfect
+                </a>
+              </div>
+            </Col>
+          </Row>
         </div>
-
-        {/* Divider */}
-        <FooterDivider className="footer-divider" />
-
-        {/* Bottom Links */}
-        <div className="footer-bottom" style={{ paddingTop: "15px" }}>
-          <FooterLink
-            href="/privacy"
-            className="no-underline"
-            style={{
-              fontFamily: "var(--primary-font)",
-              fontWeight: "400",
-            }}
-          >
-            Privacy Policy
-          </FooterLink>
-          <FooterLink
-            href="/terms"
-            className="no-underline"
-            style={{
-              fontFamily: "var(--primary-font)",
-              fontWeight: "400",
-            }}
-          >
-            Terms of Service
-          </FooterLink>
-          <FooterLink
-            href="https://pixelperfect.co.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="no-underline"
-            style={{
-              fontFamily: "var(--primary-font)",
-              fontWeight: "400",
-            }}
-          >
-            Designed By Pixel Perfect Software Solutions
-          </FooterLink>
-          <FooterCopyright
-            href="#"
-            by="ZUTTO"
-            year={new Date().getFullYear()}
-            className="footer-copyright"
-            style={{
-              fontFamily: "var(--primary-font)",
-              fontWeight: "400",
-            }}
-          />
-        </div>
-      </div>
-    </Footer>
+      </Container>
+    </footer>
   );
 }
