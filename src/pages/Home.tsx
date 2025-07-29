@@ -97,14 +97,14 @@ const Home: React.FC = () => {
                   <img
                     src="/appstore.png"
                     alt="Download on the App Store"
-                    style={{ height: 50, width: "auto" }}
+                    style={{ height: 50, width: "auto", borderRadius: 7 }}
                   />
                 </a>
                 <a href="#" target="_blank" rel="noopener noreferrer">
                   <img
                     src="/playstore.png"
                     alt="Download on Google Play"
-                    style={{ height: 50, width: "auto" }}
+                    style={{ height: 50, width: "auto", borderRadius: 7 }}
                   />
                 </a>
               </div>
