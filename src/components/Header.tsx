@@ -4,6 +4,18 @@ import { LinkContainer } from "react-router-bootstrap";
 import { useLocation, useNavigate } from "react-router-dom";
 import "../index.css";
 
+// CSS to remove focus outline
+const noOutlineStyle = `
+  .no-focus-outline:focus,
+  .no-focus-outline a:focus,
+  .no-focus-outline:active,
+  .no-focus-outline a:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+`;
+
 const navItems = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
@@ -33,12 +45,13 @@ const Header: React.FC = () => {
       expanded={expanded}
       className="apple-navbar py-3 shadow-sm"
     >
+      <style>{noOutlineStyle}</style>
       <Container
         style={{ maxWidth: "1200px" }}
         className="mx-auto d-flex justify-content-between align-items-center px-4"
       >
         {/* Logo Left */}
-        <LinkContainer to="/">
+        <LinkContainer to="/" className="no-focus-outline">
           <Navbar.Brand
             className="fw-bold logo"
             style={{
