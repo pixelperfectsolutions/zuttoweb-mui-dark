@@ -22,7 +22,7 @@ const About: React.FC = () => (
             display: "inline-block",
           }}
         >
-          The Story Behind ZUTTO: Why ZUTTO?
+          The Story Behind ZUTTO
         </h1>
       </div>
 
@@ -48,20 +48,15 @@ const About: React.FC = () => (
         {/* Right Content */}
         <Col md={7}>
           <div
+            className="founder-story"
             style={{
               borderLeft: "4px solid #dbc8ad",
               paddingLeft: "2rem",
             }}
           >
             <p
-              style={{
-                fontFamily: "var(--primary-font)",
-                fontWeight: "400",
-                fontSize: "1.125rem",
-                lineHeight: "1.8",
-                color: "#333",
-                marginBottom: "1.5rem",
-              }}
+              className="mb-4"
+              style={{ fontSize: "1.1rem", lineHeight: "1.8" }}
             >
               ZUTTO was inspired by a moment my father experienced at the
               airport that exposed how people are facing unclear details
@@ -69,14 +64,8 @@ const About: React.FC = () => (
             </p>
 
             <p
-              style={{
-                fontFamily: "var(--primary-font)",
-                fontWeight: "400",
-                fontSize: "1.125rem",
-                lineHeight: "1.8",
-                color: "#333",
-                marginBottom: "1.5rem",
-              }}
+              className="mb-4"
+              style={{ fontSize: "1.1rem", lineHeight: "1.8" }}
             >
               That moment sparked a conversation that became the foundation of
               this platform. His experience gave rise to our mission, to bring
@@ -84,135 +73,62 @@ const About: React.FC = () => (
             </p>
 
             <p
-              style={{
-                fontFamily: "var(--primary-font)",
-                fontWeight: "400",
-                fontSize: "1.125rem",
-                lineHeight: "1.8",
-                color: "#333",
-                marginBottom: "2rem",
-              }}
+              className="mb-4"
+              style={{ fontSize: "1.1rem", lineHeight: "1.8" }}
             >
               Though he's no longer with us, his story lives in ZUTTO. Every
               feature we build carries forward his vision and this company
               stands as a tribute to the journey he began.
             </p>
 
-            <div
+            <p
+              className="mb-4"
               style={{
-                marginBottom: "1.5rem",
+                fontSize: "1.1rem",
+                lineHeight: "1.8",
+                fontStyle: "italic",
               }}
             >
-              <p
-                style={{
-                  fontFamily: "var(--primary-font)",
-                  fontWeight: "600",
-                  fontSize: "1.125rem",
-                  lineHeight: "1.6",
-                  color: "#333",
-                  marginBottom: "0.5rem",
-                }}
-              >
-                <strong>It's more than a business...</strong>
-              </p>
-              <p
-                style={{
-                  fontFamily: "var(--primary-font)",
-                  fontWeight: "600",
-                  fontSize: "1.125rem",
-                  lineHeight: "1.6",
-                  color: "#333",
-                  marginBottom: "1.5rem",
-                }}
-              >
-                <strong>It's a continuation of his story...</strong>
-              </p>
-            </div>
+              It's more than a business...
+              <br />
+              It's a continuation of his story...
+            </p>
 
-            <div>
-              <h3
-                style={{
-                  fontFamily: "var(--primary-font)",
-                  fontWeight: "700",
-                  fontSize: "1.25rem",
-                  color: "#333",
-                  marginBottom: "0.25rem",
-                }}
+            <div className="founder-signature mt-5">
+              <p
+                className="mb-2"
+                style={{ fontSize: "1.2rem", fontWeight: "600" }}
               >
                 Varshan Kannan
-              </h3>
-              <p
-                style={{
-                  fontFamily: "var(--primary-font)",
-                  fontWeight: "500",
-                  fontSize: "1rem",
-                  color: "#666",
-                  marginBottom: "1rem",
-                }}
-              >
+              </p>
+              <p className="mb-4" style={{ color: "#666" }}>
                 Founder & CEO
               </p>
 
-              {/* Social Icons Placeholder */}
-              <div className="d-flex gap-3">
-                <div
-                  style={{
-                    width: "40px",
-                    height: "40px",
-                    backgroundColor: "#333",
-                    borderRadius: "8px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    cursor: "pointer",
-                    transition: "background-color 0.3s ease",
-                  }}
-                  onMouseOver={(e) => {
-                    e.currentTarget.style.backgroundColor = "#dbc8ad";
-                  }}
-                  onMouseOut={(e) => {
-                    e.currentTarget.style.backgroundColor = "#333";
-                  }}
+              <div className="social-links">
+                <a
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="me-3"
                 >
-                  {/* LinkedIn Icon Placeholder */}
-                  <div
-                    style={{
-                      width: "20px",
-                      height: "20px",
-                      backgroundColor: "#fff",
-                      borderRadius: "2px",
-                    }}
-                  ></div>
-                </div>
-                <div
-                  style={{
-                    width: "40px",
-                    height: "40px",
-                    backgroundColor: "#333",
-                    borderRadius: "8px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    cursor: "pointer",
-                    transition: "background-color 0.3s ease",
-                  }}
-                  onMouseOver={(e) => {
-                    e.currentTarget.style.backgroundColor = "#dbc8ad";
-                  }}
-                  onMouseOut={(e) => {
-                    e.currentTarget.style.backgroundColor = "#333";
-                  }}
+                  <img
+                    src="/linkedin-icon.svg"
+                    alt="LinkedIn"
+                    style={{ width: "24px", height: "24px" }}
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  {/* Instagram Icon Placeholder */}
-                  <div
-                    style={{
-                      width: "20px",
-                      height: "20px",
-                      backgroundColor: "#fff",
-                      borderRadius: "50%",
-                    }}
-                  ></div>
-                </div>
+                  <img
+                    src="/instagram-icon.svg"
+                    alt="Instagram"
+                    style={{ width: "24px", height: "24px" }}
+                  />
+                </a>
               </div>
             </div>
           </div>
