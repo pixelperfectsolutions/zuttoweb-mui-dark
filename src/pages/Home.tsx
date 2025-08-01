@@ -17,6 +17,7 @@ import {
   FaUsers,
 } from "react-icons/fa";
 import "../index.css";
+import SEO from "../components/SEO";
 
 // Data for offer cards
 const offers = [
@@ -47,8 +48,47 @@ const Home: React.FC = () => {
     </section>
   );
 
+  const homeStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "ZUTTO Airport Lounge Access",
+    "description": "Comprehensive solution for accessing lounge eligibility at domestic and international airports in India",
+    "provider": {
+      "@type": "Organization",
+      "name": "ZUTTO"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "India"
+    },
+    "serviceType": "Airport Lounge Access Services",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Lounge Access Information",
+        "description": "Get instant, accurate information about lounge access eligibility"
+      },
+      {
+        "@type": "Offer", 
+        "name": "Bank Card Integration",
+        "description": "Seamlessly integrate your bank cards to verify lounge benefits"
+      },
+      {
+        "@type": "Offer",
+        "name": "Airport Lounge Search",
+        "description": "Find lounges at any airport in India and check eligibility"
+      }
+    ]
+  };
+
   return (
     <>
+      <SEO
+        title="ZUTTO - Your Gateway to Premium Airport Experiences | Airport Lounge Access India"
+        description="ZUTTO is a comprehensive solution for accessing lounge eligibility at domestic and international airports in India. Check lounge access, verify card benefits, and enjoy hassle-free airport experiences."
+        keywords="airport lounge India, lounge access, credit card benefits, premium travel India, ZUTTO app, airport lounge eligibility, travel companion India"
+        structuredData={homeStructuredData}
+      />
       {/* Updated Hero Section */}
       <section
         style={{

@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Header from "./components/Header";
 import { CustomFooter } from "./components/Footer";
@@ -27,6 +27,7 @@ function App() {
           {/* <Route path="/faq" element={<FAQ />} /> */}
           {/* <Route path="/testimonials" element={<Testimonials />} /> */}
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/privacy-policy" element={<Navigate to="/privacy" replace />} />
           {/* <Route path="/terms" element={<Terms />} /> */}
         </Routes>
       </main>

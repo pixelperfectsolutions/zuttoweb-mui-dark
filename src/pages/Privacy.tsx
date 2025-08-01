@@ -1,10 +1,31 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import '../index.css';
+import SEO from '../components/SEO';
 
 const Privacy: React.FC = () => {
+  const privacyStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "ZUTTO Privacy Policy",
+    "description": "ZUTTO's privacy policy outlining how we collect, use, and protect your personal information while providing airport lounge access services.",
+    "mainEntity": {
+      "@type": "PrivacyPolicy",
+      "name": "ZUTTO Privacy Policy",
+      "dateModified": "2025-08-01"
+    }
+  };
+
   return (
-    <div style={{ background: 'var(--apple-bg)', minHeight: '100vh', paddingTop: '80px' }}>
+    <>
+      <SEO
+        title="ZUTTO Privacy Policy - Data Protection & Security"
+        description="Read ZUTTO's privacy policy to understand how we protect your data and ensure secure airport lounge access services across India."
+        keywords="ZUTTO privacy policy, data protection, security, privacy India, airport lounge privacy, personal data protection"
+        url="https://zutto.in/privacy"
+        structuredData={privacyStructuredData}
+      />
+      <div style={{ background: 'var(--apple-bg)', minHeight: '100vh', paddingTop: '80px' }}>
       <Container style={{ maxWidth: '1200px', padding: '3rem 2rem' }}>
         <Row className="justify-content-center">
           <Col lg={10}>
@@ -259,8 +280,9 @@ const Privacy: React.FC = () => {
             </Card>
           </Col>
         </Row>
-      </Container>
-    </div>
+        </Container>
+      </div>
+    </>
   );
 };
 

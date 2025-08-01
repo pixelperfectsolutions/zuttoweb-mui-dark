@@ -1,9 +1,36 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../index.css";
+import SEO from "../components/SEO";
 
-const About: React.FC = () => (
-  <>
+const About: React.FC = () => {
+  const aboutStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About ZUTTO",
+    "description": "Learn about ZUTTO - Your personalized travel companion offering curated experiences and hassle-free airport lounge access across India.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "ZUTTO",
+      "foundingDate": "2025",
+      "founder": {
+        "@type": "Person",
+        "name": "Varshan Kannan",
+        "jobTitle": "Founder & CEO"
+      },
+      "description": "Premium travel app providing airport lounge access services across India"
+    }
+  };
+
+  return (
+    <>
+      <SEO
+        title="About ZUTTO - Your Premium Travel Companion | Founded 2025"
+        description="Learn about ZUTTO's mission to simplify airport lounge access across India. Founded in 2025 by Varshan Kannan, ZUTTO transforms air travel with premium experiences."
+        keywords="about ZUTTO, travel company India, airport lounge services, Varshan Kannan founder, premium travel India, ZUTTO story"
+        url="https://zutto.in/about"
+        structuredData={aboutStructuredData}
+      />
     <Container
       className="pt-24 pb-5 px-4"
       style={{ paddingTop: "10rem", paddingBottom: "5rem", maxWidth: "1200px" }}
@@ -461,7 +488,8 @@ const About: React.FC = () => (
         </Row>
       </div>
     </Container>
-  </>
-);
+    </>
+  );
+};
 
 export default About;

@@ -1,9 +1,36 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../index.css";
+import SEO from "../components/SEO";
 
-const Contact: React.FC = () => (
-  <Container
+const Contact: React.FC = () => {
+  const contactStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact ZUTTO",
+    "description": "Get in touch with ZUTTO for queries, feedback, or partnership opportunities. Connect with India's premium travel companion.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "ZUTTO",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": "English"
+      }
+    }
+  };
+
+  return (
+    <>
+      <SEO
+        title="Contact ZUTTO - Get in Touch | Customer Support India"
+        description="Contact ZUTTO for queries, feedback, or partnership opportunities. Connect with India's leading airport lounge access service provider."
+        keywords="contact ZUTTO, customer support, feedback, partnership, airport lounge support India, travel assistance"
+        url="https://zutto.in/contact"
+        structuredData={contactStructuredData}
+      />
+      <Container
     className="pt-24 px-4"
     style={{ maxWidth: "1200px", paddingTop: "10rem" }}
   >
@@ -183,7 +210,9 @@ const Contact: React.FC = () => (
         </Row>
       </div>
     </div>
-  </Container>
-);
+      </Container>
+    </>
+  );
+};
 
 export default Contact;

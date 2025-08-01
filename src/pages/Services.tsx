@@ -14,9 +14,40 @@ import {
   FaUsers,
 } from "react-icons/fa";
 import "../index.css";
+import SEO from "../components/SEO";
 
-const Services: React.FC = () => (
-  <>
+const Services: React.FC = () => {
+  const servicesStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "ZUTTO Airport Services",
+    "description": "Comprehensive airport lounge access services across India including card integration, lounge search, and travel tips.",
+    "provider": {
+      "@type": "Organization",
+      "name": "ZUTTO"
+    },
+    "serviceType": [
+      "Lounge Access Information",
+      "Bank Card Integration", 
+      "Airport Lounge Search",
+      "Travel Tips & Updates",
+      "Premium Travel Offers"
+    ],
+    "areaServed": {
+      "@type": "Country",
+      "name": "India"
+    }
+  };
+
+  return (
+    <>
+      <SEO
+        title="ZUTTO Services - Airport Lounge Access & Travel Benefits India"
+        description="Discover ZUTTO's comprehensive airport services: lounge access verification, bank card integration, airport search, and premium travel benefits across India."
+        keywords="airport services India, lounge access services, bank card integration, airport lounge search, travel benefits, premium travel services"
+        url="https://zutto.in/services"
+        structuredData={servicesStructuredData}
+      />
     {/* Hero Section */}
     <section
       style={{
@@ -916,7 +947,8 @@ const Services: React.FC = () => (
         </Row>
       </Container>
     </section>
-  </>
-);
+    </>
+  );
+};
 
 export default Services;

@@ -1,9 +1,31 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../index.css";
+import SEO from "../components/SEO";
 
-const TravelHub: React.FC = () => (
-  <Container
+const TravelHub: React.FC = () => {
+  const travelHubStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "ZUTTO Travel Hub",
+    "description": "Your comprehensive travel resource hub featuring airport guides, lounge information, and premium travel tips across India.",
+    "mainEntity": {
+      "@type": "TravelGuide",
+      "name": "ZUTTO Travel Hub",
+      "description": "Premium travel resources and airport guides for Indian travelers"
+    }
+  };
+
+  return (
+    <>
+      <SEO
+        title="ZUTTO Travel Hub - Airport Guides & Travel Resources India"
+        description="Access comprehensive travel guides, airport information, and premium travel resources. Your hub for enhanced airport experiences across India."
+        keywords="travel hub India, airport guides, travel resources, premium travel tips, airport information India, ZUTTO travel guides"
+        url="https://zutto.in/travel-hub"
+        structuredData={travelHubStructuredData}
+      />
+      <Container
     className="pt-24 px-4"
     style={{ maxWidth: "1200px", paddingTop: "10rem" }}
   >
@@ -178,7 +200,9 @@ const TravelHub: React.FC = () => (
         </div>
       </Col>
     </Row>
-  </Container>
-);
+      </Container>
+    </>
+  );
+};
 
 export default TravelHub;
