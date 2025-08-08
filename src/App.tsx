@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 // import FAQ from './pages/FAQ';
 // import Testimonials from './pages/Testimonials';
 import Privacy from './pages/Privacy';
+import AccountDelete from './pages/AccountDelete';
 // import Terms from './pages/Terms';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           {/* <Route path="/testimonials" element={<Testimonials />} /> */}
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/privacy-policy" element={<Navigate to="/privacy" replace />} />
+          <Route path="/account-delete" element={<AccountDelete />} />
           {/* <Route path="/terms" element={<Terms />} /> */}
         </Routes>
       </main>
