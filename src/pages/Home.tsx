@@ -18,6 +18,7 @@ import {
 } from "react-icons/fa";
 import "../index.css";
 import SEO from "../components/SEO";
+import WaitlistForm from "../components/WaitlistForm";
 
 // Data for offer cards
 const offers = [
@@ -148,23 +149,103 @@ const Home: React.FC = () => {
                   />
                 </a>
               </div>
+
+              {/* Waitlist Section */}
+              <div
+                style={{
+                  background: "#fff",
+                  borderRadius: "1rem",
+                  padding: "2rem",
+                  marginTop: "3rem",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  maxWidth: "500px",
+                  position: "relative",
+                }}
+              >
+                <div
+                  style={{
+                    textAlign: "center",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontFamily: "var(--primary-font)",
+                      fontWeight: "500",
+                      fontSize: "0.9rem",
+                      color: "#dbc8ad",
+                      backgroundColor: "#f8f9fa",
+                      padding: "0.25rem 0.75rem",
+                      borderRadius: "1rem",
+                      textTransform: "uppercase",
+                      letterSpacing: "0.5px",
+                    }}
+                  >
+                    Launching Soon
+                  </span>
+                </div>
+                <h3
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    fontSize: "1.5rem",
+                    color: "#333",
+                    marginBottom: "0.5rem",
+                    textAlign: "center",
+                  }}
+                >
+                  Join the Waitlist
+                </h3>
+                <p
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "400",
+                    fontSize: "1rem",
+                    lineHeight: "1.5",
+                    color: "#666",
+                    marginBottom: "1.5rem",
+                    textAlign: "center",
+                  }}
+                >
+                  Be the first to experience premium airport lounge access with ZUTTO.
+                </p>
+                
+                <WaitlistForm />
+              </div>
             </Col>
 
-            {/* Right Image */}
+            {/* Right Video */}
             <Col
               md={6}
               className="d-flex justify-content-end align-items-center mt-5 mt-md-0"
             >
-              <img
-                src="/heroimage.png"
-                alt="ZUTTO App Mockup"
+              <div
                 style={{
                   width: "100%",
                   maxWidth: 320,
                   borderRadius: 24,
+                  overflow: "hidden",
                   boxShadow: "0 8px 24px rgba(0,0,0,0.15)",
+                  position: "relative",
                 }}
-              />
+              >
+                <video
+                  src="/Zutto Demo.mp4"
+                  title="ZUTTO App Demo"
+                  controls
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    border: "none",
+                    borderRadius: 24,
+                    display: "block",
+                  }}
+                />
+              </div>
             </Col>
           </Row>
         </Container>
