@@ -39,6 +39,7 @@ const WaitlistForm: React.FC = () => {
         </Button>
       </div>
     </form>
+  );
 };
 
 export default WaitlistForm;
