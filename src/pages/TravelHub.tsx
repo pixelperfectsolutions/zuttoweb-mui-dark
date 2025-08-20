@@ -37,14 +37,14 @@ const TravelHub: React.FC = () => {
       {/* Hero Section */}
       <section
         style={{
-          minHeight: "300px",
+          minHeight: "250px",
           background: "var(--apple-bg)",
-          paddingTop: "4rem",
-          paddingBottom: "2rem",
+          paddingTop: "clamp(2rem, 6vw, 4rem)",
+          paddingBottom: "clamp(1rem, 4vw, 2rem)",
         }}
         className="position-relative overflow-hidden d-flex align-items-center justify-content-center pt-24"
       >
-        <Container style={{ maxWidth: "1200px" }}>
+        <Container style={{ maxWidth: "1200px" }} className="px-3">
           <Row className="text-center">
             <Col lg={12}>
               <h1
@@ -52,7 +52,7 @@ const TravelHub: React.FC = () => {
                 style={{
                   fontFamily: "var(--primary-font)",
                   fontWeight: "700",
-                  fontSize: "3rem",
+                  fontSize: "clamp(2rem, 5vw, 3rem)",
                   lineHeight: "1.2",
                   marginBottom: "1rem",
                   color: "var(--apple-heading)",
@@ -65,11 +65,12 @@ const TravelHub: React.FC = () => {
                 style={{
                   fontFamily: "var(--primary-font)",
                   fontWeight: "400",
-                  fontSize: "1.25rem",
+                  fontSize: "clamp(1rem, 3vw, 1.25rem)",
                   lineHeight: "1.6",
                   color: "var(--apple-text)",
                   maxWidth: "600px",
                   margin: "0 auto 1rem",
+                  padding: "0 1rem",
                 }}
               >
                 Your comprehensive resource for travel news, expert tips, and inspiring stories.
@@ -80,18 +81,18 @@ const TravelHub: React.FC = () => {
       </section>
 
       {/* Main Content Section */}
-      <section style={{ background: "#f8f9fa", padding: "2rem 0" }}>
-        <Container style={{ maxWidth: "1200px" }}>
+      <section style={{ background: "#f8f9fa", padding: "clamp(1rem, 4vw, 2rem) 0" }}>
+        <Container style={{ maxWidth: "1200px" }} className="px-3">
 
           <Row className="g-4">
             {/* Travel News Card */}
-            <Col lg={4} md={6}>
+            <Col lg={4} md={6} className="mb-4 mb-lg-0">
               <div
                 className="h-100"
                 style={{
                   background: "#ffffff",
                   borderRadius: "20px",
-                  padding: "1.5rem",
+                  padding: "clamp(1rem, 3vw, 1.5rem)",
                   boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
                   border: "1px solid rgba(0,0,0,0.06)",
                   transition: "transform 0.3s ease, box-shadow 0.3s ease",
@@ -126,7 +127,7 @@ const TravelHub: React.FC = () => {
                   style={{
                     fontFamily: "var(--primary-font)",
                     fontWeight: "600",
-                    fontSize: "1.5rem",
+                    fontSize: "clamp(1.25rem, 3vw, 1.5rem)",
                     marginBottom: "1rem",
                     color: "#333",
                     textAlign: "center",
@@ -137,7 +138,7 @@ const TravelHub: React.FC = () => {
                 <p
                   style={{
                     fontFamily: "var(--primary-font)",
-                    fontSize: "1rem",
+                    fontSize: "clamp(0.9rem, 2.5vw, 1rem)",
                     lineHeight: "1.6",
                     color: "#666",
                     marginBottom: "1rem",
@@ -150,13 +151,13 @@ const TravelHub: React.FC = () => {
             </Col>
 
             {/* Pro Travel Tips Card */}
-            <Col lg={4} md={6}>
+            <Col lg={4} md={6} className="mb-4 mb-lg-0">
               <div
                 className="h-100"
                 style={{
                   background: "#ffffff",
                   borderRadius: "20px",
-                  padding: "1.5rem",
+                  padding: "clamp(1rem, 3vw, 1.5rem)",
                   boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
                   border: "1px solid rgba(0,0,0,0.06)",
                   transition: "transform 0.3s ease, box-shadow 0.3s ease",
@@ -191,7 +192,7 @@ const TravelHub: React.FC = () => {
                   style={{
                     fontFamily: "var(--primary-font)",
                     fontWeight: "600",
-                    fontSize: "1.5rem",
+                    fontSize: "clamp(1.25rem, 3vw, 1.5rem)",
                     marginBottom: "1rem",
                     color: "#333",
                     textAlign: "center",
@@ -203,7 +204,7 @@ const TravelHub: React.FC = () => {
                   <ul
                     style={{
                       fontFamily: "var(--primary-font)",
-                      fontSize: "1rem",
+                      fontSize: "clamp(0.9rem, 2.5vw, 1rem)",
                       lineHeight: "1.6",
                       color: "#666",
                       paddingLeft: "1.2rem",
@@ -228,13 +229,13 @@ const TravelHub: React.FC = () => {
             </Col>
 
             {/* Travel Stories Card */}
-            <Col lg={4} md={12}>
+            <Col lg={4} md={12} className="mb-4 mb-lg-0">
               <div
                 className="h-100"
                 style={{
                   background: "#ffffff",
                   borderRadius: "20px",
-                  padding: "1.5rem",
+                  padding: "clamp(1rem, 3vw, 1.5rem)",
                   boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
                   border: "1px solid rgba(0,0,0,0.06)",
                   transition: "transform 0.3s ease, box-shadow 0.3s ease",
@@ -269,7 +270,7 @@ const TravelHub: React.FC = () => {
                   style={{
                     fontFamily: "var(--primary-font)",
                     fontWeight: "600",
-                    fontSize: "1.5rem",
+                    fontSize: "clamp(1.25rem, 3vw, 1.5rem)",
                     marginBottom: "1rem",
                     color: "#333",
                     textAlign: "center",
@@ -280,7 +281,7 @@ const TravelHub: React.FC = () => {
                 <p
                   style={{
                     fontFamily: "var(--primary-font)",
-                    fontSize: "1rem",
+                    fontSize: "clamp(0.9rem, 2.5vw, 1rem)",
                     lineHeight: "1.6",
                     color: "#666",
                     marginBottom: "1rem",

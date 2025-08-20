@@ -217,7 +217,7 @@ const Home: React.FC = () => {
             {/* Right Video */}
             <Col
               md={6}
-              className="d-flex justify-content-end align-items-center mt-5 mt-md-0"
+              className="d-flex justify-content-center justify-content-md-end align-items-center mt-5 mt-md-0"
             >
               <div
                 style={{
