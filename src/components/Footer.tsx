@@ -133,13 +133,15 @@ export function CustomFooter() {
             </h3>
             <ul style={{ listStyle: "none", padding: 0 }}>
               {[
-                { icon: <FaInstagram />, name: "Instagram" },
-                { icon: <FaLinkedin />, name: "LinkedIn" },
-                { icon: <FaTwitter />, name: "Twitter" },
+                { icon: <FaInstagram />, name: "ZUTTO", url: "https://www.instagram.com/zutto_in" },
+                { icon: <FaLinkedin />, name: "LinkedIn", url: "https://www.linkedin.com/in/varshanrk" },
+                { icon: <FaInstagram />, name: "Varshan", url: "https://www.instagram.com/varshan_kannan" },
               ].map((social) => (
                 <li key={social.name} style={{ marginBottom: "0.8em" }}>
                   <a
-                    href="#"
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{
                       color: "#424245",
                       textDecoration: "none",
