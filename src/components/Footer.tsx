@@ -58,15 +58,19 @@ export function CustomFooter() {
               Links
             </h3>
             <ul style={{ listStyle: "none", padding: 0 }}>
-              {["Home", "About Us", "Travel Hub", "Contact Us"].map((item) => (
-                <li key={item} style={{ marginBottom: "0.8em" }}>
+              {[
+                { name: "Home", path: "/" },
+                { name: "About Us", path: "/about" },
+                { name: "Travel Hub", path: "/travel-hub" },
+                { name: "Contact Us", path: "/contact" },
+              ].map((item) => (
+                <li key={item.name} style={{ marginBottom: "0.8em" }}>
                   <a
                     href="#"
-                    onClick={() =>
-                      handleNavClick(
-                        `/${item.toLowerCase().replace(/\s+/g, "-")}`,
-                      )
-                    }
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavClick(item.path);
+                    }}
                     style={{
                       color: "#424245",
                       textDecoration: "none",
@@ -79,7 +83,7 @@ export function CustomFooter() {
                       (e.currentTarget.style.textDecoration = "none")
                     }
                   >
-                    {item}
+                    {item.name}
                   </a>
                 </li>
               ))}
@@ -195,7 +199,10 @@ export function CustomFooter() {
                   <a
                     key={link.name}
                     href="#"
-                    onClick={() => handleNavClick(link.path)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavClick(link.path);
+                    }}
                     style={{
                       color: "#424245",
                       textDecoration: "none",

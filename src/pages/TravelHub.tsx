@@ -1,9 +1,18 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { FaNewspaper, FaLightbulb, FaBookOpen, FaArrowRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import "../index.css";
 import SEO from "../components/SEO";
 
 const TravelHub: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleNavClick = (path: string) => {
+    navigate(path);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   const travelHubStructuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -25,182 +34,266 @@ const TravelHub: React.FC = () => {
         url="https://zutto.in/travel-hub"
         structuredData={travelHubStructuredData}
       />
-      <Container
-    className="pt-24 px-4"
-    style={{ maxWidth: "1200px", paddingTop: "10rem" }}
-  >
-    <Row
-      className="justify-content-center"
-      style={{ paddingTop: "0", paddingBottom: "5rem" }}
-    >
-      <Col lg={12}>
-        <div
-          className="shadow-lg border-0 mb-5 p-4"
-          style={{ background: "#ffffff" }}
-        >
-          <div style={{ padding: "3rem 2rem", textAlign: "center" }}>
-            <div style={{ display: "flex", justifyContent: "center" }}>
+      {/* Hero Section */}
+      <section
+        style={{
+          minHeight: "300px",
+          background: "var(--apple-bg)",
+          paddingTop: "4rem",
+          paddingBottom: "2rem",
+        }}
+        className="position-relative overflow-hidden d-flex align-items-center justify-content-center pt-24"
+      >
+        <Container style={{ maxWidth: "1200px" }}>
+          <Row className="text-center">
+            <Col lg={12}>
               <h1
-                className="display-5 fw-bold mb-4 text-center"
+                className="section-heading"
                 style={{
                   fontFamily: "var(--primary-font)",
-                  fontWeight: "800",
+                  fontWeight: "700",
                   fontSize: "3rem",
                   lineHeight: "1.2",
-                  position: "relative",
-                  display: "inline-block",
-                  borderBottom: "4px solid #dbc8ad",
-                  paddingBottom: "0.5rem",
-                  marginBottom: "2rem",
+                  marginBottom: "1rem",
+                  color: "var(--apple-heading)",
                 }}
               >
-                Travel Hub – News, Tips & Stories
+                Travel Hub
               </h1>
-            </div>
-            <p
-              className="lead mb-5"
-              style={{
-                fontFamily: "var(--primary-font)",
-                fontWeight: "400",
-                fontSize: "1.125rem",
-                lineHeight: "1.6",
-              }}
-            >
-              Your go-to space for updates, insider news, and travel insights.
-            </p>
+              <p
+                className="lead"
+                style={{
+                  fontFamily: "var(--primary-font)",
+                  fontWeight: "400",
+                  fontSize: "1.25rem",
+                  lineHeight: "1.6",
+                  color: "var(--apple-text)",
+                  maxWidth: "600px",
+                  margin: "0 auto 1rem",
+                }}
+              >
+                Your comprehensive resource for travel news, expert tips, and inspiring stories.
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </section>
 
-            {/* First Row - Two Cards */}
-            <Row className="justify-content-center mb-4">
-              <Col md={6}>
-                <div
-                  style={{
-                    background: "#ffffff",
-                    borderRadius: "20px",
-                    padding: "2rem 1.5rem",
-                    height: "100%",
-                    boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
-                    borderTop: "3px solid #dbc8ad",
-                  }}
-                >
-                  <h2
+      {/* Main Content Section */}
+      <section style={{ background: "#f8f9fa", padding: "2rem 0" }}>
+        <Container style={{ maxWidth: "1200px" }}>
+
+          <Row className="g-4">
+            {/* Travel News Card */}
+            <Col lg={4} md={6}>
+              <div
+                className="h-100"
+                style={{
+                  background: "#ffffff",
+                  borderRadius: "20px",
+                  padding: "1.5rem",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  border: "1px solid rgba(0,0,0,0.06)",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  cursor: "pointer",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-5px)";
+                  e.currentTarget.style.boxShadow = "0 8px 30px rgba(0,0,0,0.12)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow = "0 4px 20px rgba(0,0,0,0.08)";
+                }}
+              >
+                <div className="text-center mb-3">
+                  <div
                     style={{
-                      fontFamily: "var(--primary-font)",
-                      fontWeight: "700",
-                      fontSize: "1.35rem",
-                      marginBottom: "1.25rem",
-                      color: "#333",
+                      width: "60px",
+                      height: "60px",
+                      backgroundColor: "#333",
+                      borderRadius: "50%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      margin: "0 auto",
                     }}
                   >
-                    Travel News
-                  </h2>
-                  <p
-                    style={{
-                      fontFamily: "var(--primary-font)",
-                      fontSize: "1.1rem",
-                      lineHeight: "1.6",
-                      color: "#666",
-                      fontWeight: "400",
-                    }}
-                  >
-                    Stay informed on lounge openings, travel restrictions, and
-                    aviation trends.
-                  </p>
+                    <FaNewspaper style={{ fontSize: "1.5rem", color: "#fff" }} />
+                  </div>
                 </div>
-              </Col>
-              <Col md={6}>
-                <div
+                <h3
                   style={{
-                    background: "#ffffff",
-                    borderRadius: "20px",
-                    padding: "2rem 1.5rem",
-                    height: "100%",
-                    boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
-                    borderTop: "3px solid #dbc8ad",
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    fontSize: "1.5rem",
+                    marginBottom: "1rem",
+                    color: "#333",
+                    textAlign: "center",
                   }}
                 >
-                  <h2
+                  Travel News & Updates
+                </h3>
+                <p
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontSize: "1rem",
+                    lineHeight: "1.6",
+                    color: "#666",
+                    marginBottom: "1rem",
+                    textAlign: "center",
+                  }}
+                >
+                  Stay informed about the latest lounge openings, travel restrictions, policy changes, and aviation industry trends across India.
+                </p>
+              </div>
+            </Col>
+
+            {/* Pro Travel Tips Card */}
+            <Col lg={4} md={6}>
+              <div
+                className="h-100"
+                style={{
+                  background: "#ffffff",
+                  borderRadius: "20px",
+                  padding: "1.5rem",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  border: "1px solid rgba(0,0,0,0.06)",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  cursor: "pointer",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-5px)";
+                  e.currentTarget.style.boxShadow = "0 8px 30px rgba(0,0,0,0.12)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow = "0 4px 20px rgba(0,0,0,0.08)";
+                }}
+              >
+                <div className="text-center mb-3">
+                  <div
                     style={{
-                      fontFamily: "var(--primary-font)",
-                      fontWeight: "700",
-                      fontSize: "1.35rem",
-                      marginBottom: "1.25rem",
-                      color: "#333",
+                      width: "60px",
+                      height: "60px",
+                      backgroundColor: "#333",
+                      borderRadius: "50%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      margin: "0 auto",
                     }}
                   >
-                    Pro Travel Tips
-                  </h2>
+                    <FaLightbulb style={{ fontSize: "1.5rem", color: "#fff" }} />
+                  </div>
+                </div>
+                <h3
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    fontSize: "1.5rem",
+                    marginBottom: "1rem",
+                    color: "#333",
+                    textAlign: "center",
+                  }}
+                >
+                  Expert Travel Tips
+                </h3>
+                <div style={{ textAlign: "left", marginBottom: "1.5rem" }}>
                   <ul
                     style={{
                       fontFamily: "var(--primary-font)",
-                      fontSize: "1.1rem",
+                      fontSize: "1rem",
                       lineHeight: "1.6",
                       color: "#666",
-                      fontWeight: "400",
                       paddingLeft: "1.2rem",
                       marginBottom: 0,
                     }}
                   >
                     <li className="mb-2">
-                      Maximize Your Lounge Visit – Enjoy all the perks, from
-                      gourmet meals to spa access.
+                      Maximize lounge visits with spa & dining access
                     </li>
                     <li className="mb-2">
-                      Airport Hacks – Navigate terminals like a pro.
+                      Navigate airport terminals like a professional
+                    </li>
+                    <li className="mb-2">
+                      Discover hidden travel gems and destinations
                     </li>
                     <li>
-                      Top Destinations – Curated global hotspots and hidden
-                      gems.
+                      Optimize credit card benefits for travel
                     </li>
                   </ul>
                 </div>
-              </Col>
-            </Row>
+              </div>
+            </Col>
 
-            {/* Second Row - One Card */}
-            <Row className="justify-content-center">
-              <Col md={8}>
-                <div
+            {/* Travel Stories Card */}
+            <Col lg={4} md={12}>
+              <div
+                className="h-100"
+                style={{
+                  background: "#ffffff",
+                  borderRadius: "20px",
+                  padding: "1.5rem",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                  border: "1px solid rgba(0,0,0,0.06)",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  cursor: "pointer",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-5px)";
+                  e.currentTarget.style.boxShadow = "0 8px 30px rgba(0,0,0,0.12)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow = "0 4px 20px rgba(0,0,0,0.08)";
+                }}
+              >
+                <div className="text-center mb-3">
+                  <div
+                    style={{
+                      width: "60px",
+                      height: "60px",
+                      backgroundColor: "#333",
+                      borderRadius: "50%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      margin: "0 auto",
+                    }}
+                  >
+                    <FaBookOpen style={{ fontSize: "1.5rem", color: "#fff" }} />
+                  </div>
+                </div>
+                <h3
                   style={{
-                    background: "#ffffff",
-                    borderRadius: "20px",
-                    padding: "2rem 1.5rem",
-                    height: "100%",
-                    boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
-                    borderTop: "3px solid #dbc8ad",
+                    fontFamily: "var(--primary-font)",
+                    fontWeight: "600",
+                    fontSize: "1.5rem",
+                    marginBottom: "1rem",
+                    color: "#333",
+                    textAlign: "center",
                   }}
                 >
-                  <h2
-                    style={{
-                      fontFamily: "var(--primary-font)",
-                      fontWeight: "700",
-                      fontSize: "1.35rem",
-                      marginBottom: "1.25rem",
-                      color: "#333",
-                    }}
-                  >
-                    Featured Travel Stories
-                  </h2>
-                  <p
-                    style={{
-                      fontFamily: "var(--primary-font)",
-                      fontSize: "1.1rem",
-                      lineHeight: "1.6",
-                      color: "#666",
-                      fontWeight: "400",
-                    }}
-                  >
-                    Be inspired by real travelers—business flyers, adventurers,
-                    and global wanderers—sharing their luxurious and stress-free
-                    journeys with ZUTTO.
-                  </p>
-                </div>
-              </Col>
-            </Row>
-          </div>
-        </div>
-      </Col>
-    </Row>
-      </Container>
+                  Featured Travel Stories
+                </h3>
+                <p
+                  style={{
+                    fontFamily: "var(--primary-font)",
+                    fontSize: "1rem",
+                    lineHeight: "1.6",
+                    color: "#666",
+                    marginBottom: "1rem",
+                    textAlign: "center",
+                  }}
+                >
+                  Get inspired by real travelers—business professionals, adventurers, and global wanderers sharing their premium airport experiences with ZUTTO.
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     </>
   );
 };
