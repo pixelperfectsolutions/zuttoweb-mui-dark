@@ -145,6 +145,29 @@ p {
 
 /* Button styling */
 
+/* Override Bootstrap primary button colors to use black */
+.btn-primary {
+    background-color: #000 !important;
+    border-color: #000 !important;
+    color: #fff !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #333 !important;
+    border-color: #333 !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+.btn {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
 .get-started-btn {
     font-family: var(--primary-font);
     font-weight: 600;
