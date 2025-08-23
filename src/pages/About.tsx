@@ -32,8 +32,7 @@ const About: React.FC = () => {
         structuredData={aboutStructuredData}
       />
     <Container
-      className="pt-24 pb-5 px-4"
-      style={{ paddingTop: "10rem", paddingBottom: "5rem", maxWidth: "1200px" }}
+      className="page-container px-4"
     >
       {/* The Story Behind ZUTTO */}
       <div className="text-center mb-5">

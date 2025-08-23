@@ -32,8 +32,7 @@ const AccountDelete: React.FC = () => {
         structuredData={accountDeleteStructuredData}
       />
       <Container
-        className="pt-24 px-4"
-        style={{ maxWidth: "1200px", paddingTop: "10rem" }}
+        className="page-container px-4"
       >
         <div className="text-center mb-5">
           <h1

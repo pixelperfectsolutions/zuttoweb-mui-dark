@@ -9,10 +9,22 @@ const noOutlineStyle = `
   .no-focus-outline:focus,
   .no-focus-outline a:focus,
   .no-focus-outline:active,
-  .no-focus-outline a:active {
+  .no-focus-outline a:active,
+  .no-focus-outline .nav-link:focus,
+  .no-focus-outline .nav-link:hover,
+  .no-focus-outline .nav-link:active,
+  .no-focus-outline .btn:focus,
+  .no-focus-outline .btn:hover,
+  .no-focus-outline .btn:active {
     outline: none !important;
     box-shadow: none !important;
     border: none !important;
+  }
+  
+  .apple-navbar .no-focus-outline .nav-link:focus,
+  .apple-navbar .no-focus-outline .nav-link:hover {
+    outline: none !important;
+    box-shadow: none !important;
   }
 `;
 
@@ -99,6 +111,7 @@ const Header: React.FC = () => {
                   key={item.path}
                   to={item.path}
                   onClick={() => handleNavClick(item.path)}
+                  className="no-focus-outline"
                 >
                   <Nav.Link
                     active={location.pathname === item.path}
@@ -122,6 +135,7 @@ const Header: React.FC = () => {
               <LinkContainer
                 to="/contact"
                 onClick={() => handleNavClick("/contact")}
+                className="no-focus-outline"
               >
                 <Button
                   className="get-started-btn fw-bold"

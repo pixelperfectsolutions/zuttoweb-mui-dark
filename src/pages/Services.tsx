@@ -48,60 +48,59 @@ const Services: React.FC = () => {
         url="https://zutto.in/services"
         structuredData={servicesStructuredData}
       />
-    {/* Hero Section */}
+    {/* Page Header Section */}
     <section
       style={{
-        minHeight: "0px",
         background: "var(--apple-bg)",
-        paddingTop: "2rem",
-        paddingBottom: "3rem",
+        paddingTop: "8rem",
+        paddingBottom: "2rem",
       }}
       className="position-relative overflow-hidden d-flex align-items-center justify-content-center"
     >
       <Container style={{ maxWidth: "1200px" }} className="px-4">
-        <Row></Row>
+        <Row>
+          <Col lg={12} className="text-center">
+            <h1
+              className="section-heading"
+              style={{
+                fontFamily: "var(--primary-font)",
+                fontWeight: "700",
+                fontSize: "3rem",
+                color: "var(--apple-heading)",
+                marginBottom: "1rem",
+                position: "relative",
+                display: "inline-block",
+              }}
+            >
+              Our Services
+            </h1>
+            <p
+              className="lead"
+              style={{
+                fontFamily: "var(--primary-font)",
+                fontWeight: "400",
+                fontSize: "1.25rem",
+                lineHeight: "1.6",
+                color: "var(--apple-text)",
+                maxWidth: "700px",
+                margin: "0 auto",
+              }}
+            >
+              Comprehensive solutions to enhance your airport experience with premium lounge access across India.
+            </p>
+          </Col>
+        </Row>
       </Container>
     </section>
 
-    {/* Our Services Section */}
+    {/* Services Grid Section */}
     <section
       style={{
-        padding: "5rem 0",
+        padding: "3rem 0 5rem 0",
         background: "#f8f9fa",
       }}
     >
       <Container style={{ maxWidth: "1200px" }} className="px-4">
-        {/* Section Header */}
-        <div className="text-center mb-5">
-          <h2
-            className="section-heading"
-            style={{
-              fontFamily: "var(--primary-font)",
-              fontWeight: "700",
-              fontSize: "2.5rem",
-              color: "#333",
-              marginBottom: "1rem",
-              position: "relative",
-              display: "inline-block",
-            }}
-          >
-            Our Services
-          </h2>
-          <p
-            style={{
-              fontFamily: "var(--primary-font)",
-              fontWeight: "400",
-              fontSize: "1.125rem",
-              lineHeight: "1.6",
-              color: "#666",
-              maxWidth: "600px",
-              margin: "0 auto",
-            }}
-          >
-            ZUTTO provides comprehensive solutions to enhance your airport
-            experience with premium lounge access.
-          </p>
-        </div>
 
         {/* Services Grid */}
         <Row className="g-4 justify-content-center">
@@ -508,7 +507,7 @@ const Services: React.FC = () => {
     {/* Who We Serve Section */}
     <section
       style={{
-        padding: "5rem 0",
+        padding: "4rem 0",
         background: "var(--apple-bg)",
       }}
     >

@@ -25,7 +25,7 @@ const Privacy: React.FC = () => {
         url="https://zutto.in/privacy"
         structuredData={privacyStructuredData}
       />
-      <div style={{ background: 'var(--apple-bg)', minHeight: '100vh', paddingTop: '80px' }}>
+      <div style={{ background: 'var(--apple-bg)', minHeight: '100vh', paddingTop: '8rem' }}>
       <Container style={{ maxWidth: '1200px', padding: '3rem 2rem' }}>
         <Row className="justify-content-center">
           <Col lg={10}>

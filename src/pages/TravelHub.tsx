@@ -39,7 +39,7 @@ const TravelHub: React.FC = () => {
         style={{
           minHeight: "250px",
           background: "var(--apple-bg)",
-          paddingTop: "clamp(2rem, 6vw, 4rem)",
+          paddingTop: "8rem",
           paddingBottom: "clamp(1rem, 4vw, 2rem)",
         }}
         className="position-relative overflow-hidden d-flex align-items-center justify-content-center pt-24"
