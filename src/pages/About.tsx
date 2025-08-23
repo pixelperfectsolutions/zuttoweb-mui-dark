@@ -134,7 +134,7 @@ const About: React.FC = () => {
 
               <div className="social-links">
                 <a
-                  href="https://www.linkedin.com"
+                  href="https://www.linkedin.com/in/varshanrk/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="me-3"
@@ -146,7 +146,7 @@ const About: React.FC = () => {
                   />
                 </a>
                 <a
-                  href="https://www.instagram.com"
+                  href="https://www.instagram.com/varshan_kannan/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

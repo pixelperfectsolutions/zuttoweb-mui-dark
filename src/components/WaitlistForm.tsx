@@ -67,7 +67,7 @@ const WaitlistForm: React.FC = () => {
               width: "100%",
             }}
           >
-            Join Waitlist
+            Join Android Waitlist
           </Button>
         </div>
       </form>

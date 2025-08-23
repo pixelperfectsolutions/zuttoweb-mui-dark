@@ -261,7 +261,7 @@ const Privacy: React.FC = () => {
                     For privacy-related questions or concerns, please contact us:
                   </p>
                   <ul style={{ paddingLeft: '1.5rem', marginBottom: '1rem', listStyle: 'none' }}>
-                    <li><strong>Email:</strong> privacy@zutto.in</li>
+                    <li><strong>Email:</strong> support@zutto.in</li>
                     <li><strong>Support:</strong> support@zutto.in</li>
                     <li><strong>Developer:</strong> Ramachandran Arumugma Velmurugan</li>
                     <li><strong>Address:</strong> Coimbatore, India</li>

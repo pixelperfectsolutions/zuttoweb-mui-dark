@@ -194,7 +194,7 @@ const Home: React.FC = () => {
                     textAlign: "center",
                   }}
                 >
-                  Join the Waitlist
+                  Join Android Waitlist
                 </h3>
                 <p
                   style={{
@@ -207,7 +207,7 @@ const Home: React.FC = () => {
                     textAlign: "center",
                   }}
                 >
-                  Be the first to experience premium airport lounge access with ZUTTO.
+                  Get notified when ZUTTO launches on Android.
                 </p>
                 
                 <WaitlistForm />
