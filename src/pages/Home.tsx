@@ -134,7 +134,7 @@ const Home: React.FC = () => {
 
               {/* Store Buttons */}
               <div className="d-flex flex-column flex-sm-row gap-3 mt-4">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://apps.apple.com/in/app/zutto-lounge-access-finder/id6748736451" target="_blank" rel="noopener noreferrer">
                   <img
                     src="/appstore.png"
                     alt="Download on the App Store"
@@ -143,8 +143,8 @@ const Home: React.FC = () => {
                 </a>
                 <a href="#" target="_blank" rel="noopener noreferrer">
                   <img
-                    src="/playstore.png"
-                    alt="Download on Google Play"
+                    src="/google-playstore.svg"
+                    alt="Coming Soon on Google Play"
                     style={{ height: 50, width: "auto", borderRadius: 7 }}
                   />
                 </a>
