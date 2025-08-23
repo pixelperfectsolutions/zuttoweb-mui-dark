@@ -42,7 +42,7 @@ const TravelHub: React.FC = () => {
           paddingTop: "8rem",
           paddingBottom: "clamp(1rem, 4vw, 2rem)",
         }}
-        className="position-relative overflow-hidden d-flex align-items-center justify-content-center pt-24"
+        className="position-relative overflow-hidden d-flex align-items-center justify-content-center"
       >
         <Container style={{ maxWidth: "1200px" }} className="px-3">
           <Row className="text-center">
