@@ -9,6 +9,8 @@ import Services from "./pages/Services";
 import TravelHub from "./pages/TravelHub";
 import Contact from "./pages/Contact";
 import Launch from "./pages/Launch";
+import Blog from "./pages/Blog";
+import BlogPostPage from "./pages/BlogPostPage";
 // import FAQ from './pages/FAQ';
 // import Testimonials from './pages/Testimonials';
 import Privacy from './pages/Privacy';
@@ -25,6 +27,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/travel-hub" element={<TravelHub />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/launch" element={<Launch />} />
           {/* <Route path="/faq" element={<FAQ />} /> */}

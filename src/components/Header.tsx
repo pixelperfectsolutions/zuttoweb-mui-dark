@@ -33,6 +33,7 @@ const navItems = [
   { name: "About Us", path: "/about" },
   { name: "Services", path: "/services" },
   { name: "Travel Hub", path: "/travel-hub" },
+  { name: "Blog", path: "/blog" },
   { name: "Contact Us", path: "/contact" },
 ];
 
