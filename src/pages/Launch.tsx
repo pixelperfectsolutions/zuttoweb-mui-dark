@@ -69,7 +69,7 @@ const Launch: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "ZUTTO App Launch",
-    "description": "Coming soon - ZUTTO's premium airport lounge access solution launches in India",
+    "description": "ZUTTO's premium airport lounge access solution is now live in India",
     "manufacturer": {
       "@type": "Organization",
       "name": "ZUTTO"
@@ -80,9 +80,9 @@ const Launch: React.FC = () => {
   return (
     <>
       <SEO
-        title="ZUTTO Launch - Premium Airport Experience Coming Soon | Airport Lounge Access India"
-        description="ZUTTO is launching soon! Be the first to experience our comprehensive airport lounge access solution. Get notified when we go live in India."
-        keywords="ZUTTO launch, airport lounge app launch, coming soon, travel app India, lounge access notification"
+        title="ZUTTO Launch - Premium Airport Experience Now Live | Airport Lounge Access India"
+        description="ZUTTO is now launched! Experience our comprehensive airport lounge access solution. Download now and enjoy premium travel in India."
+        keywords="ZUTTO launch, airport lounge app launched, travel app India, lounge access available, download now"
         structuredData={launchStructuredData}
       />
       
@@ -125,7 +125,7 @@ const Launch: React.FC = () => {
                 }}
               >
                 ZUTTO IS{" "}
-                <span style={{ color: "#dbc8ad" }}>LAUNCHING</span> SOON
+                <span style={{ color: "#dbc8ad" }}>NOW</span> LAUNCHED
               </h1>
               
               <p

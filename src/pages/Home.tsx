@@ -141,77 +141,15 @@ const Home: React.FC = () => {
                     style={{ height: 50, width: "auto", borderRadius: 7 }}
                   />
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://play.google.com/store/apps/details?id=com.pixelperfect.zutto&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">
                   <img
-                    src="/google-playstore.svg"
-                    alt="Coming Soon on Google Play"
+                    src="/googleplay.svg"
+                    alt="Get it on Google Play"
                     style={{ height: 50, width: "auto", borderRadius: 7 }}
                   />
                 </a>
               </div>
 
-              {/* Waitlist Section */}
-              <div
-                style={{
-                  background: "#fff",
-                  borderRadius: "1rem",
-                  padding: "2rem",
-                  marginTop: "3rem",
-                  boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
-                  maxWidth: "500px",
-                  position: "relative",
-                }}
-              >
-                <div
-                  style={{
-                    textAlign: "center",
-                    marginBottom: "1rem",
-                  }}
-                >
-                  <span
-                    style={{
-                      fontFamily: "var(--primary-font)",
-                      fontWeight: "500",
-                      fontSize: "0.9rem",
-                      color: "#dbc8ad",
-                      backgroundColor: "#f8f9fa",
-                      padding: "0.25rem 0.75rem",
-                      borderRadius: "1rem",
-                      textTransform: "uppercase",
-                      letterSpacing: "0.5px",
-                    }}
-                  >
-                    Launching Soon
-                  </span>
-                </div>
-                <h3
-                  style={{
-                    fontFamily: "var(--primary-font)",
-                    fontWeight: "600",
-                    fontSize: "1.5rem",
-                    color: "#333",
-                    marginBottom: "0.5rem",
-                    textAlign: "center",
-                  }}
-                >
-                  Join Android Waitlist
-                </h3>
-                <p
-                  style={{
-                    fontFamily: "var(--primary-font)",
-                    fontWeight: "400",
-                    fontSize: "1rem",
-                    lineHeight: "1.5",
-                    color: "#666",
-                    marginBottom: "1.5rem",
-                    textAlign: "center",
-                  }}
-                >
-                  Get notified when ZUTTO launches on Android.
-                </p>
-                
-                <WaitlistForm />
-              </div>
             </Col>
 
             {/* Right Video */}
