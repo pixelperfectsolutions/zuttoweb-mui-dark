@@ -133,7 +133,7 @@ const Home: React.FC = () => {
               </p>
 
               {/* Store Buttons */}
-              <div className="d-flex flex-column gap-2 mt-4" style={{ alignItems: "flex-start", maxWidth: "200px" }}>
+              <div className="d-flex flex-row gap-2 mt-4" style={{ alignItems: "center" }}>
                 <a href="https://apps.apple.com/in/app/zutto-lounge-access-finder/id6748736451" target="_blank" rel="noopener noreferrer">
                   <img
                     alt="Download on the App Store"
@@ -144,8 +144,8 @@ const Home: React.FC = () => {
                 <a href="https://play.google.com/store/apps/details?id=com.pixelperfect.zutto&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">
                   <img
                     alt="Get it on Google Play"
-                    src="/googleplay.svg"
-                    style={{ width: "180px", borderRadius: "7px", objectFit: "fill" }}
+                    src="/playstore.png"
+                    style={{ width: "180px", borderRadius: "7px", objectFit: "contain" }}
                   />
                 </a>
               </div>
