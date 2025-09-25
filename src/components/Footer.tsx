@@ -169,6 +169,31 @@ export function CustomFooter() {
           </Col>
         </Row>
 
+        {/* Company Information */}
+        <div
+          style={{
+            borderTop: "1px solid #d2d2d7",
+            paddingTop: "20px",
+            paddingBottom: "20px",
+            fontSize: "11px",
+            color: "#6e6e73",
+          }}
+        >
+          <Row>
+            <Col lg={12}>
+              <p style={{ marginBottom: "8px" }}>
+                <strong>ZUTTO</strong> is owned and operated by <strong>VKN NEXTGEN PVT LTD</strong>
+              </p>
+              <p style={{ marginBottom: "4px" }}>
+                Corporate Identification Number (CIN): U62099TN2025PTC183122 | Registration No: 183122
+              </p>
+              <p style={{ margin: 0 }}>
+                Registered Office: 6/277 South Kattu Kottai, Iyyappan K, Nagiampatti, Salem, Gangavalli, Tamil Nadu, India, 636113
+              </p>
+            </Col>
+          </Row>
+        </div>
+
         {/* Footer Bottom */}
         <div
           style={{
@@ -180,7 +205,7 @@ export function CustomFooter() {
           <Row className="align-items-center">
             <Col lg={6} md={12}>
               <p style={{ margin: 0 }}>
-                Copyright © {new Date().getFullYear()} ZUTTO. All rights
+                Copyright © {new Date().getFullYear()} VKN NEXTGEN PVT LTD. All rights
                 reserved.
               </p>
             </Col>

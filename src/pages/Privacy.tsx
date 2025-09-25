@@ -51,6 +51,24 @@ const Privacy: React.FC = () => {
               </h1>
               
               <div style={{ fontFamily: 'var(--primary-font)', color: 'var(--apple-text)', lineHeight: '1.6' }}>
+                {/* Company Information Box */}
+                <div style={{ 
+                  background: '#f8f9fa', 
+                  padding: '1.5rem', 
+                  borderRadius: '8px', 
+                  marginBottom: '2rem',
+                  border: '1px solid #dee2e6' 
+                }}>
+                  <p style={{ fontSize: '0.95rem', marginBottom: '0.5rem', textAlign: 'center' }}>
+                    This Privacy Policy is published by <strong>VKN NEXTGEN PVT LTD</strong>, 
+                    the company that owns and operates ZUTTO.
+                  </p>
+                  <p style={{ fontSize: '0.85rem', marginBottom: '0', textAlign: 'center', color: '#666' }}>
+                    <strong>CIN:</strong> U62099TN2025PTC183122 | <strong>Registration No:</strong> 183122<br />
+                    <strong>Registered Office:</strong> 6/277 South Kattu Kottai, Iyyappan K, Nagiampatti, Salem, Gangavalli, Tamil Nadu, India, 636113
+                  </p>
+                </div>
+
                 <p style={{ fontSize: '1.125rem', marginBottom: '2rem', textAlign: 'center', color: '#666' }}>
                   <strong>Developer:</strong> Ramachandran Arumugma Velmurugan<br />
                   <strong>Last Updated:</strong> {new Date().toLocaleDateString()}

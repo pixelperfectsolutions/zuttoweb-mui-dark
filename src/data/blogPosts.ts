@@ -37,33 +37,52 @@ Let's uncover the hidden world of debit card lounge benefits and ensure you neve
 
 <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=600&h=300&fit=crop" alt="Debit vs Credit Cards" style="width: 100%; max-width: 600px; height: 300px; object-fit: cover; border-radius: 8px; margin: 20px 0;" />
 
-**Annual Fee Comparison**
-- Debit Cards: ₹500-₹1,500 (significantly lower)
-- Credit Cards: ₹2,500-₹12,000 (premium pricing)
-
-**Approval Requirements**
-- Debit Cards: Based on account balance, no credit check needed
-- Credit Cards: Requires good credit score and income proof
-
-**Lounge Visit Limits**
-- Debit Cards: Typically 2-8 visits per quarter
-- Credit Cards: 4 visits to unlimited annually
-
-**Guest Access Policies**
-- Debit Cards: Guests usually charged ₹2,000-₹3,000 per visit
-- Credit Cards: Often include 1-2 complimentary guests
-
-**International Coverage**
-- Debit Cards: Limited to domestic lounges primarily
-- Credit Cards: Extensive worldwide access through Priority Pass
-
-**Activation Process**
-- Debit Cards: Often requires manual activation via SMS or call
-- Credit Cards: Usually automatic upon card receipt
-
-**Transaction Requirements**
-- Debit Cards: Common requirement (₹10,000-₹50,000 monthly spending)
-- Credit Cards: Rarely have spending requirements for lounge access
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: var(--primary-font);">
+<thead>
+<tr style="background-color: #f8f9fa; border-bottom: 2px solid #dee2e6;">
+<th style="padding: 12px; text-align: left; font-weight: 600;">Feature</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Debit Cards</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Credit Cards</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom: 1px solid #dee2e6;">
+<td style="padding: 12px; font-weight: 500;">Annual Fee</td>
+<td style="padding: 12px;">₹500-₹1,500 (significantly lower)</td>
+<td style="padding: 12px;">₹2,500-₹12,000 (premium pricing)</td>
+</tr>
+<tr style="border-bottom: 1px solid #dee2e6; background-color: #f8f9fa;">
+<td style="padding: 12px; font-weight: 500;">Approval Requirements</td>
+<td style="padding: 12px;">Based on account balance, no credit check needed</td>
+<td style="padding: 12px;">Requires good credit score and income proof</td>
+</tr>
+<tr style="border-bottom: 1px solid #dee2e6;">
+<td style="padding: 12px; font-weight: 500;">Lounge Visit Limits</td>
+<td style="padding: 12px;">Typically 2-8 visits per quarter</td>
+<td style="padding: 12px;">4 visits to unlimited annually</td>
+</tr>
+<tr style="border-bottom: 1px solid #dee2e6; background-color: #f8f9fa;">
+<td style="padding: 12px; font-weight: 500;">Guest Access</td>
+<td style="padding: 12px;">Guests charged ₹2,000-₹3,000 per visit</td>
+<td style="padding: 12px;">Often include 1-2 complimentary guests</td>
+</tr>
+<tr style="border-bottom: 1px solid #dee2e6;">
+<td style="padding: 12px; font-weight: 500;">International Coverage</td>
+<td style="padding: 12px;">Limited to domestic lounges primarily</td>
+<td style="padding: 12px;">Extensive worldwide access via Priority Pass</td>
+</tr>
+<tr style="border-bottom: 1px solid #dee2e6; background-color: #f8f9fa;">
+<td style="padding: 12px; font-weight: 500;">Activation Process</td>
+<td style="padding: 12px;">Often requires manual activation (SMS/call)</td>
+<td style="padding: 12px;">Usually automatic upon card receipt</td>
+</tr>
+<tr style="border-bottom: 1px solid #dee2e6;">
+<td style="padding: 12px; font-weight: 500;">Transaction Requirements</td>
+<td style="padding: 12px;">Common (₹10,000-₹50,000 monthly spending)</td>
+<td style="padding: 12px;">Rarely have spending requirements</td>
+</tr>
+</tbody>
+</table>
 
 ## Best Debit Cards with Airport Lounge Access in India
 
@@ -71,97 +90,138 @@ Let's uncover the hidden world of debit card lounge benefits and ensure you neve
 
 ### Premium Debit Cards with Maximum Benefits
 
-**HDFC Bank EasyShop Platinum Debit Card**
-- Annual Fee: ₹750 (often waived)
-- Lounge Access: 4 complimentary visits per quarter
-- Coverage: 700+ lounges across India including Delhi, Mumbai, Bangalore
-- Minimum Balance: ₹25,000 average quarterly balance
-- Guest Policy: ₹2,000 per guest
-- Special Feature: Works at both domestic and select international lounges
-- Activation: Automatic with card issuance
-- ZUTTO Tip: Best value debit card for frequent domestic travelers
-
-**SBI Elite Debit Card**
-- Annual Fee: ₹4,999
-- Lounge Access: 8 visits per year (2 per quarter)
-- Coverage: Major Indian airports - DEL, BOM, BLR, MAA, HYD
-- Account Requirement: Elite or Wealth account with ₹5 lakh balance
-- International Access: Limited Priority Pass benefits
-- Guest Benefits: First guest at 50% discount
-- Activation: Call SBI customer service to enable
-- Best For: High net worth individuals with substantial SBI deposits
-
-**ICICI Bank Sapphiro Debit Card**
-- Annual Fee: ₹699
-- Lounge Access: 4 domestic visits per quarter
-- Coverage: 30+ Indian airports
-- Minimum Balance: ₹1 lakh monthly average
-- Transaction Requirement: ₹50,000 quarterly spending
-- Guest Policy: Paid at ₹2,000 per guest
-- Special Perk: 1 international lounge visit per year
-- Activation: SMS activation required
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: var(--primary-font); overflow-x: auto; display: block;">
+<thead>
+<tr style="background-color: #333; color: white;">
+<th style="padding: 12px; text-align: left; font-weight: 600; min-width: 150px;">Card Name</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Annual Fee</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Lounge Access</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Min Balance</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Coverage</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Guest Policy</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Special Features</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom: 1px solid #dee2e6;">
+<td style="padding: 12px; font-weight: 500;">HDFC EasyShop Platinum</td>
+<td style="padding: 12px;">₹750 (often waived)</td>
+<td style="padding: 12px;">4 visits/quarter</td>
+<td style="padding: 12px;">₹25,000 AQB</td>
+<td style="padding: 12px;">700+ lounges across India</td>
+<td style="padding: 12px;">₹2,000 per guest</td>
+<td style="padding: 12px;">Domestic + select international lounges</td>
+</tr>
+<tr style="border-bottom: 1px solid #dee2e6; background-color: #f8f9fa;">
+<td style="padding: 12px; font-weight: 500;">SBI Elite</td>
+<td style="padding: 12px;">₹4,999</td>
+<td style="padding: 12px;">8 visits/year (2/quarter)</td>
+<td style="padding: 12px;">₹5 lakh (Elite account)</td>
+<td style="padding: 12px;">DEL, BOM, BLR, MAA, HYD</td>
+<td style="padding: 12px;">First guest 50% off</td>
+<td style="padding: 12px;">Limited Priority Pass benefits</td>
+</tr>
+<tr style="border-bottom: 1px solid #dee2e6;">
+<td style="padding: 12px; font-weight: 500;">ICICI Sapphiro</td>
+<td style="padding: 12px;">₹699</td>
+<td style="padding: 12px;">4 visits/quarter</td>
+<td style="padding: 12px;">₹1 lakh monthly avg</td>
+<td style="padding: 12px;">30+ Indian airports</td>
+<td style="padding: 12px;">₹2,000 per guest</td>
+<td style="padding: 12px;">1 international visit/year; ₹50k quarterly spending required</td>
+</tr>
+</tbody>
+</table>
 
 ### Mid-Range Debit Cards with Good Benefits
 
-**Axis Bank Priority Debit Card**
-- Annual Fee: ₹750
-- Lounge Access: 2 visits per quarter (8 annually)
-- Coverage: Domestic lounges at major Indian airports
-- Account Type: Priority Banking with ₹5 lakh relationship
-- Guest Access: Available at standard rates
-- Transaction Requirement: ₹25,000 monthly spending
-- Activation: Automatic with Priority account
-- Added Benefit: Complimentary movie tickets
-
-**HDFC Millennia Debit Card**
-- Annual Fee: ₹500
-- Lounge Access: 4 complimentary visits per year
-- Target Audience: Young professionals aged 21-35
-- Coverage: Major metros - Delhi, Mumbai, Bangalore, Chennai
-- Minimum Balance: ₹10,000 monthly average
-- Cashback Feature: 2.5% on online shopping
-- Guest Policy: Standard charges apply
-- Best For: Millennials starting their travel journey
-
-**Kotak Privy League Signature Debit Card**
-- Annual Fee: ₹999
-- Lounge Access: 4 visits per quarter
-- Account Requirement: Privy League account with ₹10 lakh balance
-- Coverage: 35+ domestic airports
-- International Access: 2 visits annually
-- Guest Benefits: First guest free on domestic lounges
-- Activation: Needs SMS confirmation
-- Unique Feature: Golf privileges included
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: var(--primary-font); overflow-x: auto; display: block;">
+<thead>
+<tr style="background-color: #007aff; color: white;">
+<th style="padding: 12px; text-align: left; font-weight: 600; min-width: 150px;">Card Name</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Annual Fee</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Lounge Access</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Min Balance</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Coverage</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Guest Policy</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Special Features</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom: 1px solid #dee2e6;">
+<td style="padding: 12px; font-weight: 500;">Axis Priority</td>
+<td style="padding: 12px;">₹750</td>
+<td style="padding: 12px;">2 visits/quarter</td>
+<td style="padding: 12px;">₹5 lakh relationship</td>
+<td style="padding: 12px;">Major Indian airports</td>
+<td style="padding: 12px;">Standard rates</td>
+<td style="padding: 12px;">Movie tickets; ₹25k monthly spending required</td>
+</tr>
+<tr style="border-bottom: 1px solid #dee2e6; background-color: #f8f9fa;">
+<td style="padding: 12px; font-weight: 500;">HDFC Millennia</td>
+<td style="padding: 12px;">₹500</td>
+<td style="padding: 12px;">4 visits/year</td>
+<td style="padding: 12px;">₹10,000 monthly avg</td>
+<td style="padding: 12px;">Delhi, Mumbai, Bangalore, Chennai</td>
+<td style="padding: 12px;">Standard charges</td>
+<td style="padding: 12px;">2.5% cashback online; For age 21-35</td>
+</tr>
+<tr style="border-bottom: 1px solid #dee2e6;">
+<td style="padding: 12px; font-weight: 500;">Kotak Privy League</td>
+<td style="padding: 12px;">₹999</td>
+<td style="padding: 12px;">4 visits/quarter</td>
+<td style="padding: 12px;">₹10 lakh balance</td>
+<td style="padding: 12px;">35+ domestic airports</td>
+<td style="padding: 12px;">First guest free (domestic)</td>
+<td style="padding: 12px;">2 international visits/year; Golf privileges</td>
+</tr>
+</tbody>
+</table>
 
 ### Entry-Level Debit Cards with Lounge Benefits
 
-**Yes Bank Exclusive Debit Card**
-- Annual Fee: ₹599
-- Lounge Access: 2 domestic visits per quarter
-- Minimum Balance: ₹1 lakh average
-- Coverage: 25+ Indian airports
-- Transaction Requirement: ₹10,000 monthly
-- Guest Policy: Standard charges
-- Activation: Call customer service
-- Good For: Occasional travelers
-
-**IndusInd Pioneer Heritage Debit Card**
-- Annual Fee: ₹750
-- Lounge Access: 2 visits per quarter
-- Account Type: Pioneer Heritage with ₹50,000 balance
-- Coverage: Major Indian metros
-- Guest Access: Paid
-- Special Feature: Heritage banking privileges
-- Activation: Branch activation required
-
-**IDFC FIRST Wealth Debit Card**
-- Annual Fee: ₹500
-- Lounge Access: 3 visits per quarter
-- Minimum Balance: ₹3 lakh monthly average
-- Coverage: 30+ domestic airports
-- Guest Benefits: Available at standard rates
-- Transaction Benefits: No forex markup
-- Activation: Automatic with Wealth account
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: var(--primary-font); overflow-x: auto; display: block;">
+<thead>
+<tr style="background-color: #6c757d; color: white;">
+<th style="padding: 12px; text-align: left; font-weight: 600; min-width: 150px;">Card Name</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Annual Fee</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Lounge Access</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Min Balance</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Coverage</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Guest Policy</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Special Features</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom: 1px solid #dee2e6;">
+<td style="padding: 12px; font-weight: 500;">Yes Bank Exclusive</td>
+<td style="padding: 12px;">₹599</td>
+<td style="padding: 12px;">2 visits/quarter</td>
+<td style="padding: 12px;">₹1 lakh average</td>
+<td style="padding: 12px;">25+ Indian airports</td>
+<td style="padding: 12px;">Standard charges</td>
+<td style="padding: 12px;">₹10k monthly spending required</td>
+</tr>
+<tr style="border-bottom: 1px solid #dee2e6; background-color: #f8f9fa;">
+<td style="padding: 12px; font-weight: 500;">IndusInd Pioneer Heritage</td>
+<td style="padding: 12px;">₹750</td>
+<td style="padding: 12px;">2 visits/quarter</td>
+<td style="padding: 12px;">₹50,000 balance</td>
+<td style="padding: 12px;">Major Indian metros</td>
+<td style="padding: 12px;">Paid</td>
+<td style="padding: 12px;">Heritage banking privileges</td>
+</tr>
+<tr style="border-bottom: 1px solid #dee2e6;">
+<td style="padding: 12px; font-weight: 500;">IDFC FIRST Wealth</td>
+<td style="padding: 12px;">₹500</td>
+<td style="padding: 12px;">3 visits/quarter</td>
+<td style="padding: 12px;">₹3 lakh monthly avg</td>
+<td style="padding: 12px;">30+ domestic airports</td>
+<td style="padding: 12px;">Standard rates</td>
+<td style="padding: 12px;">No forex markup</td>
+</tr>
+</tbody>
+</table>
 
 ## How to Check If Your Debit Card Has Lounge Access
 
@@ -203,10 +263,33 @@ Stop the guesswork and confusion. ZUTTO's comprehensive database includes ALL In
 <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=300&fit=crop" alt="Banking Transactions" style="width: 100%; max-width: 600px; height: 300px; object-fit: cover; border-radius: 8px; margin: 20px 0;" />
 
 **Monthly Spending Thresholds**:
-- HDFC EasyShop Platinum: ₹15,000 monthly spending
-- ICICI Sapphiro: ₹50,000 quarterly transactions
-- Axis Priority: ₹25,000 monthly usage
-- Yes Bank Exclusive: ₹10,000 monthly spending
+
+<table style="width: 100%; max-width: 600px; border-collapse: collapse; margin: 20px 0; font-family: var(--primary-font);">
+<thead>
+<tr style="background-color: #28a745; color: white;">
+<th style="padding: 10px; text-align: left; font-weight: 600;">Bank & Card</th>
+<th style="padding: 10px; text-align: left; font-weight: 600;">Required Spending</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom: 1px solid #dee2e6;">
+<td style="padding: 10px;">HDFC EasyShop Platinum</td>
+<td style="padding: 10px;">₹15,000 monthly</td>
+</tr>
+<tr style="border-bottom: 1px solid #dee2e6; background-color: #f8f9fa;">
+<td style="padding: 10px;">ICICI Sapphiro</td>
+<td style="padding: 10px;">₹50,000 quarterly</td>
+</tr>
+<tr style="border-bottom: 1px solid #dee2e6;">
+<td style="padding: 10px;">Axis Priority</td>
+<td style="padding: 10px;">₹25,000 monthly</td>
+</tr>
+<tr style="border-bottom: 1px solid #dee2e6; background-color: #f8f9fa;">
+<td style="padding: 10px;">Yes Bank Exclusive</td>
+<td style="padding: 10px;">₹10,000 monthly</td>
+</tr>
+</tbody>
+</table>
 
 **Transaction Types That Count**:
 ✅ Online shopping and e-commerce
@@ -466,7 +549,7 @@ Remember: You're already paying for these benefits through your account fees. ZU
     publishedAt: "2025-09-12T08:00:00Z",
     featuredImage: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?w=800&h=400&fit=crop",
     tags: ["Debit Card Lounge Access", "Indian Debit Cards", "HDFC Debit Card", "SBI Debit Card", "ICICI Debit Card", "Airport Lounges India", "Banking Benefits", "ZUTTO App"],
-    category: "Credit Card Tips",
+    category: "Debit Card Tips",
     readingTime: 11,
     featured: true
   },
