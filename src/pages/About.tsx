@@ -524,37 +524,69 @@ const About: React.FC = () => {
               >
                 VKN NEXTGEN PVT LTD
               </h3>
-              
-              <div style={{ textAlign: "left", fontSize: "1.05rem", lineHeight: "1.8", color: "#666" }}>
-                <p style={{ marginBottom: "1rem" }}>
-                  <strong>ZUTTO</strong> is a product owned and operated by <strong>VKN NEXTGEN PVT LTD</strong>, 
-                  a private limited company registered in India.
-                </p>
-                
-                <div style={{ marginBottom: "1rem" }}>
-                  <p style={{ marginBottom: "0.5rem" }}>
-                    <strong>Corporate Identification Number (CIN):</strong><br />
-                    U62099TN2025PTC183122
-                  </p>
-                  
-                  <p style={{ marginBottom: "0.5rem" }}>
-                    <strong>Registration Number:</strong> 183122
-                  </p>
-                </div>
-                
-                <div>
-                  <p style={{ marginBottom: "0.5rem" }}>
-                    <strong>Registered Office Address:</strong>
-                  </p>
-                  <address style={{ fontStyle: "normal", paddingLeft: "1rem" }}>
-                    6/277 South Kattu Kottai<br />
-                    Iyyappan K, Nagiampatti<br />
-                    Salem, Gangavalli<br />
-                    Tamil Nadu, India<br />
-                    PIN: 636113
-                  </address>
-                </div>
-              </div>
+              <Row className="align-items-center g-4">
+                <Col lg={4} className="text-center">
+                  <img
+                    src="/vkn-nextgen-logo.png"
+                    alt="VKN NEXTGEN PVT LTD logo"
+                    style={{
+                      width: "100%",
+                      maxWidth: "220px",
+                      height: "auto",
+                      borderRadius: "12px",
+                      boxShadow: "0 6px 18px rgba(0,0,0,0.1)",
+                    }}
+                  />
+                </Col>
+
+                <Col lg={8}>
+                  <div
+                    style={{
+                      textAlign: "left",
+                      fontSize: "1.05rem",
+                      lineHeight: "1.8",
+                      color: "#666",
+                    }}
+                  >
+                    <p style={{ marginBottom: "1rem" }}>
+                      <strong>ZUTTO</strong> is a product owned and operated by{" "}
+                      <strong>VKN NEXTGEN PVT LTD</strong>, a private limited
+                      company registered in India.
+                    </p>
+
+                    <div style={{ marginBottom: "1rem" }}>
+                      <p style={{ marginBottom: "0.5rem" }}>
+                        <strong>Corporate Identification Number (CIN):</strong>
+                        <br />
+                        U62099TN2025PTC183122
+                      </p>
+
+                      <p style={{ marginBottom: "0.5rem" }}>
+                        <strong>Registration Number:</strong> 183122
+                      </p>
+                    </div>
+
+                    <div>
+                      <p style={{ marginBottom: "0.5rem" }}>
+                        <strong>Registered Office Address:</strong>
+                      </p>
+                      <address
+                        style={{ fontStyle: "normal", paddingLeft: "1rem" }}
+                      >
+                        6/277 South Kattu Kottai
+                        <br />
+                        Iyyappan K, Nagiampatti
+                        <br />
+                        Salem, Gangavalli
+                        <br />
+                        Tamil Nadu, India
+                        <br />
+                        PIN: 636113
+                      </address>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
             </div>
           </Col>
         </Row>
