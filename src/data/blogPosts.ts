@@ -2,6 +2,354 @@ import { BlogPost, BlogCategory } from '../types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "6",
+    title: "Relax Before Your Flight: Use Our Lounge Finder App for Easy Airport Access",
+    slug: "relax-before-flight-lounge-finder",
+    excerpt: "Turn hectic airport routines into calm lounge time with ZUTTO's step-by-step guidance on locations, eligibility, and the best way to swipe the right card.",
+    content: `
+# Relax Before Your Flight: Use Our Lounge Finder App for Easy Airport Access
+
+Airports can feel chaotic—crowded terminals, unexpected gate changes, and last-minute documentation checks add stress before every trip. Airport lounges solve most of that friction, but only if you know which lounge you can actually enter and how to prove eligibility at the door. That is exactly what the ZUTTO Lounge Finder App was built to handle.
+
+<img src="https://images.unsplash.com/photo-1500048993953-d23a436266cf?w=1200&h=600&fit=crop" alt="Traveler relaxing in an airport lounge with a warm drink" style="width: 100%; max-width: 720px; height: 360px; object-fit: cover; border-radius: 12px; margin: 24px 0;" />
+
+## Why Airport Lounges Are Essential
+
+- Quiet seating zones that let you reset and plan the trip
+- Complimentary snacks, beverages, and dependable Wi-Fi
+- Plenty of charging ports plus work-friendly desks
+- Lower stress before boarding, especially on business trips
+
+## How ZUTTO Helps Travellers
+
+### 1. Instant Lounge Location
+- Search every major Indian airport in seconds  
+- View amenities, opening hours, and the gates closest to each lounge  
+- Filter lounges by card network, membership partner, or airline
+
+### 2. Swipe the Right Card
+- Get a definitive answer on which card or payment method guarantees access  
+- Track how many visits you have already consumed this quarter  
+- Avoid denial at the counter, even during peak hours
+
+### 3. Eligibility and Requirements
+- See minimum balance or transaction thresholds for debit and credit cards  
+- Monitor guest access policies and add-on card permissions  
+- Receive alerts the moment you meet a bank’s requirement
+
+### 4. Time-Saving Features
+- Find the lounges with the shortest walk from your gate  
+- Check live occupancy where feeds are available  
+- Get proactive reminders so you can head to the gate on time
+
+## Top Features of the ZUTTO Lounge Finder App
+
+- Comprehensive database for every Indian bank and co-branded card  
+- Real-time lounge information, including temporary closures  
+- Smart notifications for eligibility, balance thresholds, and visit limits  
+- Family travel support so you can manage add-on cards in one place  
+- Airport-specific guidance that spells out accepted cards per terminal
+
+## Tips to Maximize Lounge Access
+
+- Plan ahead by checking lounge capacity before leaving home  
+- Track quarterly or annual visit limits to avoid surprise charges  
+- Combine lounge access with priority security or DigiYatra enrollment  
+- Assign add-on cards strategically for family travel days  
+- Stay updated on policy changes using ZUTTO push notifications
+
+## Major Indian Airports Covered by ZUTTO
+
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: var(--primary-font);">
+  <thead>
+    <tr style="background-color: #0f0f0f; color: white;">
+      <th style="padding: 12px; text-align: left;">Airport</th>
+      <th style="padding: 12px; text-align: left;">Popular Lounges</th>
+      <th style="padding: 12px; text-align: left;">Card Access Insights</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #222;">
+      <td style="padding: 12px;">Delhi (DEL)</td>
+      <td style="padding: 12px;">Plaza Premium, Travel Club, Air India Lounge</td>
+      <td style="padding: 12px;">Most premium debit and credit cards accepted; verify gate changes in-app.</td>
+    </tr>
+    <tr style="background-color: #161616; border-bottom: 1px solid #222;">
+      <td style="padding: 12px;">Mumbai (BOM)</td>
+      <td style="padding: 12px;">GVK Lounge, Loyalty Lounge, Plaza Premium</td>
+      <td style="padding: 12px;">ZUTTO highlights which cards get complimentary late-night access.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #222;">
+      <td style="padding: 12px;">Bengaluru (BLR)</td>
+      <td style="padding: 12px;">080 Lounge, Plaza Premium, Bird Lounge</td>
+      <td style="padding: 12px;">Track crowding patterns before you choose the domestic or international concourse.</td>
+    </tr>
+    <tr style="background-color: #161616; border-bottom: 1px solid #222;">
+      <td style="padding: 12px;">Chennai (MAA)</td>
+      <td style="padding: 12px;">Travel Club, Lounge @ T1, TFS Lounge</td>
+      <td style="padding: 12px;">Cross-check card eligibility for metro vs regional departures.</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px;">Hyderabad (HYD)</td>
+      <td style="padding: 12px;">Encalm Lounge, Plaza Premium</td>
+      <td style="padding: 12px;">App alerts flag DigiYatra and guest policy changes weekly.</td>
+    </tr>
+  </tbody>
+</table>
+
+## Why Travellers Love ZUTTO
+
+- Saves precious buffer minutes before every flight  
+- Eliminates guesswork on which card to show the lounge host  
+- Tracks visit quotas so you avoid surprise charges  
+- Gives full transparency into guest and add-on card rules
+
+## Future of Lounge Access in India
+
+- Digital-first banks are bundling app-based lounge QR codes  
+- Expect UPI-linked access and paperless entry lanes  
+- Eco-friendly lounges are phasing out printed receipts  
+- Real-time availability boards will sync directly with ZUTTO
+
+## Conclusion
+
+Airports will always be busy, but ZUTTO keeps the experience calm. Locate a lounge, confirm eligibility, and glide past the queues without fumbling through emails or PDFs.
+
+📲 Download ZUTTO today on the App Store or Google Play and make every airport visit stress-free.
+    `,
+    author: {
+      name: "Ram",
+      avatar: "/blog/authors/ram.jpg"
+    },
+    publishedAt: "2025-11-05T08:00:00Z",
+    updatedAt: "2025-11-05T08:00:00Z",
+    featuredImage: "https://images.unsplash.com/photo-1500048993953-d23a436266cf?w=1200&h=600&fit=crop",
+    tags: ["Airport Lounges", "Lounge Finder App", "Travel Tips", "Indian Airports", "ZUTTO App"],
+    category: "Travel Tips",
+    readingTime: 11
+  },
+  {
+    id: "5",
+    title: "Top 10 Tips to Save Time at Airport Lounges: Swipe the Right Card Every Time",
+    slug: "top-10-lounge-time-saving-tips",
+    excerpt: "Beat the rush at Indian airport lounges with ten actionable tips powered by live eligibility checks, visit tracking, and card recommendations from ZUTTO.",
+    content: `
+# Top 10 Tips to Save Time at Airport Lounges: Swipe the Right Card Every Time
+
+Airport lounges are a sanctuary for travelers, but only if you reach them quickly and meet every requirement the host demands. The ZUTTO Lounge Finder App removes the uncertainty with real-time data so you can enter, refuel, and board on time.
+
+<img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&h=600&fit=crop" alt="Traveler checking lounge information on a phone near a departure board" style="width: 100%; max-width: 720px; height: 360px; object-fit: cover; border-radius: 12px; margin: 24px 0;" />
+
+## Top 10 Tips to Save Time at Airport Lounges
+
+1. **Use ZUTTO for instant lounge info** – Preview locations, amenities, opening hours, and gates before you leave home.  
+2. **Swipe the correct card on the first try** – The app recommends the card or membership that guarantees access.  
+3. **Track your quarterly visits** – Prevent wasted swipes by logging every entry.  
+4. **Plan your airport timing** – Avoid peak hours using occupancy notifications.  
+5. **Monitor eligibility requirements** – Keep tabs on minimum balances, transaction thresholds, and membership renewals.  
+6. **Coordinate family travel** – Manage add-on cards and shared visit quotas in one dashboard.  
+7. **Pre-book where available** – Reserve slots when lounges allow advance confirmation.  
+8. **Layer perks** – Pair lounge visits with priority security or fast-track immigration.  
+9. **Stay informed on policy changes** – Receive alerts for new lounges, closures, or revised card tie-ups.  
+10. **Centralize your travel data** – Store cards, eligibility proofs, and lounge preferences inside ZUTTO.
+
+## Popular Lounges Across Indian Airports
+
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: var(--primary-font);">
+  <thead>
+    <tr style="background-color: #0f0f0f; color: white;">
+      <th style="padding: 12px; text-align: left;">Airport</th>
+      <th style="padding: 12px; text-align: left;">Popular Lounges</th>
+      <th style="padding: 12px; text-align: left;">Card Access Info</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #222;">
+      <td style="padding: 12px;">Delhi (DEL)</td>
+      <td style="padding: 12px;">Plaza Premium, Travel Club, Air India Lounge</td>
+      <td style="padding: 12px;">Every lounge is validated in ZUTTO with live eligibility.</td>
+    </tr>
+    <tr style="background-color: #161616; border-bottom: 1px solid #222;">
+      <td style="padding: 12px;">Mumbai (BOM)</td>
+      <td style="padding: 12px;">GVK Lounge, Loyalty Lounge, Plaza Premium</td>
+      <td style="padding: 12px;">App highlights peak-hour restrictions and recommended cards.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #222;">
+      <td style="padding: 12px;">Bengaluru (BLR)</td>
+      <td style="padding: 12px;">080 Lounge, Plaza Premium, Bird Lounge</td>
+      <td style="padding: 12px;">Know which premium debit cards are honored at each concourse.</td>
+    </tr>
+    <tr style="background-color: #161616; border-bottom: 1px solid #222;">
+      <td style="padding: 12px;">Chennai (MAA) & Hyderabad (HYD)</td>
+      <td style="padding: 12px;">Multiple Travel Club and Encalm lounges</td>
+      <td style="padding: 12px;">ZUTTO flags document requirements for regional departures.</td>
+    </tr>
+  </tbody>
+</table>
+
+## Why ZUTTO Is Essential for Travellers
+
+- Saves time with smart lounge recommendations and live directions  
+- Prevents denied entry by reminding you which card to present  
+- Tracks visit limits automatically so you always know remaining swipes  
+- Pushes real-time updates on closures, relocations, or access policy changes
+
+## Conclusion
+
+Never waste another minute deciphering lounge eligibility at the airport. Let ZUTTO do the heavy lifting so you can focus on catching the next flight in comfort.
+
+📲 Download ZUTTO on the App Store or Google Play for a smoother airport routine.
+    `,
+    author: {
+      name: "Ram",
+      avatar: "/blog/authors/ram.jpg"
+    },
+    publishedAt: "2025-11-05T08:00:00Z",
+    updatedAt: "2025-11-05T08:00:00Z",
+    featuredImage: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&h=600&fit=crop",
+    tags: ["Airport Lounges", "Lounge Finder App", "Travel Tips", "Indian Airports", "ZUTTO App"],
+    category: "Travel Tips",
+    readingTime: 11
+  },
+  {
+    id: "4",
+    title: "Airport Check-In 2025 Guide: Faster Boarding and Smarter Lounge Access",
+    slug: "airport-check-in-2025-guide",
+    excerpt: "Navigate November 2025 check-in changes across Indian airports: DigiYatra rollouts, faster bag drops, and real-time lounge capacity signals.",
+    content: `
+# Airport Check-In 2025 Guide: Faster Boarding and Smarter Lounge Access
+
+_Last updated: November 4, 2025_
+
+Security lanes are quicker, bag drops are smarter, and lounge trackers are now part of the check-in routine. November's updates across Indian airports introduced new kiosks, DigiYatra checkpoints, and refreshed passenger flows so you can hit the gate faster without missing a lounge visit.
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600&h=720&fit=crop" alt="Travelers walking through a modern airport terminal during check-in" style="width: 100%; max-width: 720px; height: 360px; object-fit: cover; border-radius: 12px; margin: 24px 0;" />
+
+## Why Airport Check-In Still Matters in 2025
+
+- Domestic air traffic is up 23 percent year over year, so prepared travelers dodge the longest queues.
+- Airlines now push 60 percent of passengers through self-service, but the longest waits still happen at documentation checks.
+- Lounges cap capacity more aggressively, so syncing check-in timing with lounge availability is the new superpower.
+
+## November 2025 Updates at Indian Airports
+
+**DigiYatra Expansion** - Chennai (MAA), Goa (GOX), and Jaipur (JAI) activated DigiYatra Phase 2 lanes, trimming average security time by 11 minutes for enrolled flyers.
+
+**Smart Drop Counters** - Vistara and IndiGo rolled out RFID-enabled bag tags in Delhi and Mumbai; both support faster belt confirmations and reduce manual scans by 40 percent.
+
+**Document Flexibility** - Bureau of Civil Aviation Security now accepts the DigiLocker version of voter IDs at four metro airports, reducing the need to carry physical copies.
+
+### Fast Bag Drop Snapshot (Week of November 4)
+
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: var(--primary-font);">
+  <thead>
+    <tr style="background-color: #111; color: #fff;">
+      <th style="padding: 12px; text-align: left;">Airport</th>
+      <th style="padding: 12px; text-align: left;">Airlines</th>
+      <th style="padding: 12px; text-align: left;">Average Wait</th>
+      <th style="padding: 12px; text-align: left;">Pro Tip</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #222;">
+      <td style="padding: 12px;">Delhi T3</td>
+      <td style="padding: 12px;">Air India, Vistara</td>
+      <td style="padding: 12px;">7 minutes</td>
+      <td style="padding: 12px;">Schedule bag drop at least 60 minutes ahead to keep a buffer for lounge queues and random checks.</td>
+    </tr>
+    <tr style="background-color: #161616; border-bottom: 1px solid #222;">
+      <td style="padding: 12px;">Mumbai T2</td>
+      <td style="padding: 12px;">IndiGo, Akasa</td>
+      <td style="padding: 12px;">9 minutes</td>
+      <td style="padding: 12px;">Check airport queue dashboards before you leave the cab to decide whether to head for island C or D.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #222;">
+      <td style="padding: 12px;">Bengaluru</td>
+      <td style="padding: 12px;">Vistara, Air India Express</td>
+      <td style="padding: 12px;">6 minutes</td>
+      <td style="padding: 12px;">Enroll in DigiYatra to reserve facial scan slots and glide through security during morning peaks.</td>
+    </tr>
+  </tbody>
+</table>
+
+## Check-In Essentials for November 2025
+
+**Plan Digital IDs** - Enroll in DigiYatra early, link Aadhaar or passport, and keep a printed copy handy until biometric lanes stabilize.
+
+**Track Wait Times** - Use airport display boards and airline apps for live queue estimates before picking a check-in island.
+
+**Sync Lounge Plans** - Check lounge capacity screens or airline notifications before clearing security; some lounges now cap stays at 90 minutes.
+
+**Pre-Tag Bags** - Print bag tags at home or kiosks where offered to avoid rework at counters that require reprinting.
+
+**Prep for Random Checks** - Keep physical IDs accessible because airlines still trigger spot verifications even when digital IDs are accepted.
+
+## Three-Step Check-In Playbook
+
+1. **60 Minutes Out**: Download or print your boarding pass, weigh your bag, and review the latest queue updates.
+2. **45 Minutes Out**: Head straight to the airline's smart drop counter or priority lane and confirm belt assignment on the overhead display.
+3. **30 Minutes Out**: Scan lounge availability boards, choose the least crowded option, and set a phone reminder 15 minutes before boarding begins.
+
+## Airport-Specific Game Plans
+
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: var(--primary-font);">
+  <thead>
+    <tr style="background-color: #0f0f0f; color: #ffffff;">
+      <th style="padding: 12px; text-align: left;">Airport</th>
+      <th style="padding: 12px; text-align: left;">Check-In Watch Item</th>
+      <th style="padding: 12px; text-align: left;">Lounge Strategy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #222;">
+      <td style="padding: 12px;">Delhi (DEL)</td>
+      <td style="padding: 12px;">Terminal shuffles for Air India domestic sectors. Verify gate zone post check-in.</td>
+      <td style="padding: 12px;">Plaza Premium T3 now caps stays at 90 minutes, so set a timer to avoid overstay penalties.</td>
+    </tr>
+    <tr style="background-color: #161616; border-bottom: 1px solid #222;">
+      <td style="padding: 12px;">Mumbai (BOM)</td>
+      <td style="padding: 12px;">Two baggage scanners offline during late nights; expect detours at security islands C and D.</td>
+      <td style="padding: 12px;">GVK Lounge posts seat counts at 15-minute intervals near the entrance; check the board before clearing security.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #222;">
+      <td style="padding: 12px;">Hyderabad (HYD)</td>
+      <td style="padding: 12px;">IndiGo relocates priority counters near Door 4 starting November 6.</td>
+      <td style="padding: 12px;">Encalm Lounge added a breakfast rush lane; weekdays before 0830 IST see the shortest waits.</td>
+    </tr>
+  </tbody>
+</table>
+
+## Traveler Snapshot
+
+> "I checked in at Bengaluru with DigiYatra and used the new capacity boards to spot a short queue at the 080 lounge. Breezed through in under 25 minutes." - Varun, Product Designer, Mumbai
+
+## Coming Up Next
+
+- Boarding group notifications are currently piloting with Vistara and Akasa; broader rollout expected by December.
+- Air India Express is testing app-based seat upgrades at check-in kiosks in Kochi and Bengaluru.
+- Tier 2 airport enhancements for Coimbatore, Lucknow, and Guwahati are slated to go live by mid-November.
+
+## Quick Actions Before Your Next Flight
+
+- Enroll in DigiYatra if you fly from Delhi, Mumbai, or Bengaluru this month.
+- Update your airline apps with valid ID proofs and vaccination records.
+- Screenshot lounge entry policies for your card network so you can reference them even when airport Wi-Fi drops.
+
+Smooth check-ins build smoother lounge experiences. Start early, follow smart queues, and make the most of your lounge benefits.
+    `,
+    author: {
+      name: "Travel Research Team",
+      avatar: "/blog/authors/zutto-team.jpg"
+    },
+    publishedAt: "2025-11-04T08:00:00Z",
+    updatedAt: "2025-11-04T08:00:00Z",
+    featuredImage: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600&h=720&fit=crop",
+    tags: ["Airport Check-In", "Travel Tips", "Airport Lounge Access"],
+    category: "Travel Tips",
+    readingTime: 8,
+    featured: true
+  },
+  {
     id: "3",
     title: "Complete Guide to Debit Cards with Airport Lounge Access in India 2025",
     slug: "debit-cards-airport-lounge-access-india-2025",
@@ -1118,6 +1466,13 @@ export const blogCategories: BlogCategory[] = [
     slug: "credit-card-tips",
     description: "Strategies for getting the most from your credit cards",
     count: blogPosts.filter(post => post.category === "Credit Card Tips").length
+  },
+  {
+    id: "2",
+    name: "Travel Tips",
+    slug: "travel-tips",
+    description: "Guides to streamline airport journeys and make the most of lounge access",
+    count: blogPosts.filter(post => post.category === "Travel Tips").length
   }
 ];
 
